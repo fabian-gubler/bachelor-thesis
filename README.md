@@ -35,6 +35,7 @@ Misc
 
 
 ## 2. Theoretical Framework
+It is essential to understanding the theoretical framework of refactoring and design patterns. At the same time, get an overview of the code and relevant toolset for refactoring.
 
 ### a) Research and Literature Review
 - [ ] Find relevant Papers for subject matter
