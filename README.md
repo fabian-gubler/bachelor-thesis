@@ -8,7 +8,7 @@ Here comes a short introduction
 List all open questions for ronny
 
 
-# Tasks and Milestones
+# Upcoming Milestones
 
 ## 1. Preparatory measures
 All things necessary to make writing the bachelor thesis easier
@@ -36,3 +36,4 @@ Misc
 - [ ] Read Fowler's work and take notes
 - [ ] Develop Hypotheses
 
+# Completed
