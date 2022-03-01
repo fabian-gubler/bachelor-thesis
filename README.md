@@ -11,7 +11,8 @@ Here comes a short introduction of this project.
 
 # Current Milestone
 - ~~list here~~
-Find a more detailed description [below](#Completed-tasks))
+
+Find a more detailed description [below](#Completed-tasks)
 
 ## 1. Preparatory measures
 It makes sense to first take some time preparing the writing process of the thesis.
