@@ -15,6 +15,10 @@ Here comes a short introduction of this project.
 - [3. Coding](#3.-Coding)
 - [4. Finalization](#3.-Finalization)
 
+### Project Notes
+- [Contents](https://github.com/fabian-gubler/bachelor-thesis/blob/main/notes/contents.md)
+- [Research](https://github.com/fabian-gubler/bachelor-thesis/blob/main/notes/research.md)
+
 # 1. Preparations
 It makes sense to first take some time preparing the writing process of the thesis.
 The following measures are personally useful to me by making writing more efficent and fun.
