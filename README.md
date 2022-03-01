@@ -1,5 +1,5 @@
 ### [👉 Preview Bachelor Thesis](https://raw.githubusercontent.com/fabian-gubler/thesis/main/thesis.pdf?token=GHSAT0AAAAAABQH7HYY3D5TS3BQWSW2JOGOYQ6EZVA)
-Note: This Bachelor Thesis is continously updated on future changes
+__Note: This Bachelor Thesis is continously updated__
 
 ## Introduction
 Here comes a short introduction
