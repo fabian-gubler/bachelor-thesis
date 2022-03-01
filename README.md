@@ -10,11 +10,12 @@ Here comes a short introduction of this project.
 - **Code Formatter and Version Control?** Important to know if there are preferences before editing your code.
 
 ### Milestones Overview
+- [1. Preparations](#1.-Preparations)
 - [2. Framework](#2.-Framework)
 - [3. Coding](#3.-Coding)
 - [4. Finalization](#3.-Finalization)
 
-# Current: 1. Preparatory measures
+# 1. Preparations
 It makes sense to first take some time preparing the writing process of the thesis.
 The following measures are personally useful to me by making writing more efficent and fun.
 
