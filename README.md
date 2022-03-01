@@ -2,12 +2,12 @@
 Note: This pdf document is continuously updated and automatically generated
 
 # Project Description
-Here comes a short introduction
+Here comes a short introduction of this project.
 
 ### Open Questions
 - **What is necessary for personal lab access?** This would be very convenient for me.
 - **Weekly feedback sessions?** Personal + fixed day would be preferable.
-
+- **Code Formatter and Version Control?** Important to know if there are preferences before editing your code.
 
 # Current Milestones
 
