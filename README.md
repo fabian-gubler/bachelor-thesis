@@ -10,6 +10,8 @@ Here comes a short introduction of this project.
 - **Code Formatter and Version Control?** Important to know if there are preferences before editing your code.
 
 # Current Milestone
+### Prior Milestones (see [below](#Completed tasks))
+- ~~list here~~
 
 ## 1. Preparatory measures
 It makes sense to first take some time preparing the writing process of the thesis.
