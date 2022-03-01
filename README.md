@@ -14,5 +14,5 @@ List all open questions for ronny
 
 ## Completed Tasks
 - ~~Set up Latex Editing Environment~~
-- Find Thesis Template and adjust Metadata
-- Create a Roadmap
+- ~~Find Thesis Template and adjust Metadata~~
+- ~~Create a Roadmap~~
