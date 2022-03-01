@@ -1,0 +1,345 @@
+                         Fabian Gubler
+          Refactoring of a Software System for
+                       Industry 4.0
+                       Bachelor’s Thesis
+                    to achieve the university degree of
+                         Bachelor of Arts
+               Bachelor’s degree programme: Business Adminstration
+                          submitted to
+                     University of St. Gallen
+                          Supervisor
+                       Prof. Dr. Ronny Seiger
+                     Institute of Computer Science
+                           Head:
+                       Steckborn, May 2022
+      Abstract
+      This is a placeholder for the abstract. It summarizes the whole thesis to give
+      a very short overview. Usually, this the abstract is written when the whole
+      thesis text is ﬁnished.
+                                       iii
+               Contents
+               Abstract                                                                                iii
+               1 Example Chapter                                                                       1
+               2 Language and Writing Style                                                            3
+                   2.1    SomeBasic Rules of English . . . . . . . . . . . . . . . . . . . .           4
+                   2.2    Avoid Austrianisms . . . . . . . . . . . . . . . . . . . . . . . . .         6
+                   2.3    Clear Writing . . . . . . . . . . . . . . . . . . . . . . . . . . . .        7
+                   2.4    Avoiding Gender Bias . . . . . . . . . . . . . . . . . . . . . . .           8
+                   2.5    Titles and Headings in Initial Caps . . . . . . . . . . . . . . . .         10
+                   2.6    Use a Spelling Checker . . . . . . . . . . . . . . . . . . . . . . .        10
+                   2.7    Use a Dictionary      . . . . . . . . . . . . . . . . . . . . . . . . . .   11
+                   2.8    Use a Thesaurus . . . . . . . . . . . . . . . . . . . . . . . . . . .       11
+               Bibliography                                                                           15
+                                                                                                       v
+               List of Figures
+                   1.1      . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .    1
+                                                                                                      vii
+            1 Example Chapter
+            This is my text with an example Figure 1.1 and example citation Strunk and
+            White, 1999 or Bringhurst (1993). And there is another “citation” which is
+                               1
+            located at the bottom .
+            Nowyouareabletowriteyourowndocument.Alwayskeepinmind:it’s
+            the content that matters, not the form. But good typography is able to deliver
+            the content much better than information set with bad typography. This
+            template allows you to focus on writing good content while the form is
+            done by the template deﬁnitions.
+                                    Figure 1.1: Example ﬁgure.
+               1Voit, 2020.
+                                                                               1
+          2 Language and Writing Style
+           This chapter is an adopted version of a single chapter of Andrews thesis
+           template Andrews, 2011 in its version from 2011-12-11.
+           The reason why Andrews, 2011 is not recommended to be used instead
+                                           A
+           of this template is its more “traditional” LT X implementation. But the
+                                             E
+           information contained regarding “How to write a thesis” is generally
+           brilliant and worth reading.
+           Using this chapter here is meant as a teaser. If you do like this chapter,
+           please go and download the full template to read its content: Andrews,
+           2011.
+           Whatwasmodiﬁedfromtheoriginal chapter:
+              • strikethrough of bad examples
+              • minor typographical details
+              • technical modiﬁcations
+                  – moved citations from \citet{} and \citep{} to \textcite{}
+                   and \cite{}
+                  – changed quoting style to \enquote{}
+                  – created various commands and environments to encapsulate
+                   format
+          The classic reference for English writing style and grammar is Strunk and
+          White (1999). The original text is now available for free online Strunk, 1918,
+          so there is no excuse at all for writing poor English. Readers should consult
+          it ﬁrst, then continue reading this chapter. Another good free guide is
+          McCaskill (1998).
+                                                                  3
+                         2 Language and Writing Style
+                         Zobel (2004) and Dupré (1998) are guides speciﬁcally aimed at computer
+                         science students. Phillips and Pugh (2005) gives practical advice for PhD
+                         students.
+                         The following Sections 2.3 and 2.4 are adapted from the CHI’94 language
+                         and writing style guidelines.
+                         2.1 Some Basic Rules of English
+                         ThereareafewbasicrulesofEnglishforacademicwriting,whicharebroken
+                         regularly by my students, particularly if they are non-native speakers of
+                         English. Here are some classic and often encountered examples:
+                            • Never use I, we, or you.
+                              Write in the passive voice (third person).
+                                Bad:   You can do this in two ways.
+                                Good:  There are two ways this can be done.
+                            • Never use he or she, his or her.
+                              Write in the passive voice (third person).
+                                Bad:   The user speaks his thoughts out loud.
+                                Good:  The thoughts of the user are spoken out loud.
+                               See Section 2.4 for many more examples.
+                            • Stick to a consistent dialect of English. Choose either British or Ameri-
+                               can English and keep to it throughout the whole of your thesis.
+                            • Donot use slang abbreviations such as “it’s”, “doesn’t”, or “don’t”.
+                              Write the words out in full: “it is”, “does not”, and “do not”.
+                                Bad:   It’s very simple to...
+                                Good:  It is very simple to...
+                            • Donot use abbreviations such as “e.g.” or “i.e.”.
+                              Write the words out in full: “for example” and “that is”.
+                                Bad:   . . . in a tree, e. g.the items...
+                                Good:  . . . in a tree, for example the items...
+                         4
+                                                         2.1 Some Basic Rules of English
+                • Donot use slang such as “a lot of”.
+                   Bad:    There are a lot of features...
+                   Good:   There are many features...
+                • Donot use slang such as “OK” or “big”.
+                   Bad:    . . . are represented by big areas.
+                   Good:   . . . are represented by large areas.
+                • Donot use slang such as “gets” or “got”.
+                  Use “becomes” or “obtains”, or use the passive voice (third person).
+                   Bad:    The radius gets increased...
+                   Good:   The radius is increased...
+                   Bad:    The user gets disoriented...
+                   Good:   The user becomes disoriented...
+                • Never start a sentence with “But”.
+                  Use “However,” or “Nevertheless,”. Or consider joining the sentence
+                  to the previous sentence with a comma.
+                   Bad:    But there are numerous possibilities...
+                   Good:   However, there are numerous possibilities...
+                • Never start a sentence with “Because”.
+                  Use “Since”, “Owing to”, or “Due to”. Or turn the two halves of the
+                  sentence around.
+                • Neverstartasentencewith“Also”.Alsoshouldbeplacedinthemiddle
+                  of the sentence.
+                   Bad:    Also the target users are considered.
+                   Good:   The target users are also considered.
+                • Donot use “that” as a connecting word.
+                  Use “which”.
+                   Bad:    . . . a good solution that can be computed easily.
+                   Good:   . . . a good solution which can be computed easily.
+                • Donot write single-sentence paragraphs.
+                  Avoid writing two-sentence paragraphs. A paragraph should contain
+                  at least three, if not more, sentences.
+                                                                                      5
+                         2 Language and Writing Style
+                         2.2 Avoid Austrianisms
+                         I see these mistakes time and time again. Please do not let me read one of
+                         them in your work.
+                            • “actual” 6= “current”
+                               If you mean “aktuell” in German, you probably mean “current” in
+                               English.
+                                Bad:   The actual selection is cancelled.
+                                Good:  The current selection is cancelled.
+                            • “allows to” is not English.
+                                Bad:   The prototype allows to arrange components...
+                                Good:  The prototype supports the arrangement of components...
+                            • “enables to” is not English.
+                                Bad:   it enables to recognise meanings...
+                                Good:  it enables the recognition of meanings...
+                            • “according” 6= “corresponding”
+                                Bad:   For each browser, an according package is created.
+                                Good:  For each browser, a corresponding package is created.
+                            • “per default” is not English.
+                               Use “by default”.
+                                Bad:   Per default, the cursor is red.
+                                Good:  Bydefault, the cursor is red.
+                            • “As opposed to” is not English.
+                               Use “In contrast to”.
+                                Bad:   AsopposedtoC,Java is object-oriented.
+                                Good:  In contrast to C, Java is object-oriented.
+                            • “anything-dimensional” is spelt with a hyphen.
+                               For example: two-dimensional, three-dimensional.
+                            • “anything-based” is spelt with a hyphen.
+                               For example: tree-based, location-based.
+                            • “anything-oriented” is spelt with a hyphen.
+                               For example: object-oriented, display-oriented.
+                            • “anything-side” is spelt with a hyphen.
+                         6
+                                                                       2.3 Clear Writing
+                  For example: client-side, server-side.
+                • “anything-friendly” is spelt with a hyphen.
+                  For example: user-friendly, customer-friendly.
+                • “anything-to-use” is spelt with hyphens.
+                  For example: hard-to-use, easy-to-use.
+                • “realtime” is spelt with a hyphen if used as an adjective, or as two
+                  separate words if used as a noun.
+                   Bad:    . . . using realtime shadow casting.
+                   Good:   . . . using real-time shadow casting.
+                   Bad:    . . . display the object in realtime.
+                   Good:   . . . display the object in real time.
+             2.3 Clear Writing
+             The written and spoken language of your thesis is English as appropriate
+             for presentation to an international audience. Please take special care to
+             ensure that your work is adapted to such an audience. In particular:
+                • Write in a straight-forward style, using simple sentence structure.
+                • Use common and basic vocabulary. For example, use “unusual” for
+                  “arcane”, and “specialised” for “erudite”.
+                • Brieﬂy deﬁne or explain all technical vocabulary the ﬁrst time it is
+                  mentioned, to ensure that the reader understands it.
+                • Explain all acronyms and abbreviations. For example, the ﬁrst time
+                  an acronym is used, write it out in full and place the acronym in
+                  parentheses.
+                   Bad:    . . . When using the gui version, the use may...
+                   Good:   . . . When using the Graphical User Interface (gui) version, the use
+                           may...
+                • Avoid local references. For example, not everyone knows the names of
+                  all the provincial capitals of Austria. If local context is important to
+                  the material, describe it fully.
+                • Avoid “insider” comments. Ensure that your whole audience under-
+                  stands any reference whose meaning you do not describe. For example,
+                                                                                      7
+            2 Language and Writing Style
+              do not assume that everyone has used a Macintosh or a particular
+              application.
+             • Donot“play on words”. For example, do not use “puns”, particularly
+              in the title of a piece. Phrases such as “red herring” require cultural as
+              well as technical knowledge of English.
+             • Useunambiguousformatstorepresentculturally localised things such
+              as times, dates, personal names, currencies, and even numbers. 9/11
+              is the 9th of November in most of the world.
+             • Be careful with humour. In particular, irony and sarcasm can be hard
+              to detect if you are not a native speaker.
+             • If you ﬁnd yourself repeating the same word or phrase too often, look
+              in a thesaurus such as Roget (2004) and Roget (1995) for an alternative
+              wordwith the same meaning.
+            Clear writing experts recognise that part of writing understandable doc-
+            uments is understanding and responding to the needs of the intended
+            audience. It is the writer’s job to maintain the audience’s willingness to go
+            on reading the document. Readers who are continually stumped by long
+            words or offended by a pompous tone are likely to stop reading and miss
+            the intended message.
+            2.4 Avoiding Gender Bias
+            Part of striking the right tone is handling gender-linked terms sensitively.
+            Useofgendertermsiscontroversial. Some writers use the generic masculine
+            exclusively, but this offends many readers. Other writers are experimenting
+            with ways to make English more neutral. Avoiding gender bias in writing
+            involves two kinds of sensitivity:
+             1. being aware of potential bias in the kinds of observations and char-
+              acterisations that it is appropriate to make about women and men,
+              and
+             2. being aware of certain biases that are inherent in the language and of
+              howyoucanavoidthem.
+            8
+                                                           2.4 Avoiding Gender Bias
+            The second category includes using gender-speciﬁc nouns and pronouns
+            appropriately. Here are some guidelines for handling these problems:
+               • Use a gender-neutral term when speaking generically of people:
+                  man                the human race
+                  mankind            humankind, people
+                  manpower           workforce, personnel
+                  manonthestreet average person
+               • Avoidclearly gender-marked titles. Use neutral terms when good ones
+                 are available. For example:
+                  chairman     chairperson
+                  spokesman speaker, representative
+                  policeman    police ofﬁcer
+                  stewardess   ﬂight attendant
+               • If you are speaking of the holder of a position and you know the
+                 gender of the person who currently occupies the position, use the
+                 appropriate gender pronoun. For example, suppose the “head nurse”
+                 is a man:
+                  Bad:   The head nurse must ﬁle her report every Tuesday.
+                  Good:  The head nurse must ﬁle his report every Tuesday.
+               • Rewrite sentences to avoid using gender pronouns. For example, use
+                 the appropriate title or job name again:
+                  Bad:   Interview the user ﬁrst and then ask him to ﬁll out a questionnaire.
+                  Good:  Interview the user ﬁrst and then ask the user to ﬁll out a question-
+                         naire.
+               • To avoid using the third person singular pronoun (his or her), recast
+                 your statement in the plural:
+                  Bad:   Each student should bring his text to class.
+                  Good:  All students should bring their texts to class.
+               • Address your readers directly in the second person, if it is appropriate
+                 to do so:
+                  Bad:   Thestudent must send in his application by the ﬁnal deadline date.
+                  Good:  Send in your application by the ﬁnal deadline date.
+               • Replace third person singular possessives with articles.
+                  Bad:   Every student must hand his report in on Friday.
+                  Good:  Every student must hand the report in on Friday.
+                                                                                9
+                         2 Language and Writing Style
+                            • Write your way out of the problem by using the passive voice.
+                                Bad:   Each department head should do his own projections.
+                                Good:  Projections should be done by each department head.
+                            • Avoid writing awkward formulations such as “s/he”, “he/she”, or
+                              “his/her”. They interfere when someone is trying to read a text aloud.
+                               If none of the other guidelines has been helpful, use the slightly less
+                               awkwardforms“heorshe”, and “his or hers”.
+                         Remember, the goal is to avoid constructions that will offend your readers
+                         so much as to distract them from the content of your work.
+                         2.5 Titles and Headings in Initial Caps
+                         2.6 Use a Spelling Checker
+                         Inthesedaysofhightechnology,spellingmistakesandtyposareinexcusable.
+                         It is very irritating for your supervisor to have to read through and correct
+                         spelling mistake after spelling mistake which could have been caught by an
+                         automated spelling checker. Believe me, irritating your supervisor is not a
+                         good idea.
+                         So, use a spelling checker before you hand in any version, whether it is a draft
+                         or a ﬁnal version. Since this is apparently often forgotten, and sometimes
+                         even wilfully ignored, let me make it absolutely clear:
+                               Use a spelling checker, please.
+                               Use a spelling checker!
+                               Use a spelling checker, you moron.
+                         10
+                               2.7 Use a Dictionary
+      2.7 Use a Dictionary
+      If you are not quite sure of the meaning of a word, then use a dictionary.
+      dictionary.com (2004) is a free English dictionary, Chemnitz (2004) and Leo
+      (2004) are two very good English-German dictionaries.
+      2.8 Use a Thesaurus
+      If a word has been used several times already, and using another equivalent
+      word might improve the readability of the text, then consult a thesaurus.
+      Roget (2004) and Roget (1995) are free English thesauri.
+                                      11
+                  Appendix
+                                      13
+      Bibliography
+      Andrews, Keith (Dec. 2011). Writing a Thesis: Guidelines for Writing a Master’s
+       Thesis in Computer Science. url: http://ftp.iicm.edu/pub/keith/
+       thesis/ (cit. on p. 3).
+      Bringhurst, Robert (1993). The Elements of Typographic Style. ﬁrst edition.
+       Hartley and Marks Publishers (cit. on p. 1).
+      Chemnitz, TU (2004). German-English Dictionary. url: http://dict.tu-
+       chemnitz.de/ (cit. on p. 11).
+      dictionary.com (2004). dictionary.com. url: http://dictionary.com/ (cit. on
+       p. 11).
+      Dupré, Lyn (1998). Bugs in Writing: A Guide to Debugging Your Prose. Second.
+       Addison-Wesley. isbn: 020137921X (cit. on p. 4).
+      Leo (2004). Leo English-German Dictionary. url: http://dict.leo.org/
+       (cit. on p. 11).
+      McCaskill, Mary K. (Aug. 1998). Grammar, Punctuation, and Capitalization: A
+       Handbook for Technical Writers and Editors. NASA Langley Research Center
+       SP-7084. url: http://stipo.larc.nasa.gov/sp7084/ (cit. on p. 3).
+      Phillips, Estelle M. and Derek S. Pugh (2005). How to Get a PhD. Fourth.
+       OpenUniversity Press. isbn: 0335216846 (cit. on p. 4).
+      Roget (1995). Roget’s II: The New Thesaurus. url: http://www.bartleby.com/
+       62/ (cit. on pp. 8, 11).
+      Roget (2004). Roget’s Interactive Thesaurus. url: http://www.thesaurus.com/
+       (cit. on pp. 8, 11).
+      Strunk Jr, William (1918). The Elements of Style. url: http://www.bartleby.
+       com/141/ (cit. on p. 3).
+      Strunk Jr, William and Elwyn Brooks White (1999). The Elements of Style.
+       Fourth. Longman. isbn: 020530902X (cit. on pp. 1, 3).
+      Voit, Karl (July 2020). tagstore — Project home page. url: https://Karl-
+       Voit.at/tagstore (visited on 12/10/2011) (cit. on p. 1).
+                                       15
+            Bibliography
+            Zobel, Justin (2004). Writing for Computer Science. Second. Springer. isbn:
+             1852338024 (cit. on p. 4).
+            16
