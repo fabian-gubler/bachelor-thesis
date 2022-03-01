@@ -12,7 +12,7 @@ List all open questions for ronny
 
 ## 1. Preparatory measures
 It makes sense to take some time in preparing the writing process of the thesis.
-These are Things that are personally useful to me and make writing more efficent.
+These preparations personally useful to me and make writing more efficent and fun.
 
 ### a) Editing Setup
 Latex
