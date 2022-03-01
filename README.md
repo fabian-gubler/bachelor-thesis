@@ -1,5 +1,5 @@
 ### [👉 Preview Bachelor Thesis](thesis.pdf)
-Note: This document is continously updated
+Note: This document is continuously updated
 
 ## Introduction
 Here comes a short introduction
