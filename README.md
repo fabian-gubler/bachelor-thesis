@@ -11,6 +11,8 @@ List all open questions for ronny
 # Tasks and Milestones
 
 ## 1. Preparatory measures
+All things necessary to make writing the bachelor tesis easier
+
 ### Structuring Writing Process
 - [ ] Preliminary Table of Contents
 - [ ] Estimate length of sections
