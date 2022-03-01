@@ -1,4 +1,4 @@
-latex/template
+# Files created after compiling
 latex/*.aux
 latex/*.bcf
 latex/*.run.xml
@@ -9,3 +9,7 @@ latex/*.lof
 latex/*.log
 latex/*.out
 latex/*.toc
+
+# Misc
+latex/template
+latex/Template-Documentation.pdf
