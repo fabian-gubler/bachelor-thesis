@@ -36,6 +36,8 @@ Misc
 
 ## 2. Theoretical Framework
 It is essential to understanding the theoretical framework of refactoring and design patterns. At the same time, get an overview of the code and relevant toolset for refactoring.
+- Duration: 3 Weeks
+- Deliverable: Aim to write 10 Pages minimum.
 
 ### a) Research and Literature Review
 - [ ] Find relevant Papers for subject matter
@@ -48,6 +50,15 @@ It is essential to understanding the theoretical framework of refactoring and de
 - [ ] Find Software tools for different code smells
 - [ ] Best Coding Practices in a refactor
 - [ ] Find Metrics to evaluate refactor
+
+## 3. Coding
+This is the main part of the thesis. Code refactoring based on theoretical framework. Noting down whether hypotheses are validated and documenting the results.
+- Duration: ...
+- Deliverables: Refactored codebase, (Extensive) Note-taking of results
+
+## 4. Writing Process (Finalization)
+Formulation of notes into first draft of the final paper, which will then be revised and improved upon.
+- Duration: 3 Weeks
 
 # Completed parts of the Project
 The following lists the milestones that are already achieved.
