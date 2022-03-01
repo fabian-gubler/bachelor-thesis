@@ -1,14 +1,14 @@
 ### [👉 Preview Bachelor Thesis](thesis.pdf)
 Note: This document is continuously updated
 
-## Introduction
+# Project
 Here comes a short introduction
 
-## Open Questions
+### Open Questions
 List all open questions for ronny
 
 
-# Roadmap
+# Tasks and Milestones
 
 ## Preparatory measures
 ### Structuring Writing Process
