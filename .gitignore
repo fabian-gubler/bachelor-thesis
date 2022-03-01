@@ -9,6 +9,9 @@ latex/*.lof
 latex/*.log
 latex/*.out
 latex/*.toc
+latex/*.fdb*
+latex/*.fls
+latex/*.synctex.gz
 
 # Misc
 latex/template
