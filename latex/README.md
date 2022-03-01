@@ -7,3 +7,8 @@ Link to the [Github Repository](https://github.com/novoid/LaTeX-KOMA-template)
 ```bash
 make pdf
 ```
+
+**Clean Compilation Files**
+```bash
+make clean
+```
