@@ -19,7 +19,7 @@ Here comes a short introduction of this project.
 It makes sense to first take some time preparing the writing process of the thesis.
 The following measures are personally useful to me by making writing more efficent and fun.
 
-### a) Editing Setup
+**a) Editing Setup**
 Latex
 - [ ] Managing References with Zotero
 - [x] Thesis Template and first adjustments
@@ -28,12 +28,12 @@ Latex
 Misc
 - [x] Create this Git Repository
 
-### b) Structuring Writing Process
+**b) Structuring Writing Process**
 - [ ] Preliminary Table of Contents
 - [ ] Estimate length of sections
 - [ ] Superficial Descriptions of Parts
 
-### c) Empirical Groundwork
+**c) Empirical Groundwork**
 - [ ] Formulate Research Question
 - [ ] Formulate Research Objectives
 
