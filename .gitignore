@@ -12,3 +12,4 @@ latex/*.toc
 latex/*.fdb*
 latex/*.fls
 latex/*.gz
+latex/*.pdf
