@@ -23,10 +23,10 @@ Here comes a short introduction of this project.
 It makes sense to first take some time preparing the writing process of the thesis.
 The following measures are personally useful to me by making writing more efficent and fun.
 
-**a) Editing Setup**
+~~a) Editing Setup~~
 
 Latex
-- [ ] Managing References with Zotero
+- [x] Managing References with Zotero
 - [x] Thesis Template and first adjustments
 - [x] Latex Environment
 
