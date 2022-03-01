@@ -3,3 +3,9 @@ latex/*.aux
 latex/*.bcf
 latex/*.run.xml
 latex/*.-blx.bib
+latex/*.bbl
+latex/*.blg
+latex/*.lof
+latex/*.log
+latex/*.out
+latex/*.toc
