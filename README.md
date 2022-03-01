@@ -1,4 +1,4 @@
-[Current PDF](2022-*.pdf)
+[Current PDF](thesis.pdf)
 
 - Link to Current Thesis
 - Pending and Completed Tasks
