@@ -25,12 +25,9 @@ The following measures are personally useful to me by making writing more effice
 
 ~~a) Editing Setup~~
 
-Latex
 - [x] Managing References with Zotero
 - [x] Thesis Template and first adjustments
 - [x] Latex Environment
-
-Misc
 - [x] Create this Git Repository
 
 **b) Structuring Writing Process**
