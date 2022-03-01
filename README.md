@@ -13,7 +13,7 @@ List all open questions for ronny
 ## 1. Preparatory measures
 All things necessary to make writing the bachelor thesis easier
 
-### 1. Editing Setup
+### a) Editing Setup
 Latex
 - [ ] Managing References with Zotero
 - [x] Thesis Template and first adjustments
@@ -22,12 +22,12 @@ Latex
 Misc
 - [x] Create this Git Repository
 
-### 2. Structuring Writing Process
+### b) Structuring Writing Process
 - [ ] Preliminary Table of Contents
 - [ ] Estimate length of sections
 - [ ] Superficial Descriptions of Parts
 
-### 3. Empirical Groundwork
+### c) Empirical Groundwork
 - [ ] Formulate Research Question
 - [ ] Formulate Research Objectives
 
