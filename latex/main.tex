@@ -112,7 +112,7 @@
 %% Load main settings for document preamble:
 \input{template/preamble}%% DO NOT REMOVE THIS LINE!
 
-\setboolean{myaddcolophon}{true}  %% "true" or "false"
+\setboolean{myaddcolophon}{false}  %% "true" or "false"
 %% If set to "true": a colophon (with notes about this document
 %% template, LaTeX, ...) is added after the title page.
 %% Please do not set to "false" without a good reason. The colophon
@@ -134,7 +134,7 @@
 
 %% general metadata:
 \newcommand{\myauthor}{Fabian Gubler}  %% also used for PDF metadata (hyperref)
-\newcommand{\myauthorwithexistingtitles}{\myauthor{}, OLDDEGREE}  %% including
+\newcommand{\myauthorwithexistingtitles}{\myauthor{}}  %% including
                                 %% university degree already held
                                 %% (BSc, MSc, ...)
 \newcommand{\mytitle}{Refactoring of a Software System for Industry 4.0}  %% also used for PDF metadata (hyperref)
@@ -150,7 +150,7 @@
 \newcommand{\myuniversity}{University of St. Gallen} %% your university/school
 \newcommand{\myfaculty}{ }  %% only used with title_Thesis_TU_Graz_-_kazemakase
 \newcommand{\myinstitute}{Institute of Computer Science} %% affiliation
-\newcommand{\myinstitutehead}{Univ.-Prof.\,Dipl-Ing.\,Dr.techn.~Some One} %% head of institute
+\newcommand{\myinstitutehead}{} %% head of institute
 \newcommand{\mysupervisor}{Prof. Dr. Ronny Seiger} %% your supervisor
 \newcommand{\mycosupervisor}{\ }  %% only used with title_Thesis_TU_Graz_-_kazemakase
 \newcommand{\myevaluator}{Prof. Dr. Ronny Seiger} %% your evaluator
