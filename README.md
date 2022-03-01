@@ -1,6 +1,5 @@
-## [Bachelor Thesis](thesis.pdf)
+## [Preview Bachelor Thesis](thesis.pdf)
 
-- Link to Current Thesis
 - Pending and Completed Tasks
 - Open Questions
 
