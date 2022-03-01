@@ -5,7 +5,7 @@ Note: This document is continuously updated
 Here comes a short introduction
 
 ## Open Questions
-Lis all open questions for ronny
+List all open questions for ronny
 
 
 ## Pending Tasks
@@ -13,6 +13,6 @@ Lis all open questions for ronny
 - Detailed Structure with Content Overview
 
 ## Completed Tasks
-- Set up Latex Editing Environment
+- ~~Set up Latex Editing Environment~~
 - Find Thesis Template and adjust Metadata
 - Create a Roadmap

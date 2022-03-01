@@ -1,4 +1,4 @@
-# Files created after compiling
+# Ignore all make files
 latex/*.aux
 latex/*.bcf
 latex/*.run.xml
