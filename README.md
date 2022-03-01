@@ -1,4 +1,4 @@
-## [Preview Bachelor Thesis](thesis.pdf)
+### [Preview Bachelor Thesis](thesis.pdf)
 
 - Pending and Completed Tasks
 - Open Questions
