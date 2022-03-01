@@ -9,10 +9,11 @@ Here comes a short introduction of this project.
 - **Weekly feedback sessions?** Personal + fixed day would be preferable.
 - **Code Formatter and Version Control?** Important to know if there are preferences before editing your code.
 
-# Current Milestone
+Progress:
 - ~~list here~~
 
 [Detailed List of completed tasks](#Completed-tasks)
+# Current Milestone
 
 ## 1. Preparatory measures
 It makes sense to first take some time preparing the writing process of the thesis.
