@@ -10,11 +10,11 @@ List all open questions for ronny
 
 # Tasks and Milestones
 
-## 2. Theoretical Framework
+## Theoretical Framework
 - [ ] Read Fowler's work and take notes
 - [ ] Develop Hypotheses
 
-## 1. Preparatory measures
+## Preparatory measures
 ### Structuring Writing Process
 - [ ] Preliminary Table of Contents
 - [ ] Estimate length of sections
