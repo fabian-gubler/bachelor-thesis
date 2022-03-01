@@ -1,4 +1,4 @@
-[Current PDF](thesis.pdf)
+## [Bachelor Thesis](thesis.pdf)
 
 - Link to Current Thesis
 - Pending and Completed Tasks
