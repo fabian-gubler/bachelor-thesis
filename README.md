@@ -5,7 +5,8 @@ Note: This pdf document is continuously updated and automatically generated
 Here comes a short introduction
 
 ### Open Questions
-List all open questions for ronny
+- What would be necessary for personal lab access? This would be very convenient for me.
+- Would weekly feedback sessions work for you? Personal + fixed day would be preferable.
 
 
 # Current Milestones
@@ -41,6 +42,11 @@ Misc
 ### b) Comprehensive Understanding of Refactoring
 - [ ] Study Fowler's work and take notes
 - [ ] Develop Hypotheses
+
+### c) Toolset
+- [ ] Find Software tools for different code smells
+- [ ] Best Coding Practices in a refactor
+- [ ] Find Metrics to evaluate refactor
 
 # Completed parts of the Project
 The following lists the milestones that are already achieved.
