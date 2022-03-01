@@ -11,18 +11,9 @@ List all open questions for ronny
 # Tasks and Milestones
 
 ## 1. Preparatory measures
-All things necessary to make writing the bachelor tesis easier
+All things necessary to make writing the bachelor thesis easier
 
-### Structuring Writing Process
-- [ ] Preliminary Table of Contents
-- [ ] Estimate length of sections
-- [ ] Superficial Descriptions of Parts
-
-### Empirical Groundwork
-- [ ] Formulate Research Question
-- [ ] Formulate Research Objectives
-
-### Editing Setup
+### 1. Editing Setup
 Latex
 - [ ] Managing References with Zotero
 - [x] Thesis Template and first adjustments
@@ -30,6 +21,16 @@ Latex
 
 Misc
 - [x] Create this Git Repository
+
+### 2. Structuring Writing Process
+- [ ] Preliminary Table of Contents
+- [ ] Estimate length of sections
+- [ ] Superficial Descriptions of Parts
+
+### 3. Empirical Groundwork
+- [ ] Formulate Research Question
+- [ ] Formulate Research Objectives
+
 
 ## 2. Theoretical Framework
 - [ ] Read Fowler's work and take notes
