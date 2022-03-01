@@ -37,3 +37,4 @@ Misc
 - [ ] Develop Hypotheses
 
 # Completed Tasks
+The following lists the parts that are fully completed.
