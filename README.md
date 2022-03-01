@@ -8,11 +8,15 @@ Here comes a short introduction
 List all open questions for ronny
 
 
-## Pending Tasks
-- Set up Zotero Source Management
-- Detailed Structure with Content Overview
+# Roadmap
 
-## Completed Tasks
+## Preparatory measures
+### Structuring Writing Process
+- Detailed Structure with Content Overview
+- Formalize Research Question
+- Formalize Research Goals
+
+### Preliminary Editing Setup
+- Set up Zotero Source Management
 - ~~Set up Latex Editing Environment~~
 - ~~Find Thesis Template and adjust Metadata~~
-- ~~Create a Roadmap~~
