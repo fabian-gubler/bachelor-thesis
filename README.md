@@ -12,8 +12,8 @@ Here comes a short introduction of this project.
 # Current Milestone
 
 ## 1. Preparatory measures
-It makes sense to take some time in preparing the writing process of the thesis.
-These preparations are personally useful to me and make writing more efficent and also fun.
+It makes sense to first take some time preparing the writing process of the thesis.
+The following measures are personally useful to me by making writing more efficent and fun.
 
 ### a) Editing Setup
 Latex
