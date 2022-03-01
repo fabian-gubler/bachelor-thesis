@@ -10,11 +10,19 @@ List all open questions for ronny
 
 # Tasks and Milestones
 
+## 2. Theoretical Framework
+- Read Fowler's work and take notes
+- Develop Hypotheses
+
 ## 1. Preparatory measures
 ### Structuring Writing Process
-- Detailed Structure with Content Overview
-- Formalize Research Question
-- Formalize Research Goals
+- Preliminary Table of Contents
+- Estimate length of sections
+- Superficial Descriptions of Parts
+
+### Empirical Groundwork
+- Formulate Research Question
+- Formulate Research Objectives
 
 ### Preliminary Editing Setup
 - Set up Zotero Source Management
