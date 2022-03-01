@@ -1,4 +1,4 @@
-### [Preview Bachelor Thesis](thesis.pdf)
+### [👉 Preview Bachelor Thesis](thesis.pdf)
 
 ## Introduction
 Here comes a short introduction
