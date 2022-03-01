@@ -1,4 +1,4 @@
-### [👉 Preview Bachelor Thesis](thesis.pdf)
+### [👉 Preview Bachelor Thesis](https://raw.githubusercontent.com/fabian-gubler/thesis/main/thesis.pdf?token=GHSAT0AAAAAABQH7HYY3D5TS3BQWSW2JOGOYQ6EZVA)
 
 ## Introduction
 Here comes a short introduction
