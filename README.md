@@ -27,8 +27,8 @@ List all open questions for ronny
 ### Editing Setup
 Latex
 - Managing References with Zotero
-- ~~Thesis Template and first adjustments~~
-- ~~Latex Environment~~
+- [x] Thesis Template and first adjustments
+- [x] Latex Environment
 
 Misc
-- ~~Create this Git Repository~~
+- [x] Create this Git Repository
