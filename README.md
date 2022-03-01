@@ -63,6 +63,3 @@ This is the main part of the thesis. Code refactoring based on theoretical frame
 # 4. Finalization
 Formulation of notes into first draft of the final paper, which will then be revised and improved upon.
 - Duration: 3 Weeks
-
-# Completed tasks
-The following lists the milestones and their tasks that are sucessfully completed.
