@@ -1,7 +1,7 @@
 ### [👉 Preview Bachelor Thesis](thesis.pdf)
 Note: This document is continuously updated
 
-# Project
+# Project Description
 Here comes a short introduction
 
 ### Open Questions
@@ -18,5 +18,6 @@ List all open questions for ronny
 
 ### Preliminary Editing Setup
 - Set up Zotero Source Management
+- ~~Create Git Repository for personal reflection~~
 - ~~Set up Latex Editing Environment~~
 - ~~Find Thesis Template and adjust Metadata~~
