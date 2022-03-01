@@ -34,7 +34,12 @@ Misc
 
 
 ## 2. Theoretical Framework
-- [ ] Read Fowler's work and take notes
+
+### a) Research and Literature Review
+- [ ] Find relevant Papers for subject matter
+
+### b) Comprehensive Understanding of Refactoring
+- [ ] Study Fowler's work and take notes
 - [ ] Develop Hypotheses
 
 # Completed parts of the Project
