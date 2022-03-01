@@ -20,6 +20,7 @@ It makes sense to first take some time preparing the writing process of the thes
 The following measures are personally useful to me by making writing more efficent and fun.
 
 **a) Editing Setup**
+
 Latex
 - [ ] Managing References with Zotero
 - [x] Thesis Template and first adjustments
@@ -42,14 +43,14 @@ It is essential to understanding the theoretical framework of refactoring and de
 - Duration: 3 Weeks
 - Deliverable: Aim to write min. 10 Pages.
 
-### a) Research and Literature Review
+**a) Research and Literature Review**
 - [ ] Find relevant Papers for subject matter
 
-### b) Comprehensive Understanding of Refactoring
+**b) Comprehensive Understanding of Refactoring**
 - [ ] Study Fowler's work and take notes
 - [ ] Develop Hypotheses
 
-### c) Toolset
+**c) Toolset**
 - [ ] Find Software tools for different code smells
 - [ ] Best Coding Practices in a refactor
 - [ ] Find Metrics to evaluate refactor
