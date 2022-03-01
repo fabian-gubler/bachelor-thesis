@@ -32,7 +32,7 @@ The following measures are personally useful to me by making writing more effice
 - [ ] Formulate Research Question
 - [ ] Formulate Research Objectives
 
-~~Editing Setup~~
+[x] Editing Setup~~
 - [x] Managing References with Zotero
 - [x] Thesis Template and first adjustments
 - [x] Latex Environment
