@@ -23,16 +23,16 @@ Here comes a short introduction of this project.
 It makes sense to first take some time preparing the writing process of the thesis.
 The following measures are personally useful to me by making writing more efficent and fun.
 
-**b) Structuring Writing Process**
+**Structuring Writing Process**
 - [ ] Preliminary Table of Contents
 - [ ] Estimate length of sections
 - [ ] Superficial Descriptions of Parts
 
-**c) Empirical Groundwork**
+**Empirical Groundwork**
 - [ ] Formulate Research Question
 - [ ] Formulate Research Objectives
 
-~~a) Editing Setup~~
+~~Editing Setup~~
 - [x] Managing References with Zotero
 - [x] Thesis Template and first adjustments
 - [x] Latex Environment
