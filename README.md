@@ -10,7 +10,7 @@ List all open questions for ronny
 
 # Tasks and Milestones
 
-## Preparatory measures
+## 1. Preparatory measures
 ### Structuring Writing Process
 - Detailed Structure with Content Overview
 - Formalize Research Question
