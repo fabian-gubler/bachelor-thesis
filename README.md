@@ -9,7 +9,7 @@ Here comes a short introduction of this project.
 - **Weekly feedback sessions?** Personal + fixed day would be preferable.
 - **Code Formatter and Version Control?** Important to know if there are preferences before editing your code.
 
-# Current Milestones
+# Current Milestone
 
 ## 1. Preparatory measures
 It makes sense to take some time in preparing the writing process of the thesis.
@@ -34,10 +34,11 @@ Misc
 - [ ] Formulate Research Objectives
 
 
+# Upcoming Milestones
 ## 2. Theoretical Framework
 It is essential to understanding the theoretical framework of refactoring and design patterns. At the same time, get an overview of the code and relevant toolset for refactoring.
 - Duration: 3 Weeks
-- Deliverable: Aim to write 10 Pages minimum.
+- Deliverable: Aim to write min. 10 Pages.
 
 ### a) Research and Literature Review
 - [ ] Find relevant Papers for subject matter
@@ -53,7 +54,7 @@ It is essential to understanding the theoretical framework of refactoring and de
 
 ## 3. Coding
 This is the main part of the thesis. Code refactoring based on theoretical framework. Noting down whether hypotheses are validated and documenting the results.
-- Duration: ...
+- Duration: 4 Weeks
 - Deliverables: Refactored codebase, (Extensive) Note-taking of results
 
 ## 4. Writing Process (Finalization)
