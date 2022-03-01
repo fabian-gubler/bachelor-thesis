@@ -30,9 +30,11 @@ Smart Factory and Fourth Industrial Revolution
 - When do we need it?
 - Different levels of a refactor: From small programs to entire software stack / architecture
 
-## Code Smells
-- We refactor to get rid of code smells
-- List and explain
+## Concrete Theory
+- Refactoring as a process of getting rid of code smells
+- List and explain Design Pattern, Anti-Patterns
+- Established Practices of patterns and different degree of impact
+- Software Modularity
 - Consequences
 
 # Methodology
@@ -40,14 +42,28 @@ Smart Factory and Fourth Industrial Revolution
 ## Object/means of the work
 - Fischer Fabrik
 - Python
-- Architecture
+- Software Architecture
+- Controller Interface of Smart Factory
+- Describe Code Project
+
+## Procedure
+- First and foremost: Rough Overview with tools
+- Plan, Do, Check, Act
+
+## Toolset
+- Software tools
+- Metrics
+- Best practices
+- Reference projects?
 
 ## Academic Approach
 - Creating and evaluating hypotheses
 - Priority and Goals of my Project
 
 ## Limitations of the approach
+- Not having written the code myself
 - Not direct translatable to huge factories
+- Tools only get you so far. Expert Knowledge required for complex tasks
 
 ## Desired Findings
 - Code is easier to read and maintain
