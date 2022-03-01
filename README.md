@@ -16,17 +16,17 @@ List all open questions for ronny
 
 ## 1. Preparatory measures
 ### Structuring Writing Process
-- Preliminary Table of Contents
-- Estimate length of sections
-- Superficial Descriptions of Parts
+- [ ] Preliminary Table of Contents
+- [ ] Estimate length of sections
+- [ ] Superficial Descriptions of Parts
 
 ### Empirical Groundwork
-- Formulate Research Question
-- Formulate Research Objectives
+- [ ] Formulate Research Question
+- [ ] Formulate Research Objectives
 
 ### Editing Setup
 Latex
-- Managing References with Zotero
+- [ ] Managing References with Zotero
 - [x] Thesis Template and first adjustments
 - [x] Latex Environment
 
