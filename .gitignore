@@ -11,7 +11,7 @@ latex/*.out
 latex/*.toc
 latex/*.fdb*
 latex/*.fls
-latex/*.synctex.gz
+latex/*.gz
 
 # Misc
 latex/template
