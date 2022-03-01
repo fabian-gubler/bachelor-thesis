@@ -24,8 +24,11 @@ List all open questions for ronny
 - Formulate Research Question
 - Formulate Research Objectives
 
-### Preliminary Editing Setup
-- Set up Zotero Source Management
-- ~~Create Git Repository for personal reflection~~
-- ~~Set up Latex Editing Environment~~
-- ~~Find Thesis Template and adjust Metadata~~
+### Editing Setup
+Latex
+- Managing References with Zotero
+- ~~Thesis Template and first adjustments~~
+- ~~Latex Environment~~
+
+Misc
+- ~~Create this Git Repository~~
