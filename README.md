@@ -4,7 +4,7 @@ Note: This document is continuously updated and automatically generated
 # Project Description
 Here comes a short introduction
 
-### Current Open Questions
+### Open Questions
 List all open questions for ronny
 
 
