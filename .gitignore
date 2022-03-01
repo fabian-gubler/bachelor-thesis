@@ -1,0 +1,5 @@
+latex/template
+latex/*.aux
+latex/*.bcf
+latex/*.run.xml
+latex/*.-blx.bib
