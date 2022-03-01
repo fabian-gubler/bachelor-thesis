@@ -5,8 +5,8 @@ Note: This pdf document is continuously updated and automatically generated
 Here comes a short introduction
 
 ### Open Questions
-- What would be necessary for personal lab access? This would be very convenient for me.
-- Would weekly feedback sessions work for you? Personal + fixed day would be preferable.
+- **What is necessary for personal lab access?** This would be very convenient for me.
+- **Weekly feedback sessions?** Personal + fixed day would be preferable.
 
 
 # Current Milestones
