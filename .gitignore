@@ -12,7 +12,3 @@ latex/*.toc
 latex/*.fdb*
 latex/*.fls
 latex/*.gz
-
-# Misc
-latex/template
-latex/Template-Documentation.pdf
