@@ -28,9 +28,9 @@ The following measures are personally useful to me by making writing more effice
 - [x] Superficial Descriptions of Parts (see [contents](https://github.com/fabian-gubler/bachelor-thesis/blob/main/notes/contents.md))
 - [x] Preliminary Table of Contents
 
-**Empirical Groundwork**
-- [ ] Formulate Research Question
-- [ ] Formulate Research Objectives
+~~**Empirical Groundwork**~~
+- [x] Formulate Research Question
+- [x] Formulate Research Objectives
 
 ~~**Editing Setup**~~
 - [x] Managing References with Zotero
@@ -43,14 +43,14 @@ It is essential to understanding the theoretical framework of refactoring and de
 - Duration: 3 Weeks
 - Deliverable: Aim to write min. 10 Pages.
 
-**a) Research and Literature Review**
+**Research and Literature Review**
 - [ ] Find relevant Papers for subject matter
 
-**b) Comprehensive Understanding of Refactoring**
+**Comprehensive Understanding of Refactoring**
 - [ ] Study Fowler's work and take notes
 - [ ] Develop Hypotheses
 
-**c) Toolset**
+**Toolset**
 - [ ] Find Software tools for different code smells
 - [ ] Best Coding Practices in a refactor
 - [ ] Find Metrics to evaluate refactor
