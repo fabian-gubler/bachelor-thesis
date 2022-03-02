@@ -1,14 +1,15 @@
 #!/usr/bin/bash
 
-FILENAME="thesis.pdf" 
+FILE="thesis.pdf" 
+DIR="/data/thesis"
 
-# Compile pdf
-cd /data/thesis/latex
+# Compile PDF
+cd $DIR/latex
 make pdf
-rm /data/thesis/$FILENAME
-mv $FILENAME /data/thesis/
+rm $DIR/$FILE
+mv $FILE $DIR
 
 # Move to main directory and push to git
-cd /data/thesis
-git commit $FILENAME -m "pdf compiled"
+cd $DIR
+git commit $FILE -m "pdf compiled"
 git push origin main
