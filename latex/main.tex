@@ -201,8 +201,6 @@
 %% Choose your desired title page:
 \input{\mytitlepage}            %% include title page
 
-
-% \input{template/declaration_TU_Graz}  %% Statutory Declaration
 % \input{thanks}                %% this is a suggestion: you have to create this file on demand
 % \input{foreword}              %% this is a suggestion: you have to create this file on demand
 
@@ -235,6 +233,11 @@
 \include{discussion}
 \include{conclusion}
 
+%% Statutory Declaration
+\thispagestyle{plain}
+\include{declaration}			
+
+%% Appendix
 \appendix                       %% closes main document, appendix follows until end; only available in book-classes
 \addpart*{Appendix}             %% adding Appendix to tableofcontents
 
