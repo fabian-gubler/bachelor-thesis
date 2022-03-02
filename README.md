@@ -1,4 +1,6 @@
-### [👉 Preview Bachelor Thesis](thesis.pdf)
+<!-- ### [👉 Preview Bachelor Thesis](thesis.pdf) -->
+### [👉 Preview Bachelor Thesis](https://github.com/fabian-gubler/bachelor-thesis/raw/main/thesis.pdf)
+
 Note: This PDF document is continuously updated and automatically generated
 
 # Project Description
