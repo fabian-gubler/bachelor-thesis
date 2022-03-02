@@ -10,7 +10,7 @@ Here comes a short introduction of this project.
 - **Code Formatter and Version Control?** Important to know if there are preferences before editing your code.
 
 ### Milestones Overview
-- ~~[1. Preparations](#1.-Preparations)~~ (completed)
+- [1. Preparations](#1.-Preparations) (completed)
 - [2. Framework](#2.-Framework)
 - [3. Coding](#3.-Coding)
 - [4. Finalization](#3.-Finalization)
