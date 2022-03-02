@@ -1,5 +1,5 @@
 ### [👉 Preview Bachelor Thesis](thesis.pdf)
-Note: This pdf document is continuously updated and automatically generated
+Note: This PDF document is continuously updated and automatically generated
 
 # Project Description
 Here comes a short introduction of this project.
@@ -24,9 +24,9 @@ It makes sense to first take some time preparing the writing process of the thes
 The following measures are personally useful to me by making writing more efficent and fun.
 
 **Structuring Writing Process**
-- [ ] Preliminary Table of Contents
-- [ ] Estimate length of sections
-- [ ] Superficial Descriptions of Parts
+- [ ] Declaration
+- [x] Superficial Descriptions of Parts (see [contents](https://github.com/fabian-gubler/bachelor-thesis/blob/main/notes/contents.md))
+- [x] Preliminary Table of Contents
 
 **Empirical Groundwork**
 - [ ] Formulate Research Question
