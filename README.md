@@ -10,7 +10,7 @@ Here comes a short introduction of this project.
 - **Code Formatter and Version Control?** Important to know if there are preferences before editing your code.
 
 ### Milestones Overview
-- [1. Preparations](#1.-Preparations)
+- ~~[1. Preparations](#1.-Preparations)~~ (completed)
 - [2. Framework](#2.-Framework)
 - [3. Coding](#3.-Coding)
 - [4. Finalization](#3.-Finalization)
@@ -23,8 +23,8 @@ Here comes a short introduction of this project.
 It makes sense to first take some time preparing the writing process of the thesis.
 The following measures are personally useful to me by making writing more efficent and fun.
 
-**Structuring Writing Process**
-- [ ] Declaration
+~~**Structuring Writing Process**~~
+- [x] Declaration of Authorship
 - [x] Superficial Descriptions of Parts (see [contents](https://github.com/fabian-gubler/bachelor-thesis/blob/main/notes/contents.md))
 - [x] Preliminary Table of Contents
 
