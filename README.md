@@ -7,9 +7,9 @@ Note: This PDF document is continuously updated and automatically generated
 Here comes a short introduction of this project.
 
 ### Open Questions
-- **What is necessary for personal lab access?** This would be very convenient for me.
-- **Weekly feedback sessions?** Personal + fixed day would be preferable.
-- **Code Formatter and Version Control?** Important to know if there are preferences before editing your code.
+
+### Code Question
+- How do I run entire business processes?
 
 ### Milestones Overview
 - [1. Preparations](#1.-Preparations) (completed)

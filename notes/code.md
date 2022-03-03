@@ -1,10 +1,49 @@
-# Code Examples
+# Refactoring
+
+- Formatting and Linting is also a part of the Quality of the Code
+- Testing that functionalities did not change (i.e. everything works)
+  - This enables me to refactor at home and in the session at st. gallen i can test compatibility
+- Detection
+  - Code Duplication
+
+# Documentation
+
+## Code Examples
+
+See Request Overview on factory_swagger.pdf
 
 **Pick Up and Transport**
 
 ```http://127.0.0.1:5000/vgr/pick_up_and_transport?machine=vgr_1&start=sink_2&end=oven```
 
-# app.py (3500 LOC)
+## Hardware Components
+
+#### /hardware/general_txt.py
+
+- Defines object independent functionalities
+- Example: ```http://127.0.0.1:5000/ov/state_of_machine?machine=ov_1```
+
+#### /hardware/generic/*.py
+
+- Defines object dependent Functionalities
+
+#### /hardware/generic/init_factory.py
+
+- Initialize Factory
+
+#### /hardware/calib/*
+
+- Calibration of vacuum gripper and warehouse
+
+#### /hardware/txts/*.py
+
+- ???
+
+#### /hardware/utility/*
+
+- ???
+
+## app.py (3500 LOC)
 
 #### Architecture
 
@@ -45,11 +84,4 @@
 
 - Sequential Order of individual requests
 - Advanced Functionalities (e.g. checks condition)
-
-# general_txt.py
-
-- Defines object independent functionalities
-- Example: ```http://127.0.0.1:5000/ov/state_of_machine?machine=ov_1```
-
-
 
