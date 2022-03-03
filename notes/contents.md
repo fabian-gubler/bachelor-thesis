@@ -24,13 +24,15 @@ This part puts the entire topic in a broader context.
 
 # Theoretical Framework for Code Refactoring
 ## Background
-- What is it?
-- Why do we need it?
-- When do we need it?
+- Start with the overarching objective: Code quality
+- What is quality in code?
+- Why do we need code quality?
+- When do we need it, when not?
 - Different levels of a refactor: From small programs to entire software stack / architecture
 
 ## Formalisation of Design Patterns
-- Refactoring as a process of getting rid of code smells
+- Design patterns answer: "how" do we improve quality
+- i.e. Refactoring as a process of getting rid of quality deficiencies (i.e. code smells)
 - List and explain Design Pattern, Anti-Patterns
 - Established Practices of patterns and different degree of impact
 - Software Modularity
@@ -83,6 +85,7 @@ Describe with what tools (hardware and software) I am constrained to do this pro
 - Describe Code Project
 
 ## Methods of analysis
+- How did I chose which design patterns to focus on?
 - Software tools
 - Metrics
 - Best practices

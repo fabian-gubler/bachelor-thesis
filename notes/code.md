@@ -1,11 +1,3 @@
-# Refactoring
-
-- Formatting and Linting is also a part of the Quality of the Code
-- Testing that functionalities did not change (i.e. everything works)
-  - This enables me to refactor at home and in the session at st. gallen i can test compatibility
-- Detection
-  - Code Duplication
-
 # Documentation
 
 ## Code Examples

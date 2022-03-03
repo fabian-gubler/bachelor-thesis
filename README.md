@@ -10,6 +10,7 @@ Here comes a short introduction of this project.
 
 ### Code Question
 - How do I run entire business processes?
+- Are there known bugs (needed for testing)
 
 ### Milestones Overview
 - [1. Preparations](#1.-Preparations) (completed)
