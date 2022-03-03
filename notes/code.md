@@ -10,13 +10,19 @@
 
 - Getter and Setters
 - Task Execution
-- Process Execution (Bundles Tasks)
+- Process Execution
+  - Bundles Tasks
+  - Can be further bundled into business processes
 - PWM Webservices (Not implemented)
 
 #### Sequence
 
 1. Initializing Web Server
 2. Process Execution
+   1. Store
+   2. Produce
+   3. Unload from container
+   4. Store in container
 3. Sorting Machine (Execution, Getter)
 4. Multi Processing Station - Milling Machine
 5. Multi Processing Station - Oven
