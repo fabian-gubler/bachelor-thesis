@@ -18,9 +18,6 @@ Blog Article
 
 - Software Stack: Reduce the gap between the production shop floor and enterprise-level management systems
 
-# Personal Findings
-Clean Code
-- Sedgewick (p. 413): Import statements appear at the beginning of a program, with all standard Python modules appearing before all user-defined modules.
 
 # Refactoring
 

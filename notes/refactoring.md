@@ -10,3 +10,9 @@
 # Design Patterns
   - Code Duplication
 
+# Personal Findings
+Clean Code
+- Sedgewick (p. 413): Import statements appear at the beginning of a program, with all standard Python modules appearing before all user-defined modules.
+
+Data abstraction
+- Sedgewick (p. 674): Whenever you can clearly separate data and associated operations within a computation, you should do so.
