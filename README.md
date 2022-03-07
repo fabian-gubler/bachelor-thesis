@@ -28,7 +28,7 @@ The following measures are personally useful to me by making writing more effice
 
 ~~**Structuring Writing Process**~~
 - [x] Declaration of Authorship
-- [x] Superficial Descriptions of Parts (see [contents](https://github.com/fabian-gubler/bachelor-thesis/blob/main/notes/contents.md))
+- [x] Superficial Descriptions of Parts (see [contents](https://github.com/fabian-gubler/bachelor-thesis/blob/main/notes/contents/overview.md))
 - [x] Preliminary Table of Contents
 
 ~~**Empirical Groundwork**~~
