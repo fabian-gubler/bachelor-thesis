@@ -63,6 +63,10 @@ This is the main part of the thesis. Code refactoring based on theoretical frame
 - Duration: 4 Weeks
 - Deliverables: Refactored codebase, (Extensive) Note-taking of results
 
+**Preparations**
+- [ ] Create new Git Branch for active Development
+- [ ] Run Software Tools for initial Analysis
+
 # 4. Finalization
 Formulation of notes into first draft of the final paper, which will then be revised and improved upon.
 - Duration: 3 Weeks
