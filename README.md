@@ -19,7 +19,9 @@ Here comes a short introduction of this project.
 - [4. Finalization](#3.-Finalization)
 
 ### Project Notes
-- [Contents](https://github.com/fabian-gubler/bachelor-thesis/blob/main/notes/contents.md)
+- [Contents](https://github.com/fabian-gubler/bachelor-thesis/blob/main/notes/contents/overview.md)
+	1. [Exploration](https://github.com/fabian-gubler/bachelor-thesis/blob/main/notes/contents/1-exploration.md)
+	2. [Refactoring](https://github.com/fabian-gubler/bachelor-thesis/blob/main/notes/contents/2-refactoring.md)
 - [Research](https://github.com/fabian-gubler/bachelor-thesis/blob/main/notes/research.md)
 
 # 1. Preparations
