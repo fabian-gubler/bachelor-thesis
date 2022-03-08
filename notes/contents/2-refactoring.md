@@ -1,4 +1,25 @@
 # Refactoring
+## Sources
+### Books
+**Fowler: Refactoring** (400 Pages)
+- Principles of Refactoring
+- Code Smells
+- Building Tests
+
+**Martin: Clean Code** (280 Pages)
+- What is Clean Code?
+- Naming, Comments, Formatting
+- Objects and Data Structs
+
+### Articles
+**Sonnleithner: Code Smells** (4 Pages)
+- Metastudy of Fowler et al.
+
+**Lacerda: Systematic Review** (36 Pages)
+- Background and Definitions
+- Literature Review
+- Detection Tools
+
 ## Background
 ### Content
 - Start with the overarching objective: Code quality
