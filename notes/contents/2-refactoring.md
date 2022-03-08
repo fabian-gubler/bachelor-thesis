@@ -45,47 +45,20 @@
 #### First Steps
 - (fowler) Whenever I do refactoring, the first step is always the same. I need to ensure I have a solid set of tests for that section of code. The tests are essential because even though I will follow refactorings structured to avoid most of the opportunities for introducing bugs, I’m still human and still make mistakes. The larger a program, the more likely it is that my changes will cause something to break inadvertently—in the digital age, frailty’s name is software.
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 ## Formalisation of Design Patterns
 ### Research and Methods
 - Try to use visuals to explain
 
 ### Content
+- Connection between Design Patterns and Refactoring
 - Design patterns answer: "how" do we improve quality
 - i.e. Refactoring as a process of getting rid of quality deficiencies (i.e. code smells)
 - List and explain Design Pattern, Anti-Patterns
 - Established Practices of patterns and different degree of impact
 - Software Modularity
 - Consequences
+
+## Refactoring Process
 
 ## The Business Case for Refactoring 
 - Technical Debt: Cost benefit analysis

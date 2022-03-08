@@ -5,59 +5,10 @@ This bachelor thesis addresses the problem of finding the most appropriate refac
 - Having a lot of possible approaches to improve code, it is needed to find which methods are particularly of interest in improving smart factory systems. This can be done by having the characteristics of such systems in mind (e.g. Safety concerns)
 
 # Exploration of the fourth industrial revolution
-This part puts the entire topic in a broader context.
-## Terminology and Context
-- Key Terminology
-- What is it and what is it not
-- Relevance within Computer Science
-- Current progress and applications
-
-## Defining Smart Factories
-- Explanation
-
-## Economic Relevance
-- Business Processes and automation
-- Future Relevance for economy
-- Current use cases show the relevance (e.g. Amazon)
-- Automation is a very relevant topic
-- User Friendliness: Not everyone has digital literacy, can code
+see [Exploration](https://github.com/fabian-gubler/bachelor-thesis/blob/main/notes/contents/1-exploration.md)
 
 # Theoretical Framework for Code Refactoring
-## Background
-- Start with the overarching objective: Code quality
-- What is quality in code?
-- Why do we need code quality?
-- When do we need it, when not?
-- Different levels of a refactor: From small programs to entire software stack / architecture
-
-## Formalisation of Design Patterns
-- Design patterns answer: "how" do we improve quality
-- i.e. Refactoring as a process of getting rid of quality deficiencies (i.e. code smells)
-- List and explain Design Pattern, Anti-Patterns
-- Established Practices of patterns and different degree of impact
-- Software Modularity
-- Consequences
-
-## The Business Case for Refactoring 
-- Technical Debt: Cost benefit analysis
-- Worst case: Code dinosaurs, unmaintainable code
-- Difficulties in convincing clients, due to not delivering direct results
-- Find Case Studies of prominent firms
-
-## Thesis Context
-Fourth industrial revolutions demands a greater focus on refactoring.
-- Involved Costs: Having Bugs with software controlling factories can lead to immense costs (e.g. downtime).
-- Limitations of CPS: In comparison to typical software project, the debugging and testing of smart factories requires a lot of time and costs. Eventhough one needs to spend more time in the beginning, well thought out refactoring can save a lot of time in the end.
-- Security Concerns: Industrial Cyper-physical systems can be dangerous. Bugs in code base  can lead to damaging the machines and in the worst case even physical injuries.
-
-There are no right ways to write clean code, there are many different approaches
-- Best practices: What are the best ways concerning refactoring and design patterns when applied to smart factories. 
-- Consistencies: Are there perceivable consistencies that can be applied to all projects in this field?
-
-Smart Factories are inherently object-oriented and thus demand previous modeling
-- Factory Components: The Components of the smart factory are objects with component-specific methods .
-- Reusability of Code: OOP enables reusing code within the project. One can duplicating instances and reuse code for similar objects or subclasses.
-
+see [Refactoring](https://github.com/fabian-gubler/bachelor-thesis/blob/main/notes/contents/2-refactoring.md)
 
 # Methodological approach
 
