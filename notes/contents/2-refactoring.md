@@ -21,16 +21,65 @@
 - Detection Tools
 
 ## Background
+### Research and Methods
+
 ### Content
 - Start with the overarching objective: Code quality
 - What is quality in code?
 - Why do we need code quality?
 - When do we need it, when not?
+- Challenges in refactor?
 - Different levels of a refactor: From small programs to entire software stack / architecture
 
 ### Notes
+#### Definition
+- (fowler) Refactoring is the process of changing a software system in a way that does not alter the external behavior of the code yet improves its internal structure.
+
+#### Objective
+- (fowler) It is a disciplined way to clean up code that minimizes the chances of introducing bugs.
+
+#### Relevance
+- (fowler) If the code works and doesn’t ever need to change, it’s perfectly fine to leave it alone. It would be nice to improve it, but unless someone needs to understand it, it isn’t causing any real harm. Yet as soon as someone does need to understand how that code works, and struggles to follow it, then you have to do something about it.
+- (fowler) The compiler doesn’t care whether the code is ugly or clean. But when I change the system, there is a human involved, and humans do care. A poorly designed system is hard to change—because it is difficult to figure out what to change and how these changes will interact with the existing code to get the behavior I want. And if it is hard to figure out what to change, there is a good chance that I will make mistakes and introduce bugs.
+
+#### First Steps
+- (fowler) Whenever I do refactoring, the first step is always the same. I need to ensure I have a solid set of tests for that section of code. The tests are essential because even though I will follow refactorings structured to avoid most of the opportunities for introducing bugs, I’m still human and still make mistakes. The larger a program, the more likely it is that my changes will cause something to break inadvertently—in the digital age, frailty’s name is software.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 ## Formalisation of Design Patterns
+### Research and Methods
+- Try to use visuals to explain
+
+### Content
 - Design patterns answer: "how" do we improve quality
 - i.e. Refactoring as a process of getting rid of quality deficiencies (i.e. code smells)
 - List and explain Design Pattern, Anti-Patterns
@@ -43,6 +92,9 @@
 - Worst case: Code dinosaurs, unmaintainable code
 - Difficulties in convincing clients, due to not delivering direct results
 - Find Case Studies of prominent firms
+
+## Business Case
+- Being able to add new features quickly after unforeseen changes.
 
 
 # Personal
@@ -68,7 +120,8 @@
 [Video Technische Schulden](https://www.youtube.com/watch?v=hwkqHWpMQss)
 
 ## Design Patterns
-  - Code Duplication
+  - **Code Duplication**: Same code occuring at multiple places
+  - **Extensible and Modular**: Check what happens when you add more objects, features
 
 ## Findings
 Clean Code
