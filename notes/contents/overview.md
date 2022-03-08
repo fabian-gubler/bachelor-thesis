@@ -24,6 +24,13 @@ Note: To rework the entire application might be out of scope. Therefore it would
 - What research problem or question I investigate?
 - Desired Findigs: Code is easier to read and maintain
 
+## Refactoring Process
+### Research and Methods
+- Maybe include a visualization of a chain of tasks
+
+### Contents
+- First step: Writing Tests
+
 
 ## Means of data collection
 - First and foremost: Rough Overview with tools
