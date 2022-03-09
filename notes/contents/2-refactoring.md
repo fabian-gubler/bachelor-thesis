@@ -21,33 +21,53 @@
 - Detection Tools
 
 ## Background
-### Research and Methods
-
-### Content
-- Start with the overarching objective: Code quality
-- What is quality in code?
-- Why do we need code quality?
-- When do we need it, when not?
-- Challenges in refactor?
-- Different levels of a refactor: From small programs to entire software stack / architecture
-- Interplay between refactoring and performance?
-
 ### Notes
 #### Defining Refactoring
 - (fowler) Refactoring is the process of changing a software system in a way that does not alter the external behavior of the code yet improves its internal structure.
+- Talk about that it sounds less appealing not to add features.
 
 #### Objective
 - (fowler) It is a disciplined way to clean up code that minimizes the chances of introducing bugs.
 - (fowler)  Refactoring is all about applying small behavior-preserving steps and making a big change by stringing together a sequence of these behavior-preserving steps. 
+- (fowler) Refactoring is very similar to performance optimization, as both involve carrying out code manipulations that don’t change the overall functionality of the program. The difference is the purpose: Refactoring is always done to make the code “easier to understand and cheaper to modify.” 
 
 #### Relevance
 Critical Point of view
 - (fowler) If the code works and doesn’t ever need to change, it’s perfectly fine to leave it alone. It would be nice to improve it, but unless someone needs to understand it, it isn’t causing any real harm. Yet as soon as someone does need to understand how that code works, and struggles to follow it, then you have to do something about it.
 - (fowler) The compiler doesn’t care whether the code is ugly or clean. But when I change the system, there is a human involved, and humans do care. A poorly designed system is hard to change—because it is difficult to figure out what to change and how these changes will interact with the existing code to get the behavior I want. And if it is hard to figure out what to change, there is a good chance that I will make mistakes and introduce bugs.
 
-Why do we need it?
+#### Why Should we Refactor
+General
+- (fowler) When I talk about refactoring, people can easily see that it improves quality. Better internal design, readability, reducing bugs—all these improve quality.
 
-#### First Steps
+Refactoring Improves the Design of Software
+- Software tends to decay
+- (fowler) Poorly designed code usually takes more code to do the same things, often because the code quite literally does the same thing in several places. Thus an important aspect of improving design is to eliminate duplicated code. 
+
+Refactoring Makes Software Easier to Understand
+- (fowler) It does matter if it takes a programmer a week to make a change that would have taken only an hour with proper understanding of my code.
+- (fowler) Refactoring helps me make my code more readable. Before refactoring, I have code that works but is not ideally structured. 
+- The future developer can also be myself.
+
+Refactoring Helps find bugs
+- (fowler) Help in understanding the code also means help in spotting bugs. 
+
+#### Challenges in refactor
+Simultaneous
+- Could inhibit others from working on the code at the same time (fowler describes this phenomenon as two hats). 
+- Easy to change hats when coding alone, but hard when in larger teams.
+- Needs clear separation on which part of the code base is being refactored, and which is added functionality. The key is that these separate parts must be entirely indepenedent 
+- else: bugs will be introduced, point of refactoring that no observable behavior changes is not guaranteed)
+
+Scope
+- Different levels of a refactor: From small programs to entire software stack / architecture
+
+Competence
+- Needs Education, not necessarily an easy task.
+- Requires knowledge about a code base.
+
+Importance of Tests
+- Difficult if no tests available to verify that no observable behavior has changed
 - (fowler) Whenever I do refactoring, the first step is always the same. I need to ensure I have a solid set of tests for that section of code. The tests are essential because even though I will follow refactorings structured to avoid most of the opportunities for introducing bugs, I’m still human and still make mistakes. The larger a program, the more likely it is that my changes will cause something to break inadvertently—in the digital age, frailty’s name is software.
 
 ## Formalisation of Design Patterns
@@ -68,14 +88,37 @@ Why do we need it?
 
 ## The Business Case for Refactoring 
 ### Content
-- Technical Debt: Cost benefit analysis
-- Worst case: Code dinosaurs, unmaintainable code
-- Difficulties in convincing clients, due to not delivering direct results
+
+### Notes
+- Refactoring is more connected to management than one might assume in the beginning. It is not the mere top down executino of business requirements. Moreover, can be seen as a tool for product managers or team leaders to improve the quality of their product.
+- (fowler) To a manager who is genuinely savvy about technology and understands the design stamina hypothesis, refactoring isn’t hard to justify. Such managers should be encouraging refactoring on a regular basis and be looking for signs that indicate a team isn’t doing enough.
+
+#### Status Quo: Technical Debt
+- Cost benefit analysis: If the code never gets touched again, one does not need a refactor.
+- Diagram p. 71: The difference between these two is the internal quality of the software. Software with a good internal design allows me to easily find how and where I need to make changes to add a new feature. Good modularity allows me to only have to understand a small subset of the code base to make a change. If the code is clear, I’m less likely to introduce a bug, and if I do, the debugging effort is much easier.
+
+Rewriting
+- In some cases it may even be more cost effective to rewrite the code base than to refactor it.
+- This can be due to the code being that messy that rewriting it is faster.
+- This can also be the case when a new technology (e.g. programming language) would have advantages
+
+#### Problem: Difficulties in convincing
+- Refactoring can be proposed from two sides: Either from management, or the programmers themselves.
+- No direct Results for Clients. Hard to grasp the value added.
+- One could even say that there is no observable value added. Difficult to see the reason, because it prevents from future value destroyed.
+
+#### Advantages: Managerial benefits
 - Easier for new personell, less instruction (self-explainable)
 - Find Case Studies of prominent firms
 - Being able to add new features quickly after unforeseen changes.
 
-### Notes
+#### Concluding: Psychology and Relationships
+- Whether the is sucessfull refactoring depend on the structure. If there is only incentive in adding functionality, there lies a problem.
+-  (fowler) I’ve certainly seen places were refactoring has become a dirty word—with managers (and customers) believing that refactoring is either correcting errors made earlier, or work that doesn’t yield valuable features. 
+
+To avoid at all costs (Worst case)
+- One might even be incentiviced to make the code less readable, as this would secure one's job.
+- No Documentation and Refactoring leading to Legacy code with "Code Dinosaurs" working with unmaintainable code.
 
 ---
 
