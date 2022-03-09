@@ -154,10 +154,6 @@ Conclusion
 - Link Goals with concrete Design Pattern
 
 ### Content
-- **Consequences**: (Use this to transition to business case)
-	- Achieve the Goals
-	- Might seem small, but cumulated. 
-	- Code decay inhibits coding-process progressively (refactoring inverse function)
 
 ### Notes
 #### Transition: Relationship between Refactoring and Code Smells
@@ -165,20 +161,38 @@ Conclusion
 - (fowler) By now you have a good idea of how refactoring works. But just because you know how doesn’t mean you know when. Deciding when to start refactoring—and when to stop—is just as important to refactoring as knowing how to operate the mechanics of it.
 - There is no clear cut moment when to refactor, there are only indications that there is trouble that can be solved by a refactoring.
 
+#### What is a Code Smell?
+
 #### List and explain: Most prominent Design Pattern, Anti-Patterns
 
-#### Extra Activities for clean code: Comments, Naming, Formatting, Linting
-Current Setup
-- Flake8 (Linter)
-- Black (Formatter)
-- Pyright (Static Type Checker)
+#### Extra Activities for clean code: 
+**Readability**
+- In addition there are a wide range of automatic tools available.
+- General Goal is to create consistency over python code and thus making it more readable and easier to maintain.
+- Style Guide: PEP8 is a well-accepted standard when it comes to Python Code
+- Tools are based on PEP8
 
-Explanations
+**Debugging**
+- Apart from readability, formatters and static type checkers are also able to catch bugs in the code writing process.
+
+**Explanations**
 - **Linting**: Linters flag programming errors, bugs, stylistic errors, and suspicious constructs through source code analysis. 
 - **Formatters**: While linters just check for issues in your code, code formatters actually reformat your code based on a set of standards.
 - **Static Type Checking**: Type checking is the activity of providing that the operands of an operator are of compatible types.
 
+**If necessary:**
+- Comments (might be useful at the beginning of a file), but might get into the way (see Fowler)
 
+**Current Setup**
+"For an Detailed Overview of the setup used during the project please reference chaper X"
+- Flake8 (Linter)
+- Black (Formatter)
+- Pyright (Static Type Checker)
+
+#### Conclusion: (Use this to transition to business case)
+	- Achieve the Goals
+	- Might seem small, but cumulated. 
+	- Code decay inhibits coding-process progressively (refactoring inverse function)
 
 ## The Business Case for Refactoring 
 ### Content
