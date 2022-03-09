@@ -61,6 +61,36 @@ Refactoring Makes Software Easier to Understand
 Refactoring Helps find bugs
 - (fowler) Help in understanding the code also means help in spotting bugs. 
 
+#### Refactoring Process
+Branches
+- (fowler) a common approach in teams is for each team member to work on a branch of the code base using a version control system, and do considerable work on that branch before integrating with a mainline.
+- (fowler) The longer I work on an isolated branch, the harder the job of integrating my work with mainline is going to be when I’m done.
+- (fowler) The problem of complicated merges gets exponentially worse as the length of feature branches increases. 
+- (fowler)  Many people, therefore, argue for keeping feature branches short—perhaps just a couple of days. Others, such as me, want them even shorter than that. This is an approach called Continuous Integration (CI), also known as Trunk-Based Development. 
+- (fowler) Fans of CI like it partly because it reduces the complexity of merges, but the dominant reason to favor CI is that it’s far more compatible with refactoring.
+
+#### Importance Tests
+Allen Holub (Twitter): Refactoring without tests is like crossing a busy street blindfolded.
+
+Personal Reason
+- In order to provide a codebase that is improved to the previous one tests are needed.
+- Danger that due to the introduction of bugs, the refactor will be useless
+
+Risk Aversion
+- Refactoring is indeed error prone, if no tests are available.
+- In addition it is not possible to do a proper refactor, as one cannot verify whether the observable behavior has changed
+
+Connected to Branches
+- (fowler) Self-testing code is, unsurprisingly, closely associated with Continuous Integration—it is the mechanism that we use to catch semantic integration conflicts.
+
+Purpose
+- Key is catching an error quickly
+- (fowler) Mistakes happen, but they aren’t a problem provided I catch them quickly. Since each refactoring is a small change, if I break anything, I only have a small change to look at to find the fault—and if I still can’t spot it, I can revert my version control to the last working version.
+- (fowler) Whenever I do refactoring, the first step is always the same. I need to ensure I have a solid set of tests for that section of code. The tests are essential because even though I will follow refactorings structured to avoid most of the opportunities for introducing bugs, I’m still human and still make mistakes. The larger a program, the more likely it is that my changes will cause something to break inadvertently—in the digital age, frailty’s name is software.
+- (fowler) To do this, realistically, I need to be able to run a comprehensive test suite on the code—and run it quickly, so that I’m not deterred from running it frequently. This means that in most cases, if I want to refactor, I need to have self-testing code
+- (fowler) Self-testing code not only enables refactoring—it also makes it much safer to add new features, since I can quickly find and kill any bugs I introduce.
+
+
 #### Challenges in refactor
 Simultaneous
 - Could inhibit others from working on the code at the same time (fowler describes this phenomenon as two hats). 
@@ -68,6 +98,7 @@ Simultaneous
 - Needs clear separation on which part of the code base is being refactored, and which is added functionality. The key is that these separate parts must be entirely indepenedent 
 - else: bugs will be introduced, point of refactoring that no observable behavior changes is not guaranteed)
 
+Counterintuition
 - (fowler) Although many people see time spent refactoring as slowing down the development of new features, the whole purpose of refactoring is to speed things up.
 
 Scope
@@ -77,10 +108,6 @@ Competence
 - Needs Education, not necessarily an easy task.
 - Requires knowledge about a code base.
 - (fowler) That judgment I mentioned earlier on whether to refactor or not is something that takes years of experience to build up. Those with less experience
-
-Importance of Tests
-- Difficult if no tests available to verify that no observable behavior has changed
-- (fowler) Whenever I do refactoring, the first step is always the same. I need to ensure I have a solid set of tests for that section of code. The tests are essential because even though I will follow refactorings structured to avoid most of the opportunities for introducing bugs, I’m still human and still make mistakes. The larger a program, the more likely it is that my changes will cause something to break inadvertently—in the digital age, frailty’s name is software.
 
 Conclusion
 - (fowler) Still, the evidence I hear from my colleagues in the industry is that too little refactoring is far more prevalent than too much. In other words, most people should try to refactor more often.
