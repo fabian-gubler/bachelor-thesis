@@ -1,17 +1,17 @@
 # Refactoring
 ## Sources
-### Books
+### Refactoring
 **Fowler: Refactoring** (400 Pages)
 - Principles of Refactoring
 - Code Smells
 - Building Tests
 
+### Code Smells
 **Martin: Clean Code** (280 Pages)
 - What is Clean Code?
 - Naming, Comments, Formatting
 - Objects and Data Structs
 
-### Articles
 **Sonnleithner: Code Smells** (4 Pages)
 - Metastudy of Fowler et al.
 
@@ -61,8 +61,26 @@ Refactoring Makes Software Easier to Understand
 Refactoring Helps find bugs
 - (fowler) Help in understanding the code also means help in spotting bugs. 
 
-#### Refactoring Process
-Branches
+#### Refactoring as a Process
+Relevance from a Software Architecture Perspective
+- (fowler) Early in my career, I was taught that software design and architecture was something to be worked on, and mostly completed, before anyone started writing code.
+- (fowler) Refactoring changes this perspective. It allows me to significantly alter the architecture of software that’s been running in production for years. 
+- (fowler) The real impact of refactoring on architecture is in how it can be used to form a well-designed code base that can respond gracefully to changing needs.
+
+Yagni Design Trio in the Software Development Process: Testing, CI, Refactoring
+- (fowler) Enough projects now use agile methods that agile thinking is generally regarded as mainstream—but in reality most “agile” projects only use the name. 
+- (fowler) The first foundation for refactoring is self-testing code. By this, I mean that there is a suite of automated tests that I can run and be confident that, if I made an error in my programming, some test will fail. 
+- (fowler) To refactor on a team, it’s important that each member can refactor when they need to without interfering with others’ work. This is why I encourage Continuous Integration. 
+- (fowler)  Self-testing code is also a key element of Continuous Integration, so there is a strong synergy between the three practices of self-testing code, continuous integration, and refactoring.
+- (fowler)  Balance these practices, and you can get into a virtuous circle with a code base that responds rapidly to changing needs and is reliable.
+
+
+#### Practical Application: Branches, Continuous Integration
+Personal
+- I will only cover shortly, because it focusses on team. Having the luxury of coding alone, does not result in the potential risks of merge conflicts.
+- However, it still makes sense to get a grasp of the overall philosophy, which can also be applied to when working alone, and most importantly is necessary when in the future multiple persons will work on the project.
+
+Explanation
 - (fowler) a common approach in teams is for each team member to work on a branch of the code base using a version control system, and do considerable work on that branch before integrating with a mainline.
 - (fowler) The longer I work on an isolated branch, the harder the job of integrating my work with mainline is going to be when I’m done.
 - (fowler) The problem of complicated merges gets exponentially worse as the length of feature branches increases. 
@@ -75,6 +93,7 @@ Allen Holub (Twitter): Refactoring without tests is like crossing a busy street 
 Personal Reason
 - In order to provide a codebase that is improved to the previous one tests are needed.
 - Danger that due to the introduction of bugs, the refactor will be useless
+- Even if the refactor comes short, writing tests are still a good value add, for the next person who will be programming next.
 
 Risk Aversion
 - Refactoring is indeed error prone, if no tests are available.
@@ -128,6 +147,8 @@ Conclusion
 	- Code decay inhibits coding-process progressively (refactoring inverse function)
 
 ### Notes
+- (fowler) By now you have a good idea of how refactoring works. But just because you know how doesn’t mean you know when. Deciding when to start refactoring—and when to stop—is just as important to refactoring as knowing how to operate the mechanics of it.
+
 
 
 ## The Business Case for Refactoring 
