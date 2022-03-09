@@ -6,7 +6,15 @@
 - Code Smells
 - Building Tests
 
-### Code Smells
+**Kim: Field Study** (11 Pages)
+- Related Work
+- Definitions
+
+**Mens: Research and Trends** (17 Pages)
+- Techniques
+- Tool Support
+
+### Code Smells 
 **Martin: Clean Code** (280 Pages)
 - What is Clean Code?
 - Naming, Comments, Formatting
@@ -19,6 +27,11 @@
 - Background and Definitions
 - Literature Review
 - Detection Tools
+
+**Chen: Detecting Smells in Python** (6 Pages)
+- Methodology
+- Strategy
+
 
 ### Business Case
 - [Technical Debt](https://martinfowler.com/tags/technical%20debt.html)
@@ -141,7 +154,6 @@ Conclusion
 - Link Goals with concrete Design Pattern
 
 ### Content
-- **Extra Activities for clean code**: Comments, Naming, Formatting, Linting
 - **Consequences**: (Use this to transition to business case)
 	- Achieve the Goals
 	- Might seem small, but cumulated. 
@@ -154,6 +166,17 @@ Conclusion
 - There is no clear cut moment when to refactor, there are only indications that there is trouble that can be solved by a refactoring.
 
 #### List and explain: Most prominent Design Pattern, Anti-Patterns
+
+#### Extra Activities for clean code: Comments, Naming, Formatting, Linting
+Current Setup
+- Flake8 (Linter)
+- Black (Formatter)
+- Pyright (Static Type Checker)
+
+Explanations
+- **Linting**: Linters flag programming errors, bugs, stylistic errors, and suspicious constructs through source code analysis. 
+- **Formatters**: While linters just check for issues in your code, code formatters actually reformat your code based on a set of standards.
+- **Static Type Checking**: Type checking is the activity of providing that the operands of an operator are of compatible types.
 
 
 
@@ -219,6 +242,7 @@ Fowler
   - **Long Method**: Decomposed for clarity and ease of maintenance
   - **Large (God) Class**
   - **Long Parameter List**: Hard to understand, often not necessary
+  - **Complex Conditional Logic**
   - **Shotgun Surgery**: Dependency graph, lots of little changes in various classes they might be brought together
 	
 Personal
