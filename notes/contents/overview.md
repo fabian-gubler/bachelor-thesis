@@ -35,6 +35,7 @@ Note: To rework the entire application might be out of scope. Therefore it would
 ## Means of data collection
 - First and foremost: Rough Overview with tools
 - Plan, Do, Check, Act
+
 Describe with what tools (hardware and software) I am constrained to do this project.
 - Fischer Fabrik
 - Python
@@ -43,11 +44,19 @@ Describe with what tools (hardware and software) I am constrained to do this pro
 - Describe Code Project
 
 ## Methods of analysis
+Pre Refactor
 - How did I chose which design patterns to focus on?
 - Software tools
-- Metrics
 - Best practices
 - Reference projects?
+
+Post Refactor
+- Metrics
+
+## Means of Implementation
+Refactoring
+- Automated Refactoring
+- Step-by-step guide from Fowler
 
 ## Limitations
 Evaluate and justify your methodological choices

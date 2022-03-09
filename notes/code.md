@@ -28,11 +28,8 @@ Personal
 
 ## Code Examples
 
-See Request Overview on factory_swagger.pdf
-
-**Pick Up and Transport**
-
-```http://127.0.0.1:5000/vgr/pick_up_and_transport?machine=vgr_1&start=sink_2&end=oven```
+- [Ftrobopy Manual](https://github.com/ftrobopy/ftrobopy/blob/master/manual.pdf)
+- Request Overview: factory_swagger.pdf
 
 ## Hardware Components
 

@@ -20,6 +20,10 @@
 - Literature Review
 - Detection Tools
 
+### Business Case
+- [Technical Debt](https://martinfowler.com/tags/technical%20debt.html)
+- [Technische Schulden](https://www.youtube.com/watch?v=hwkqHWpMQss)
+
 ## Background
 ### Notes
 #### Defining Refactoring
@@ -137,9 +141,6 @@ Conclusion
 - Link Goals with concrete Design Pattern
 
 ### Content
-- **Relationship**: between Design Patterns and Refactoring - Refactoring as a process of getting rid of quality deficiencies (i.e. code smells)
-- **Generalized Goals**: Modularity
-- **List and explain**: Most prominent Design Pattern, Anti-Patterns
 - **Extra Activities for clean code**: Comments, Naming, Formatting, Linting
 - **Consequences**: (Use this to transition to business case)
 	- Achieve the Goals
@@ -147,7 +148,12 @@ Conclusion
 	- Code decay inhibits coding-process progressively (refactoring inverse function)
 
 ### Notes
+#### Transition: Relationship between Refactoring and Code Smells
+- Refactoring as a process of getting rid of quality deficiencies (i.e. code smells)
 - (fowler) By now you have a good idea of how refactoring works. But just because you know how doesn’t mean you know when. Deciding when to start refactoring—and when to stop—is just as important to refactoring as knowing how to operate the mechanics of it.
+- There is no clear cut moment when to refactor, there are only indications that there is trouble that can be solved by a refactoring.
+
+#### List and explain: Most prominent Design Pattern, Anti-Patterns
 
 
 
@@ -164,7 +170,6 @@ Refactoring is a managerial Task
 - (fowler) To a manager who is genuinely savvy about technology and understands the design stamina hypothesis, refactoring isn’t hard to justify. Such managers should be encouraging refactoring on a regular basis and be looking for signs that indicate a team isn’t doing enough.
 
 #### Status Quo: Technical Debt
-[Video Technische Schulden](https://www.youtube.com/watch?v=hwkqHWpMQss)
 
 Transition: To further illustrate and try to quantify this issue, let us look at the concept of technical debt.
 - Cost benefit analysis: If the code never gets touched again, one does not need a refactor.
@@ -207,12 +212,19 @@ To avoid at all costs (Worst case)
 
 ---
 
-# Personal
-## Design Patterns
-  - **Code Duplication**: Same code occuring at multiple places
+## Personal
+### Design Patterns
+Fowler
+  - **Duplicated Code**: Same code occuring at multiple places
+  - **Long Method**: Decomposed for clarity and ease of maintenance
+  - **Large (God) Class**
+  - **Long Parameter List**: Hard to understand, often not necessary
+  - **Shotgun Surgery**: Dependency graph, lots of little changes in various classes they might be brought together
+	
+Personal
   - **Extensible and Modular**: Check what happens when you add more objects, features
 
-## Findings
+### Sedgewick
 Clean Code
 - Sedgewick (p. 413): Import statements appear at the beginning of a program, with all standard Python modules appearing before all user-defined modules.
 
