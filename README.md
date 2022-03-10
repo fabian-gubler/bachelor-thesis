@@ -8,10 +8,7 @@ Note: This PDF document is continuously updated and automatically generated
 Here comes a short introduction of this project.
 
 ### Open Questions
-
-### Code Question
-- How do I run entire business processes?
-- Are there known bugs (needed for testing)
+none
 
 ### Milestones Overview
 - [1. Preparations](#1.-Preparations) (completed)
