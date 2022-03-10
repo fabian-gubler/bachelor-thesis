@@ -48,6 +48,7 @@ Improving Quality Attributes
 - Readability, Maintainability, Modifiable, Testable etc.
 - Therefore one should only do a refactor, if one or many of these attributes are not sufficient.
 - This is how the sucess of a refactor can be measured: Whether at least one quality attribute has significantly improved, without changing the observable beahvior in term of functionality
+- (lacerda) Refactoring helps to make the code more readable and eliminating possible problems, as well as improving the internal quality attributes of the software (Mens and Tourwe, 2004).
 
 Tests
 - In the end it must be proven, that only the internal structure has changed. This can be done through software tests.
@@ -161,33 +162,32 @@ Conclusion
 - (fowler) By now you have a good idea of how refactoring works. But just because you know how doesn’t mean you know when. Deciding when to start refactoring—and when to stop—is just as important to refactoring as knowing how to operate the mechanics of it.
 - There is no clear cut moment when to refactor, there are only indications that there is trouble that can be solved by a refactoring.
 
+- (sonnleithner) So called Bad smells [4] can negatively impact software quality. Bad smells are certain structures [4] or anti-patterns [5] in software that should be avoided. They can hinder understanding, maintaining, or extending a software system [6], [7].
 #### What is a Code Smell?
+- (lacerda) They increase technical debt (Kruchten et al., 2012)
+- Refactoring can remove Code smells
+- (lacerda) The term “smell” refers to some internal problem in the software either at a lower level, known as code level (Fowler et al.,1999) or higher, design (Brown et al., 1998) describing symptoms observed in components that impair software evolution. According to such level, a smell is respectively named code smell or design smell.
+- (lacerda) Differently from a bug, a smell does not necessarily cause a fault in the application but may lead to other negative consequences, impacting on software maintenance and evolution.
 
-#### List and explain: Most prominent Design Pattern, Anti-Patterns
+#### Examples and Mention Methodology
+**General**
+- Maybe best to decide after the analysis, to see what fits best
+- Make a Table similar to Lacerda
+- List in own words: Inspiration from Sonnleithner, Lacerda (4)
 
-#### Extra Activities for clean code: 
-**Readability**
-- In addition there are a wide range of automatic tools available.
-- General Goal is to create consistency over python code and thus making it more readable and easier to maintain.
-- Style Guide: PEP8 is a well-accepted standard when it comes to Python Code
-- Tools are based on PEP8
+**Method 1** (2 Detailed Smells)
+Mention two categories with one example each according to Mathyla.
 
-**Debugging**
-- Apart from readability, formatters and static type checkers are also able to catch bugs in the code writing process.
+- (lacerda) Mathyla propsoses taxonomy of smells
+- (lacerda) Bloaters: a bloater represents any element in the code that has become very large and can not be effectively handled. In general, bloaters are difficult to understand and modify. Smells belonging to this category are Long Method, Large Class, Primitive Obsession, Long Parameter List and Data Clumps;
+- (lacerda) Change Preventers: software structures very difficult to modify; in general, this difficulty may occur at one or several points. In this category we find Divergent Change and Shotgun Surgery;
 
-**Explanations**
-- **Linting**: Linters flag programming errors, bugs, stylistic errors, and suspicious constructs through source code analysis. 
-- **Formatters**: While linters just check for issues in your code, code formatters actually reformat your code based on a set of standards.
-- **Static Type Checking**: Type checking is the activity of providing that the operands of an operator are of compatible types.
+**Method 2** (10 Semi-Detailed Smells)
+- In their tertiary systematic literature review Lacerda et al. [10] discussed the main observations and challenges of smells and refactoring. They identified the top ten most cited code smells as 10 smells presented by Fowler and Beck [4] 
+- In this section, we will analyze Bad Smells introduced by Fowler and Beck [4]. They introduced 24 code structures to avoid. To stay within the scope of this paper, we limit our overview to their top ten Bad Smells identified in [10].
 
-**If necessary:**
-- Comments (might be useful at the beginning of a file), but might get into the way (see Fowler)
-
-**Current Setup**
-"For an Detailed Overview of the setup used during the project please reference chaper X"
-- Flake8 (Linter)
-- Black (Formatter)
-- Pyright (Static Type Checker)
+**Method 3** (24 One-Line Smells)
+Make a table with all code smells from Fowler: 0.5 - 1 Page
 
 #### Conclusion: (Use this to transition to business case)
 	- Achieve the Goals
