@@ -1,41 +1,4 @@
-* [Sources](#sources)
-	* [Refactoring](#refactoring)
-	* [Code Smells](#code-smells)
-	* [Business Case](#business-case)
-* [Background](#background)
-	* [Notes](#notes)
-		* [TOC](#toc)
-		* [Defining Refactoring](#defining-refactoring)
-		* [Objective: Explain External behavior and Internal Structure](#objective-explain-external-behavior-and-internal-structure)
-		* [Relevance: When should we Refactor](#relevance-when-should-we-refactor)
-		* [3 Key Benefits: Why Should we Refactor](#3-key-benefits-why-should-we-refactor)
-		* [Broader Overview: Refactoring as a Process](#broader-overview-refactoring-as-a-process)
-		* [__Optional__ Practical Application: Branches, Continuous Integration](#optional__-practical-application-branches-continuous-integration)
-		* [Sidenote: Importance Tests](#sidenote-importance-tests)
-		* [Challenges: What to watch out?](#challenges-what-to-watch-out)
-* [Formalisation of Design Patterns](#formalisation-of-design-patterns)
-	* [Research and Methods](#research-and-methods)
-	* [Content](#content)
-	* [Notes](#notes-1)
-		* [Transition: Relationship between Refactoring and Code Smells](#transition-relationship-between-refactoring-and-code-smells)
-		* [What is a Code Smell?](#what-is-a-code-smell)
-		* [Examples and Mention Methodology](#examples-and-mention-methodology)
-		* [Conclusion: (Use this to transition to business case)](#conclusion-use-this-to-transition-to-business-case)
-* [The Business Case for Refactoring](#the-business-case-for-refactoring)
-	* [Content](#content-1)
-	* [Notes](#notes-2)
-		* [Transition](#transition)
-		* [Status Quo: Technical Debt](#status-quo-technical-debt)
-		* [Problem: Difficulties in convincing](#problem-difficulties-in-convincing)
-		* [Advantages: Managerial benefits](#advantages-managerial-benefits)
-		* [Concluding: Psychology and Relationships](#concluding-psychology-and-relationships)
-* [Personal](#personal)
-	* [Design Patterns](#design-patterns)
-	* [Sedgewick](#sedgewick)
-
-<!-- vim-markdown-toc -->
 # Refactoring
-<!-- vim-markdown-toc GFM -->
 
 ## Sources
 ### Refactoring
@@ -77,15 +40,6 @@
 
 ## Background
 ### Notes
-#### TOC
-- Defining Refactoring
-- Objective: External, Internal
-- Relevance: When?
-- Benefits: Why?
-- Overview: Process
-- Sidenote: Tests
-- Challenges
-
 #### Defining Refactoring
 - (fowler) Refactoring is the process of changing a software system in a way that does not alter the external behavior of the code yet improves its internal structure.
 - Two Key Definitions that we need to make: (1) Alteration of external behavior and (2) Improving the internal structure
