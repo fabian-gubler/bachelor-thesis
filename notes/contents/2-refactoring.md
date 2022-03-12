@@ -1,4 +1,42 @@
-. Refactoring
+* [Sources](#sources)
+	* [Refactoring](#refactoring)
+	* [Code Smells](#code-smells)
+	* [Business Case](#business-case)
+* [Background](#background)
+	* [Notes](#notes)
+		* [TOC](#toc)
+		* [Defining Refactoring](#defining-refactoring)
+		* [Objective: Explain External behavior and Internal Structure](#objective-explain-external-behavior-and-internal-structure)
+		* [Relevance: When should we Refactor](#relevance-when-should-we-refactor)
+		* [3 Key Benefits: Why Should we Refactor](#3-key-benefits-why-should-we-refactor)
+		* [Broader Overview: Refactoring as a Process](#broader-overview-refactoring-as-a-process)
+		* [__Optional__ Practical Application: Branches, Continuous Integration](#optional__-practical-application-branches-continuous-integration)
+		* [Sidenote: Importance Tests](#sidenote-importance-tests)
+		* [Challenges: What to watch out?](#challenges-what-to-watch-out)
+* [Formalisation of Design Patterns](#formalisation-of-design-patterns)
+	* [Research and Methods](#research-and-methods)
+	* [Content](#content)
+	* [Notes](#notes-1)
+		* [Transition: Relationship between Refactoring and Code Smells](#transition-relationship-between-refactoring-and-code-smells)
+		* [What is a Code Smell?](#what-is-a-code-smell)
+		* [Examples and Mention Methodology](#examples-and-mention-methodology)
+		* [Conclusion: (Use this to transition to business case)](#conclusion-use-this-to-transition-to-business-case)
+* [The Business Case for Refactoring](#the-business-case-for-refactoring)
+	* [Content](#content-1)
+	* [Notes](#notes-2)
+		* [Transition](#transition)
+		* [Status Quo: Technical Debt](#status-quo-technical-debt)
+		* [Problem: Difficulties in convincing](#problem-difficulties-in-convincing)
+		* [Advantages: Managerial benefits](#advantages-managerial-benefits)
+		* [Concluding: Psychology and Relationships](#concluding-psychology-and-relationships)
+* [Personal](#personal)
+	* [Design Patterns](#design-patterns)
+	* [Sedgewick](#sedgewick)
+
+<!-- vim-markdown-toc -->
+# Refactoring
+<!-- vim-markdown-toc GFM -->
+
 ## Sources
 ### Refactoring
 **Fowler: Refactoring** (400 Pages)
@@ -39,34 +77,59 @@
 
 ## Background
 ### Notes
+#### TOC
+- Defining Refactoring
+- Objective: External, Internal
+- Relevance: When?
+- Benefits: Why?
+- Overview: Process
+- Sidenote: Tests
+- Challenges
+
 #### Defining Refactoring
 - (fowler) Refactoring is the process of changing a software system in a way that does not alter the external behavior of the code yet improves its internal structure.
+- Two Key Definitions that we need to make: (1) Alteration of external behavior and (2) Improving the internal structure
+  - External behavior: Features remain the same (proven with tests)
+  - Improving internal structure: Quality Attributes
+
+
+#### Objective: Explain External behavior and Internal Structure
+Intro: Value Added
+
 - Talk about that it sounds less appealing not to add features.
-
-#### Objective: Include Main points
-Improving Quality Attributes
-- Readability, Maintainability, Modifiable, Testable etc.
-- Therefore one should only do a refactor, if one or many of these attributes are not sufficient.
-- This is how the sucess of a refactor can be measured: Whether at least one quality attribute has significantly improved, without changing the observable beahvior in term of functionality
-- (lacerda) Refactoring helps to make the code more readable and eliminating possible problems, as well as improving the internal quality attributes of the software (Mens and Tourwe, 2004).
-
-Tests
-- In the end it must be proven, that only the internal structure has changed. This can be done through software tests.
+- Value that is added is not clear on first sight, nothing to show to the client or manager
+- However, if that code quality is getting worse and worse, so called technical debt accrues. Which means that future features are more costly to implement and sudden changes to the code (e.g. new corporate goals) are near impossible.
 
 General
 - (fowler) It is a disciplined way to clean up code that minimizes the chances of introducing bugs.
 - (fowler)  Refactoring is all about applying small behavior-preserving steps and making a big change by stringing together a sequence of these behavior-preserving steps. 
 - (fowler) Refactoring is very similar to performance optimization, as both involve carrying out code manipulations that don’t change the overall functionality of the program. The difference is the purpose: Refactoring is always done to make the code “easier to understand and cheaper to modify.” 
 
-#### Relevance
+Internal Structure: Improving the Quality Attributes
+
+- Therefore one should only do a refactor, if one or many of these attributes are not sufficient.
+- Readability, Maintainability, Modifiable, Testable etc.
+- This is how the sucess of a refactor can be measured: Whether at least one quality attribute has significantly improved, without changing the observable beahvior in term of functionality
+- (lacerda) Refactoring helps to make the code more readable and eliminating possible problems, as well as improving the internal quality attributes of the software (Mens and Tourwe, 2004).
+
+External behavior: Tests
+- We now have a better understanding of how the internal structure (i.e. quality attributes) is improved.
+- Second part was that the external behavior is not altered.
+- By changing code new bugs could be introduced.
+- In the end it must be proven, that only the internal structure has changed. This can be done through software tests.
+
+#### Relevance: When should we Refactor
+Transition
+- (fowler) When I talk about refactoring, people can easily see that it improves quality. Better internal design, readability, reducing bugs—all these improve quality.
+- Now we need to know why we even should improve the internal structure.
+- Sometimes we might think that we add more value if we add features.
+- Refactoring needs time and resources, so the improvement of the internals needs to be justified
+
 Critical Point of view
 - (fowler) If the code works and doesn’t ever need to change, it’s perfectly fine to leave it alone. It would be nice to improve it, but unless someone needs to understand it, it isn’t causing any real harm. Yet as soon as someone does need to understand how that code works, and struggles to follow it, then you have to do something about it.
 - (fowler) The compiler doesn’t care whether the code is ugly or clean. But when I change the system, there is a human involved, and humans do care. A poorly designed system is hard to change—because it is difficult to figure out what to change and how these changes will interact with the existing code to get the behavior I want. And if it is hard to figure out what to change, there is a good chance that I will make mistakes and introduce bugs.
 
-#### Why Should we Refactor
-General
-- (fowler) When I talk about refactoring, people can easily see that it improves quality. Better internal design, readability, reducing bugs—all these improve quality.
-
+#### 3 Key Benefits: Why Should we Refactor
 Refactoring Improves the Design of Software
 - Software tends to decay
 - (fowler) Poorly designed code usually takes more code to do the same things, often because the code quite literally does the same thing in several places. Thus an important aspect of improving design is to eliminate duplicated code. 
@@ -79,7 +142,11 @@ Refactoring Makes Software Easier to Understand
 Refactoring Helps find bugs
 - (fowler) Help in understanding the code also means help in spotting bugs. 
 
-#### Refactoring as a Process
+#### Broader Overview: Refactoring as a Process
+Transition
+- Now that we decided that the incorporation of refactoring would be a good idea.
+- We want to find out where we can integrate refactoring into our software development process.
+
 Relevance from a Software Architecture Perspective
 - (fowler) Early in my career, I was taught that software design and architecture was something to be worked on, and mostly completed, before anyone started writing code.
 - (fowler) Refactoring changes this perspective. It allows me to significantly alter the architecture of software that’s been running in production for years. 
@@ -93,7 +160,8 @@ Yagni Design Trio in the Software Development Process: Testing, CI, Refactoring
 - (fowler)  Balance these practices, and you can get into a virtuous circle with a code base that responds rapidly to changing needs and is reliable.
 
 
-#### Practical Application: Branches, Continuous Integration
+#### __Optional__ Practical Application: Branches, Continuous Integration
+
 Personal
 - I will only cover shortly, because it focusses on team. Having the luxury of coding alone, does not result in the potential risks of merge conflicts.
 - However, it still makes sense to get a grasp of the overall philosophy, which can also be applied to when working alone, and most importantly is necessary when in the future multiple persons will work on the project.
@@ -105,7 +173,7 @@ Explanation
 - (fowler)  Many people, therefore, argue for keeping feature branches short—perhaps just a couple of days. Others, such as me, want them even shorter than that. This is an approach called Continuous Integration (CI), also known as Trunk-Based Development. 
 - (fowler) Fans of CI like it partly because it reduces the complexity of merges, but the dominant reason to favor CI is that it’s far more compatible with refactoring.
 
-#### Importance Tests
+#### Sidenote: Importance Tests
 Allen Holub (Twitter): Refactoring without tests is like crossing a busy street blindfolded.
 
 Personal Reason
@@ -116,6 +184,7 @@ Personal Reason
 Risk Aversion
 - Refactoring is indeed error prone, if no tests are available.
 - In addition it is not possible to do a proper refactor, as one cannot verify whether the observable behavior has changed
+- To quantify the success of the refactor and not make decisions on how one feels after it, tests are needed.
 
 Connected to Branches
 - (fowler) Self-testing code is, unsurprisingly, closely associated with Continuous Integration—it is the mechanism that we use to catch semantic integration conflicts.
@@ -128,7 +197,7 @@ Purpose
 - (fowler) Self-testing code not only enables refactoring—it also makes it much safer to add new features, since I can quickly find and kill any bugs I introduce.
 
 
-#### Challenges in refactor
+#### Challenges: What to watch out?
 Simultaneous
 - Could inhibit others from working on the code at the same time (fowler describes this phenomenon as two hats). 
 - Easy to change hats when coding alone, but hard when in larger teams.
@@ -259,6 +328,7 @@ Fowler
   - **Complex Conditional Logic**
   - **Shotgun Surgery**: Dependency graph, lots of little changes in various classes they might be brought together
 	
+
 Personal
   - **Extensible and Modular**: Check what happens when you add more objects, features
 
