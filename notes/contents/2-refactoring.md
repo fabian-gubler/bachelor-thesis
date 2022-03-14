@@ -39,11 +39,6 @@
 
 ## Background
 ### Notes
-#### Defining Refactoring
-- Two Key Definitions that we need to make: (1) Alteration of external behavior and (2) Improving the internal structure
-  - External behavior: Features remain the same (proven with tests)
-  - Improving internal structure: Quality Attributes
-
 
 #### Objective: Explain External behavior and Internal Structure
 Intro: Value Added
