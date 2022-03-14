@@ -33,7 +33,6 @@
 - Methodology
 - Strategy
 
-
 ### Business Case
 - [Technical Debt](https://martinfowler.com/tags/technical%20debt.html)
 - [Technische Schulden](https://www.youtube.com/watch?v=hwkqHWpMQss)

@@ -14,7 +14,7 @@ PROJECTNAME = "thesis"
 MAINDOCUMENTBASENAME = main
 MAINDOCUMENTFILENAME = ${MAINDOCUMENTBASENAME}.tex
 ## COMMANDS:
-PDFLATEX_CMD = pdflatex
+PDFLATEX_CMD = pdflatex -synctex=1 -undump=pdflatex
 #BIBTEX_CMD = bibtex
 BIBTEX_CMD = biber
 MAKEIDX_CMD = makeindex
