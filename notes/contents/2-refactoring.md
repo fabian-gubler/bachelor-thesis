@@ -40,7 +40,6 @@
 ## Background
 ### Notes
 #### Defining Refactoring
-- (fowler) Refactoring is the process of changing a software system in a way that does not alter the external behavior of the code yet improves its internal structure.
 - Two Key Definitions that we need to make: (1) Alteration of external behavior and (2) Improving the internal structure
   - External behavior: Features remain the same (proven with tests)
   - Improving internal structure: Quality Attributes
@@ -50,7 +49,11 @@
 Intro: Value Added
 
 - Talk about that it sounds less appealing not to add features.
+- (Kim) Some [programmer] also believe that refactoring does not provide
+immediate benefit unlike new features or bug fixes.
 - Value that is added is not clear on first sight, nothing to show to the client or manager
+- (Mens) As the software is enhanced, modified and adapted to new requirements, the code becomes more and more complex and drifts away from its original design.
+- There exists an increase of debt which has to be repaid in the future in the form of maintenance costs.
 - However, if that code quality is getting worse and worse, so called technical debt accrues. Which means that future features are more costly to implement and sudden changes to the code (e.g. new corporate goals) are near impossible.
 
 General
@@ -232,6 +235,7 @@ Refactoring is a managerial Task
 
 Transition: To further illustrate and try to quantify this issue, let us look at the concept of technical debt.
 - Cost benefit analysis: If the code never gets touched again, one does not need a refactor.
+- There exists an increase of debt which has to be repaid in the future in the form of maintenance costs.
 - Diagram p. 71: The difference between these two is the internal quality of the software. Software with a good internal design allows me to easily find how and where I need to make changes to add a new feature. Good modularity allows me to only have to understand a small subset of the code base to make a change. If the code is clear, I’m less likely to introduce a bug, and if I do, the debugging effort is much easier.
 
 Reasons
