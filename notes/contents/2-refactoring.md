@@ -34,8 +34,8 @@
 - Strategy
 
 ### Business Case
+- [Einführung: Technische Schulden](https://www.youtube.com/watch?v=hwkqHWpMQss)
 - [Technical Debt](https://martinfowler.com/tags/technical%20debt.html)
-- [Technische Schulden](https://www.youtube.com/watch?v=hwkqHWpMQss)
 
 ## Background
 ### Notes
@@ -71,6 +71,12 @@ External behavior: Tests
 
 #### Relevance: When should we Refactor
 Transition
+- (mens) While refactoring creates does not normally involve modifications of new requirements, it may lead to better observations of the system that suggest changes that would improve aspects of the systems.
+- Vice versa, 
+- Thus it is hard to differentiate between a day to day activity (philosophical approach) of refactoring and the architectural decision of a fundamental refactor.
+- The following ask the question of the architectural decision, meaning asking when one should do a refactor.
+- Here we talk about allocating bunch of ressources into a fundamental  and foccused change to the system, which is internal in nature.
+
 - (fowler) When I talk about refactoring, people can easily see that it improves quality. Better internal design, readability, reducing bugs—all these improve quality.
 - Now we need to know why we even should improve the internal structure.
 - Sometimes we might think that we add more value if we add features.
@@ -81,6 +87,10 @@ Critical Point of view
 - (fowler) The compiler doesn’t care whether the code is ugly or clean. But when I change the system, there is a human involved, and humans do care. A poorly designed system is hard to change—because it is difficult to figure out what to change and how these changes will interact with the existing code to get the behavior I want. And if it is hard to figure out what to change, there is a good chance that I will make mistakes and introduce bugs.
 
 #### 3 Key Benefits: Why Should we Refactor
+Transition
+- We now have discussed when we should do the refactor. This begs the question if the previously discussed circumstances do not apply if we then should not spend time working on the quality. Which is not the case.
+- By asking why we should refactor, we can better understand the scope and complexity of a refactor. And might realize that small changes during the development phase can suffice. That while the projet currently does not need a fundamental refactor, we still need to avoid software decay in the future.
+
 Refactoring Improves the Design of Software
 - Software tends to decay
 - (fowler) Poorly designed code usually takes more code to do the same things, often because the code quite literally does the same thing in several places. Thus an important aspect of improving design is to eliminate duplicated code. 
