@@ -73,7 +73,7 @@ The concept of technical debt is an important one to fully grasp,
 % Transition: Relationship between Refactoring and Code Smells
 Knowing just the importance and applicatons of refactoring does not suffice, 
 	as one still needs to understand when to do the refactoring.
-Fowler \textcite{fowler2018} argues that deciding when to start refactoring—and when to stop 
+\textcite{fowler2018} argues that deciding when to start refactoring—and when to stop 
 	is just as important to refactoring as knowing how to operate the mechanics of it.
 Particularly, there is no clear cut moment when to refactor, 
 	there are only indications that there is trouble that can be solved by a refactoring.
@@ -82,7 +82,7 @@ As throughout this work we are not concerned with design decisions of the codeba
 	we will from now on refer to the indications as code smells.
 
 % What is a Code Smell?
-	% Define Code Smells here %
+	% TODO: Define Code Smells here %
 Refactoring can then can be thought of as the process of getting rid of these code smells. 
 
 % Examples Intro
@@ -90,10 +90,10 @@ To better comprehend these code smells it is best to list some of them.
 However, to stay within the scope of this paper, 
 	we will limit the examples to the most prominent ones. 
 In their work, Fowler and Beck introduced a total of 24 code smells to avoid.
-The following overview will briefly summarize the top ten code smells according to Lacerda \textcite{lacerda2020}.
+Therefore, the following overview will briefly summarize the top ten code smells according to \textcite{lacerda2020}.
 
 % Table
-	% Need to be in list of figures, right?
+	% TODO: Need to be in list of figures, right?
 \myparagraph{Table 1}
 Summary of code smells identified by Fowler and Beck \textcite{fowler2018}
 
@@ -102,27 +102,28 @@ Summary of code smells identified by Fowler and Beck \textcite{fowler2018}
 \renewcommand{\arraystretch}{1.7}
 \scalebox{0.8}{
 \begin{tabularx}{1.2\textwidth}{{sb}}
- Code Smells & Description \\
+	Code Smells & Description \\
  \hline
 	Duplicated Code & Consists of equal or very similar passages in different fragments of the same code base.  \\
 	Large Class & Class that has many responsibilities and therefore contains many variables and methods. \\
-	Feature Envy & When a method is more interested in members of other classes than its own, 
+	Feature Envy & When a method is more interested in members of other classes than its own,
 		is a clear sign that it is in the wrong class \\
-	Long Method & Very large method/function and, therefore, difficult to understand, extend and modify. 
-		It is very likely that this method has too many responsibilities, 
+	Long Method & Very large method/function and, therefore, difficult to understand, extend and modify.
+		It is very likely that this method has too many responsibilities,
 		hurting one of the principles of a good OO design \\
-	Long Parameter List & Extensive parameter list, which makes it difficult to understand 
+	Long Parameter List & Extensive parameter list, which makes it difficult to understand
 		and is usually an indication that the method has too many responsibilities. \\
-	Data Clumps & Data structures that always appear together, 
+	Data Clumps & Data structures that always appear together,
 		and when one of the items is not present, the whole set loses its meaning \\
 	Refused Bequest & It indicates that a subclass does not use inherited data or behaviors \\
-	Divergent Change & A single class needs to be changed for many reasons. 
+	Divergent Change & A single class needs to be changed for many reasons.
 		This is a clear indication that it is not sufficiently cohesive and must be divided \\
-	Shotgun Surgery & Opposite to Divergent Change, 
+	Shotgun Surgery & Opposite to Divergent Change,
 		because when it happens a modification, several different classes have to be changed \\
 	Lazy Class & Classes that do not have sufficient responsibilities and therefore should not exist \\
 \end{tabularx}
 }
+
 
 \section{The Business Case for Refactoring}
 \label{sec:Business}
