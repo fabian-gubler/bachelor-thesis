@@ -48,7 +48,7 @@ Intro: Value Added
 immediate benefit unlike new features or bug fixes.
 - Value that is added is not clear on first sight, nothing to show to the client or manager
 - (Mens) As the software is enhanced, modified and adapted to new requirements, the code becomes more and more complex and drifts away from its original design.
-- There exists an increase of debt which has to be repaid in the future in the form of maintenance costs.
+- By Lack of internal quality, there exists an increase of debt which has to be repaid in the future in the form of maintenance costs.
 - However, if that code quality is getting worse and worse, so called technical debt accrues. Which means that future features are more costly to implement and sudden changes to the code (e.g. new corporate goals) are near impossible.
 
 General
