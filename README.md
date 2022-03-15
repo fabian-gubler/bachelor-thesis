@@ -44,14 +44,14 @@ The following measures are personally useful to me by making writing more effice
 
 ## 2. Framework
 It is essential to understanding the theoretical framework of refactoring and design patterns. At the same time, get an overview of the code and relevant toolset for refactoring.
-- Duration: 3 Weeks
+- Duration: 4 Weeks
 - Deliverable: Aim to write min. 10 Pages.
 
-**Research and Literature Review**
-- [ ] Find relevant Papers for subject matter
+~~**Research and Literature Review**~~
+- [x] Find relevant Papers for subject matter
 
 **Comprehensive Understanding of Refactoring**
-- [ ] Study Fowler's work and take notes
+- [x] Study Fowler's work and take notes
 - [ ] Develop Hypotheses
 
 **Toolset**
