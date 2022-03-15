@@ -41,21 +41,6 @@
 ### Notes
 
 #### Objective: Explain External behavior and Internal Structure
-Intro: Value Added
-
-- Talk about that it sounds less appealing not to add features.
-- (Kim) Some [programmer] also believe that refactoring does not provide
-immediate benefit unlike new features or bug fixes.
-- Value that is added is not clear on first sight, nothing to show to the client or manager
-- (Mens) As the software is enhanced, modified and adapted to new requirements, the code becomes more and more complex and drifts away from its original design.
-- By Lack of internal quality, there exists an increase of debt which has to be repaid in the future in the form of maintenance costs.
-- However, if that code quality is getting worse and worse, so called technical debt accrues. Which means that future features are more costly to implement and sudden changes to the code (e.g. new corporate goals) are near impossible.
-
-General
-- (fowler) It is a disciplined way to clean up code that minimizes the chances of introducing bugs.
-- (fowler)  Refactoring is all about applying small behavior-preserving steps and making a big change by stringing together a sequence of these behavior-preserving steps. 
-- (fowler) Refactoring is very similar to performance optimization, as both involve carrying out code manipulations that don’t change the overall functionality of the program. The difference is the purpose: Refactoring is always done to make the code “easier to understand and cheaper to modify.” 
-
 Internal Structure: Improving the Quality Attributes
 
 - Therefore one should only do a refactor, if one or many of these attributes are not sufficient.
@@ -90,6 +75,12 @@ Critical Point of view
 Transition
 - We now have discussed when we should do the refactor. This begs the question if the previously discussed circumstances do not apply if we then should not spend time working on the quality. Which is not the case.
 - By asking why we should refactor, we can better understand the scope and complexity of a refactor. And might realize that small changes during the development phase can suffice. That while the projet currently does not need a fundamental refactor, we still need to avoid software decay in the future.
+
+Small Steps
+- Refactor is not one big black box.
+- Even if there is a demand of a huge refactor, the refactorings themselves are minor.
+- (fowler)  Refactoring is all about applying small behavior-preserving steps and making a big change by stringing together a sequence of these behavior-preserving steps. 
+- (fowler) Refactoring is very similar to performance optimization, as both involve carrying out code manipulations that don’t change the overall functionality of the program. The difference is the purpose: Refactoring is always done to make the code “easier to understand and cheaper to modify.” 
 
 Refactoring Improves the Design of Software
 - Software tends to decay

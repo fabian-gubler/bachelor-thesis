@@ -7,15 +7,18 @@
 % ---
 
 
+% Intro
 Refactoring is a well established concept in software development. 
-Especially in complex project, 
-	tasks such as cleaning up code are a regular activity and often referred to as refactoring. 
+Especially in complex projects, 
+	tasks such as cleaning and restructuring code are regularly occuring and oftentimes necessary. 
+When refering to these activities by name, many employees describe them as refactoring. 
 Despite of its familiarity, 
-	the exact definition of the term "refactoring" is not always self evident.
+	the exact definition of the term \emph{refactoring} is not always self evident.
 To avoid refering to the term too loosely, 
 	it is therefore important to give a precise definition to reference throughout the paper. 
 
-Martin \textcite{fowler2018} managed to formulate a definition that is both short and precise. 
+% Fowler Refactoring Definition
+Martin \textcite[p. ~xiv]{fowler2018} managed to formulate a definition that is both short and precise. 
 Notably, Fowler is one of the most prominent figure, 
 	who has pioneered many concept in the field of refactoring,
 	which validates the utilization of his definition.
@@ -25,6 +28,7 @@ Fowler defines refactoring the following:
 	that does not alter the external behavior of the code yet improves its internal structure.
 \end{quote}
 
+% Definition in Own Words
 It is therefore an integral part of reactoring to not change the features of the program, 
 	while improving the quality of the code.
 By proper refactoring, we can thus eleviate the risk associated with changing the codebase,
@@ -34,15 +38,38 @@ By proper refactoring, we can thus eleviate the risk associated with changing th
 % Objective: Explain External behavior and Internal Structure
 % ---
 
+\myparagraph{Objective}
+% Adding Features is attractive
 Spending valuable ressources, while not adding new features, 
 	might sound unappealing to many managers and even programmers.
-\textcite{kim2021} mentions the problem of not having an immediate benefit when refactoring, 
+\textcite[p.~1]{kim2012} mention the problem of not having an immediate benefit when refactoring, 
 	unlike new features or bug fixes.
 In addition, the value of improving the internals of the code, is hard to show to a manager, 
 	who is not an expert and even harder to present to the client, who is paying for the work.
 
+Through continuous modifications and adaptations to new requirements, the code becomes increasinlgy complex and drifts away from original design. 
+As a consequence, 
+	a major part of the resources is spent on software maintenance (\cite[p.~1]{mens2003}). 
+
+% Refactoring necessary to avoid maintenance costs
+Having Fowler's Definition in mind, 
+	we however aim to mitigate time spent on tedious maintenance, 
+	by improving the quality attributes of the code and thus its internal structure.
+Conversely, by ignoring the internals of the program, 
+	there would exist and continuous increase of debt, 
+	which would have to be reapaid in the future in the form of maintenance costs.
+Moreover, by obtaining so called technical debt, 
+	future features are more costly to implement and sudden changes are near impossible. 
+The concept of technical debt is an important one to fully grasp, 
+	which is why it is further explained in a future section of this paper 
+(see Section \ref{sec:Business}).
+	
+
+% Internal Structure = Improving the Quality Attributes
 
 
 \section{Formalization of Design Patterns}
 \section{The Business Case for Refactoring}
+\label{sec:Business}
+
 \section{Thesis Context}
