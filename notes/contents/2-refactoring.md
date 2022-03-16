@@ -15,7 +15,7 @@
 - Techniques
 - Tool Support
 
-### Code Smells 
+### Code Smells
 **Martin: Clean Code** (280 Pages)
 - What is Clean Code?
 - Naming, Comments, Formatting
