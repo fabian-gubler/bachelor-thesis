@@ -11,10 +11,10 @@ see [Exploration](https://github.com/fabian-gubler/bachelor-thesis/blob/main/not
 see [Refactoring](https://github.com/fabian-gubler/bachelor-thesis/blob/main/notes/contents/2-refactoring.md)
 
 # Methodology
-see [Methodology](see [Refactoring](https://github.com/fabian-gubler/bachelor-thesis/blob/main/notes/contents/3-methodology.md)
+see [Methodology](https://github.com/fabian-gubler/bachelor-thesis/blob/main/notes/contents/3-methodology.md)
 
-# Main Findings
-This results chapter objectively reports the findings, presenting only brief observations in relation to each question or hypothesis. It should not give an overall answer to the main research question or speculate on the meaning of the results.
+# Results
+see [Results](https://github.com/fabian-gubler/bachelor-thesis/blob/main/notes/contents/4-results.md)
 
 # Discussion
 

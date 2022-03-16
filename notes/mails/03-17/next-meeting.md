@@ -25,7 +25,8 @@ Main: Theoretical Framework & Methodology
 
 # Open Questions
 ### Large
-- Discuss about the extent of writing tests.
+- Discuss the importance of writing tests.
+- Extent of Methodology that can be written before implementation
 
 ### Small
 - Citation: Reference Author or Author + Page Number?

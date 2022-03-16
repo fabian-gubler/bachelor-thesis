@@ -31,26 +31,64 @@ Describe with what tools (hardware and software) I am constrained to do this pro
 - Controller Interface of Smart Factory
 - Describe Code Project
 
-## Pre Refactor: Methods of analysis
+## Pre Refactor: Methods of Sucess
 ### Goal
 Detection of code smells to determine flaws in code
 
-#### Detection Methods
-- [PySmell](https://github.com/orestis/pysmell)
+### Hypotheses
+#### Do the code quality metrics improve when refactoring the code smells?
+-> How linked? = Create hypotheses
 
+### Describe Quality Attributes
+- Difficulty of quantification regarding each attribute (e.g. readability)
 
-### Design Patterns
-- Under which criteria did I choose the design patterns?
-- Which Software tools?
+### Global Metrics
 
+Tools
+- [Radon](https://pypi.org/project/radon/) (Cyclomatic Complexity, Maintainability, Halstead)
+- [Wily](https://github.com/tonybaloney/wily) (See Progress, and Graphs of Metrics during Refactor)
+- Pylint (Current = 6.16)
+
+Article from realpython
+- [Link](https://realpython.com/python-refactoring/#metrics-for-measuring-complexity)
+- Metrics: Cyclomatic Complexity, Halstead, Maintainability Index
+
+## Pre Refactor: Methods of Analysis (Code Smells)
 ### Evaluation
 - Can the detected Code smells be prioritized according to severity / importance?
 - Are there relationships between the Smells? Can I just go sequentially when refactoring?
 
+### Tools
+#### Tool: Cohesion (Divergent Change, Shotgun Surgery)
+- [Cohesion](https://github.com/mschwager/cohesion)
+- Description: When cohesion is high, it means that the methods and variables of the class are co-dependent and hang together as a logical whole.
+- Code Smells: Divergent Change, Shotgun Surgery
+
+#### Pylint
+Duplicated Code
+- --enable=duplicate-code smart-factory-python
+- or as language server and then search with telescope
+
+#### Manual Approaches
+Go through them individually
+- Long Parameter List
+- Long Method 
+- Large Class 
+- Lazy Class (not sufficent responsibilities)
+
+#### Not contained anyways
+- Refused Bequest: There are no subclasses
+
+#### Still open
+- Feature Envy: Method more interested in other classes than its own
+- Data Clumps: 
+
+#### Dependencies
+- [Pydeps](https://github.com/thebjorn/pydeps#how-to-install) (Dependencies)
+
 ## Refactor: Means of Implementation
 ### Goal
 Improving the Quality of the code
-
 
 ### Refactoring
 Using Some Automated Refactoring Tools
@@ -60,6 +98,8 @@ Using Step-by-step guide from Fowler
 
 ### Extra Activities for clean code: 
 In addition I will use extra tools during my software development process, with the aim to improve the quality of the Code.
+
+These extras are not listed in the means of analysis because they will be used during the implementation.
 
 #### Readability
 - In addition there are a wide range of automatic tools available.
@@ -84,16 +124,6 @@ In addition I will use extra tools during my software development process, with 
 - Pylint (Linter)
 - Black (Formatter)
 - Pyright (Static Type Checker)
-
-
-## Post Refactor: Methods of analysis
-### Goal
-The sucess of the refactor according to the quality attributes and Metrics
-
-### Describe Quality Attributes
-- Not always easy to quanity (e.g. readability)
-
-
 
 ## Limitations
 Evaluate and justify your methodological choices
