@@ -51,19 +51,6 @@ Detection of code smells to determine flaws in code
 ### Goal
 Improving the Quality of the code
 
-### Global Metrics
-Tools
-- [Radon](https://pypi.org/project/radon/) (Cyclomatic Complexity, Maintainability, Halstead)
-- [Wily](https://github.com/tonybaloney/wily) (See Progress, and Graphs of Metrics during Refactor)
-- [Cohesion](https://github.com/mschwager/cohesion) (Class Cohesion)
-- [Vulture](https://github.com/jendrikseipp/vulture) (Unused, Dead Code)
-- [Pydeps](https://github.com/thebjorn/pydeps#how-to-install) (Dependencies)
-
-Article from realpython
-- [Link](https://realpython.com/python-refactoring/#metrics-for-measuring-complexity)
-- Metrics: Cyclomatic Complexity, Halstead, Maintainability Index
-
-### Code Smells
 
 ### Refactoring
 Using Some Automated Refactoring Tools
@@ -74,32 +61,34 @@ Using Step-by-step guide from Fowler
 ### Extra Activities for clean code: 
 In addition I will use extra tools during my software development process, with the aim to improve the quality of the Code.
 
-**Readability**
+#### Readability
 - In addition there are a wide range of automatic tools available.
 - General Goal is to create consistency over python code and thus making it more readable and easier to maintain.
 - Style Guide: PEP8 is a well-accepted standard when it comes to Python Code
 - Tools are based on PEP8
 
-**Debugging**
+#### Debugging
 - Apart from readability, formatters and static type checkers are also able to catch bugs in the code writing process.
 
-**Explanations**
+#### Explanations
 - **Linting**: Linters flag programming errors, bugs, stylistic errors, and suspicious constructs through source code analysis. 
 - **Formatters**: While linters just check for issues in your code, code formatters actually reformat your code based on a set of standards.
 - **Static Type Checking**: Type checking is the activity of providing that the operands of an operator are of compatible types.
 
-**If necessary:**
-- Comments (might be useful at the beginning of a file), but might get into the way (see Fowler)
+#### Unused Code
+- [Vulture](https://github.com/jendrikseipp/vulture)
+- Code or Variables that are not used
 
-**Current Setup**
-"For an Detailed Overview of the setup used during the project please reference chaper X"
+#### Current Setup
 - Flake8 (Linter)
+- Pylint (Linter)
 - Black (Formatter)
 - Pyright (Static Type Checker)
 
+
 ## Post Refactor: Methods of analysis
 ### Goal
-The sucess of the refactor according to the quality attributes
+The sucess of the refactor according to the quality attributes and Metrics
 
 ### Describe Quality Attributes
 - Not always easy to quanity (e.g. readability)
