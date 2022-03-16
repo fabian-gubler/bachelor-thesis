@@ -29,6 +29,7 @@ Main: Theoretical Framework & Methodology
 
 ### Small
 - Citation: Reference Author or Author + Page Number?
+- Sonograph (not found), dependency graph (modules?)
 
 # Outlook
 ## Objectives (for following Weeks)
