@@ -41,33 +41,31 @@
 ### Notes
 
 #### Relevance: When should we Refactor
-Transition
+Small Steps
+- Refactor is not one big black box.
+- Even if there is a demand of a huge refactor, the refactorings themselves are minor.
+- (fowler)  Refactoring is all about applying small behavior-preserving steps and making a big change by stringing together a sequence of these behavior-preserving steps. 
+- (fowler) Refactoring is very similar to performance optimization, as both involve carrying out code manipulations that don’t change the overall functionality of the program. The difference is the purpose: Refactoring is always done to make the code “easier to understand and cheaper to modify.” 
+
+Big Step
+- At a certain points doing small refactoring on the side might not suffice, and an overarching refactor is necessary.
+- Here we talk about allocating bunch of ressources into a fundamental and foccused change to the system.
+
 - (mens) While refactoring creates does not normally involve modifications of new requirements, it may lead to better observations of the system that suggest changes that would improve aspects of the systems.
-- Vice versa, 
-- Thus it is hard to differentiate between a day to day activity (philosophical approach) of refactoring and the architectural decision of a fundamental refactor.
-- The following ask the question of the architectural decision, meaning asking when one should do a refactor.
-- Here we talk about allocating bunch of ressources into a fundamental  and foccused change to the system, which is internal in nature.
 
-- (fowler) When I talk about refactoring, people can easily see that it improves quality. Better internal design, readability, reducing bugs—all these improve quality.
-- Now we need to know why we even should improve the internal structure.
-- Sometimes we might think that we add more value if we add features.
-- Refactoring needs time and resources, so the improvement of the internals needs to be justified
-- Therefore one should only do a refactor, if one or many of these attributes are not sufficient.
+- Best Case scenario is, that such points can be foreseen a priori. 
+- Refactor then can be thought as an investment into the future. 
+- Big corporate changes, as in a migration to the cloud, can be done much faster without existing technical debt.
+- Sometimes also one of the quality attributes gains much importance, which would justify a refactor of code that is perceived as healthy.
+- Having a business case for refactoring is such an important topic, that it will be discussed later in section (X).
 
-Critical Point of view
-- (fowler) If the code works and doesn’t ever need to change, it’s perfectly fine to leave it alone. It would be nice to improve it, but unless someone needs to understand it, it isn’t causing any real harm. Yet as soon as someone does need to understand how that code works, and struggles to follow it, then you have to do something about it.
-- (fowler) The compiler doesn’t care whether the code is ugly or clean. But when I change the system, there is a human involved, and humans do care. A poorly designed system is hard to change—because it is difficult to figure out what to change and how these changes will interact with the existing code to get the behavior I want. And if it is hard to figure out what to change, there is a good chance that I will make mistakes and introduce bugs.
+
 
 #### 3 Key Benefits: Why Should we Refactor
 Transition
 - We now have discussed when we should do the refactor. This begs the question if the previously discussed circumstances do not apply if we then should not spend time working on the quality. Which is not the case.
 - By asking why we should refactor, we can better understand the scope and complexity of a refactor. And might realize that small changes during the development phase can suffice. That while the projet currently does not need a fundamental refactor, we still need to avoid software decay in the future.
 
-Small Steps
-- Refactor is not one big black box.
-- Even if there is a demand of a huge refactor, the refactorings themselves are minor.
-- (fowler)  Refactoring is all about applying small behavior-preserving steps and making a big change by stringing together a sequence of these behavior-preserving steps. 
-- (fowler) Refactoring is very similar to performance optimization, as both involve carrying out code manipulations that don’t change the overall functionality of the program. The difference is the purpose: Refactoring is always done to make the code “easier to understand and cheaper to modify.” 
 
 Refactoring Improves the Design of Software
 - Software tends to decay

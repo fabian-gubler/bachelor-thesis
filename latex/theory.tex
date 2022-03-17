@@ -39,6 +39,7 @@ By proper refactoring, we can thus eleviate the risk associated with changing th
 % ---
 
 \myparagraph{Objective}
+
 % Adding Features is attractive
 Spending valuable ressources, while not adding new features, 
 	might sound unappealing to many managers and even programmers.
@@ -67,7 +68,7 @@ The concept of technical debt is an important one to fully grasp,
 
 % Internal Structure = Improving the Quality Attributes
 Refactoring helps to make the code more readable, 
-	as well as improving the internal quality attributes of the software \textcite[p.~129]{mens2004}. 
+	as well as improving the internal quality attributes of the software (\cite[p.~129]{mens2004}). 
 Some refactorings remove code redundancy, 
 	some raise the level of abstraction, 
 	some enhance the reusability, and so on.
@@ -91,8 +92,27 @@ Thereby, software tests is a major component when deciding the sucess of a refac
 % ---
 % Criteria: When should we Refactor
 % ---
+% 3 Key Benefits: Why Should we Refactor
+% ---
 
-\myparagraph{Criteria}
+\myparagraph{Benefits}
+
+% Critical Perspective
+There needs to be less justification when it comes to time spent on new features and fixing bugs.
+As discussed earlier, it is significantly harder to persuade doing a refactor, 
+	as there are fewer immediate benefits.
+For that reason, one needs to verify the necessity of a refactor 
+	and compare it to the need of other pending tasks.
+\textcite[p.~5]{fowler2018} points out that if the code works and doesn't ever need to change, 
+	it's fine to leave it alone.
+He suggests that as soon as someone needs to understand how that code works, 
+	and struggles to follow it, one has to do something about it.
+Hence, we can conclude that the potential improvement in quality, doesn't warrant a refactor by itself.
+
+% Small Refactors
+
+Therefore, with a project that is in active development, active monitoring of the code quality and small improvements are advisable.
+
 
 
 
