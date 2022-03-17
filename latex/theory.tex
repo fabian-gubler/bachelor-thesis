@@ -47,7 +47,6 @@ Spending valuable ressources, while not adding new features,
 	unlike new features or bug fixes.
 In addition, the value of improving the internals of the code, is hard to show to a manager, 
 	who is not an expert and even harder to present to the client, who is paying for the work.
-
 Through continuous modifications and adaptations to new requirements, the code becomes increasinlgy complex and drifts away from original design. 
 As a consequence, 
 	a major part of the resources is spent on software maintenance (\cite[p.~1]{mens2003}). 
@@ -110,9 +109,19 @@ He suggests that as soon as someone needs to understand how that code works,
 Hence, we can conclude that the potential improvement in quality, doesn't warrant a refactor by itself.
 
 % Small Refactors
+It is crucial to state that refactoring should not be considered to be a massive, obscure undertaking.
+Even if there is a demand of a huge refactor, the refactorings themselves are minor.
+Refactoring is all about applying small behavior-preserving steps and making a big change by stringing together a sequence of these behavior-preserving steps (\cite[p.~45]{fowler2018}). 
+For this reason, refactoring as a principle, 
+	always plays a key role, 
+	as code being easier to understand and cheaper to modify is vital in software development.
+Therefore, with a project that is in active development, 
+	active monitoring of the code quality and therefore being willing to do continous improvements 
+	by means of refactorings is advisable.
+However, as one may presume, such activities are done more in the background and differ from fundamental refactorings or even rewrites of the entire code base.
 
-Therefore, with a project that is in active development, active monitoring of the code quality and small improvements are advisable.
-
+% Big Step
+Another question is the scope of how many of these small refactoring steps needs to be applied.
 
 
 

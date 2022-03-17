@@ -41,11 +41,6 @@
 ### Notes
 
 #### Relevance: When should we Refactor
-Small Steps
-- Refactor is not one big black box.
-- Even if there is a demand of a huge refactor, the refactorings themselves are minor.
-- (fowler)  Refactoring is all about applying small behavior-preserving steps and making a big change by stringing together a sequence of these behavior-preserving steps. 
-- (fowler) Refactoring is very similar to performance optimization, as both involve carrying out code manipulations that don’t change the overall functionality of the program. The difference is the purpose: Refactoring is always done to make the code “easier to understand and cheaper to modify.” 
 
 Big Step
 - At a certain points doing small refactoring on the side might not suffice, and an overarching refactor is necessary.
