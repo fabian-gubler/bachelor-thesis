@@ -40,20 +40,6 @@
 ## Background
 ### Notes
 
-#### Objective: Explain External behavior and Internal Structure
-Internal Structure: Improving the Quality Attributes
-
-- Therefore one should only do a refactor, if one or many of these attributes are not sufficient.
-- Readability, Maintainability, Modifiable, Testable etc.
-- This is how the sucess of a refactor can be measured: Whether at least one quality attribute has significantly improved, without changing the observable beahvior in term of functionality
-- (lacerda) Refactoring helps to make the code more readable and eliminating possible problems, as well as improving the internal quality attributes of the software (Mens and Tourwe, 2004).
-
-External behavior: Tests
-- We now have a better understanding of how the internal structure (i.e. quality attributes) is improved.
-- Second part was that the external behavior is not altered.
-- By changing code new bugs could be introduced.
-- In the end it must be proven, that only the internal structure has changed. This can be done through software tests.
-
 #### Relevance: When should we Refactor
 Transition
 - (mens) While refactoring creates does not normally involve modifications of new requirements, it may lead to better observations of the system that suggest changes that would improve aspects of the systems.
@@ -66,6 +52,7 @@ Transition
 - Now we need to know why we even should improve the internal structure.
 - Sometimes we might think that we add more value if we add features.
 - Refactoring needs time and resources, so the improvement of the internals needs to be justified
+- Therefore one should only do a refactor, if one or many of these attributes are not sufficient.
 
 Critical Point of view
 - (fowler) If the code works and doesn’t ever need to change, it’s perfectly fine to leave it alone. It would be nice to improve it, but unless someone needs to understand it, it isn’t causing any real harm. Yet as soon as someone does need to understand how that code works, and struggles to follow it, then you have to do something about it.

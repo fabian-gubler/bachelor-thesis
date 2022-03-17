@@ -56,8 +56,8 @@ However, having Fowler's Definition in mind,
 	we aim to mitigate time spent on tedious maintenance, 
 	by improving the quality attributes of the code and thus its internal structure.
 Conversely, by ignoring the internals of the program, 
-	there would exist and continuous increase of debt, 
-	which would have to be reapaid in the future in the form of maintenance costs.
+	there would exist a continuous increase of debt, 
+	which would have to be repaid in the future in the form of maintenance costs.
 Moreover, by obtaining so called technical debt, 
 	future features are more costly to implement and sudden changes are near impossible. 
 The concept of technical debt is an important one to fully grasp, 
@@ -66,6 +66,35 @@ The concept of technical debt is an important one to fully grasp,
 	
 
 % Internal Structure = Improving the Quality Attributes
+Refactoring helps to make the code more readable, 
+	as well as improving the internal quality attributes of the software \textcite[p.~129]{mens2004}. 
+Some refactorings remove code redundancy, 
+	some raise the level of abstraction, 
+	some enhance the reusability, and so on.
+On a higher level, these quality attributes include whether the software is maintainable, modifiable, testable and much more.
+The effect of a refactor can to a certain extent be estimated, 
+	by the level of improvement in these quality attributes.
+Consequently, the transformation of the internal structure 
+	is the deciding factor on which sucess is measured.
+Ultimatlely, refactoring adds value if at least one quality attribute has significantly improved.
+
+% External Structure = Tests
+There is however one caveat when measuring the added value,
+	which is that the external behavior is not altered. 
+As an example, changing the code base could make the program more modulear, 
+	but during the process create bugs that didn't exist before. 
+Accordingly, it must be proven that only the internal structure has changed.
+This is achieved by writing tests beforehand and then testing the features after the refactor.
+Thereby, software tests is a major component when deciding the sucess of a refactor.
+
+
+% ---
+% Criteria: When should we Refactor
+% ---
+
+\myparagraph{Criteria}
+
+
 
 
 \section{Formalization of Design Patterns}
