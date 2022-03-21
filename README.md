@@ -54,9 +54,10 @@ It is essential to understanding the theoretical framework of refactoring and de
 - [ ] Develop Hypotheses
 
 **Toolset**
-- [ ] Find Software tools for different code smells
+- [x] Find Software tools for different code smells
 - [ ] Best Coding Practices in a refactor
-- [ ] Find Metrics to evaluate refactor
+- [x] Find Metrics to evaluate refactor
+
 
 ## 3. Coding
 This is the main part of the thesis. Code refactoring based on theoretical framework. Noting down whether hypotheses are validated and documenting the results.

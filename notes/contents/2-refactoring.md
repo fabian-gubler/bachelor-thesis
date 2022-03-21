@@ -1,5 +1,17 @@
 # Refactoring
 
+## Visualization
+### Process Idea
+Create a visualization for (a) refactoring, (b) code smells, (c) business case
+	detecting code smells -> refactoring steps -> reduce technological debt
+
+Either
+1. add in the end these three together to visualize the relationship as a process
+2. Build on top of each, and grey out prior part
+
+### Technical Debt diagram
+see Fowler
+
 ## Sources
 ### Refactoring
 **Fowler: Refactoring** (400 Pages)
@@ -42,14 +54,33 @@
 
 #### Relevance: When should we Refactor
 
+Two Hats
+% Metaphor Two Hats
+- (fowler) When I use refactoring to develop software, I divide my time between two distinct activities: adding functionality and refactoring.
+- (fowler) When I add functionality, I shouldn’t be changing existing code; I’m just adding new capabilities. 
+- (fowler) When I refactor, I make a point of not adding functionality; I only restructure the code.
+
+% Swapping Hats
+- (fowler) As I develop software, I find myself swapping hats frequently. I start by trying to add a new capability, then I realize this would be much easier if the code were structured differently. 
+- (fowler)  Once the code is better structured, I swap hats back and add the new capability.
+
+% Arguments
+- (fowler) But good developers know that, often, the fastest way to add a new feature is to change the code to make it easy to add. 
+- (fowler) It’s also a common error to see refac toring as something people do to fix past mistakes or clean up ugly code.
+
+% Transition
+- (fowler) All this doesn’t mean that planned refactoring is always wrong. If a team has neglected refactoring, it often needs dedicated time to get their code base into a better state for new features, and a week spent refactoring now can repay itself over the next couple of months. 
+
 Big Step
-- At a certain points doing small refactoring on the side might not suffice, and an overarching refactor is necessary.
-- Here we talk about allocating bunch of ressources into a fundamental and foccused change to the system.
 
-- (mens) While refactoring creates does not normally involve modifications of new requirements, it may lead to better observations of the system that suggest changes that would improve aspects of the systems.
+% Cases where development is hindered due to bad code
 
+- Fixing in post is oftentimes a costly way of writing code.
 - Best Case scenario is, that such points can be foreseen a priori. 
-- Refactor then can be thought as an investment into the future. 
+- Refactor then can be then thought as an investment into the future. 
+
+% Corporate Changes
+- (fowler) The real impact of refactoring on architecture is in how it can be used to form a well-designed code base that can respond gracefully to changing needs.
 - Big corporate changes, as in a migration to the cloud, can be done much faster without existing technical debt.
 - Sometimes also one of the quality attributes gains much importance, which would justify a refactor of code that is perceived as healthy.
 - Having a business case for refactoring is such an important topic, that it will be discussed later in section (X).
@@ -74,7 +105,7 @@ Refactoring Makes Software Easier to Understand
 Refactoring Helps find bugs
 - (fowler) Help in understanding the code also means help in spotting bugs. 
 
-#### Broader Overview: Refactoring as a Process
+#### __Optional__ Broader Overview: Refactoring as a Process
 Transition
 - Now that we decided that the incorporation of refactoring would be a good idea.
 - We want to find out where we can integrate refactoring into our software development process.
@@ -82,7 +113,6 @@ Transition
 Relevance from a Software Architecture Perspective
 - (fowler) Early in my career, I was taught that software design and architecture was something to be worked on, and mostly completed, before anyone started writing code.
 - (fowler) Refactoring changes this perspective. It allows me to significantly alter the architecture of software that’s been running in production for years. 
-- (fowler) The real impact of refactoring on architecture is in how it can be used to form a well-designed code base that can respond gracefully to changing needs.
 
 Yagni Design Trio in the Software Development Process: Testing, CI, Refactoring
 - (fowler) Enough projects now use agile methods that agile thinking is generally regarded as mainstream—but in reality most “agile” projects only use the name. 
