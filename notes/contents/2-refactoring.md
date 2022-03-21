@@ -66,7 +66,7 @@ Two Hats
 
 % Arguments
 - (fowler) But good developers know that, often, the fastest way to add a new feature is to change the code to make it easy to add. 
-- (fowler) It’s also a common error to see refac toring as something people do to fix past mistakes or clean up ugly code.
+- (fowler) It’s also a common error to see refactoring as something people do to fix past mistakes or clean up ugly code.
 
 % Transition
 - (fowler) All this doesn’t mean that planned refactoring is always wrong. If a team has neglected refactoring, it often needs dedicated time to get their code base into a better state for new features, and a week spent refactoring now can repay itself over the next couple of months. 
@@ -75,13 +75,13 @@ Big Step
 
 % Cases where development is hindered due to bad code
 
-- Fixing in post is oftentimes a costly way of writing code.
-- Best Case scenario is, that such points can be foreseen a priori. 
+- Therefore it is safe to say that avoiding refactoring and fixing in post is way of writing code associated with costs and risks.
+- Best Case scenario is, that such points can be adressed a priori. 
 - Refactor then can be then thought as an investment into the future. 
 
 % Corporate Changes
-- (fowler) The real impact of refactoring on architecture is in how it can be used to form a well-designed code base that can respond gracefully to changing needs.
 - Big corporate changes, as in a migration to the cloud, can be done much faster without existing technical debt.
+- (fowler) The real impact of refactoring on architecture is in how it can be used to form a well-designed code base that can respond gracefully to changing needs.
 - Sometimes also one of the quality attributes gains much importance, which would justify a refactor of code that is perceived as healthy.
 - Having a business case for refactoring is such an important topic, that it will be discussed later in section (X).
 
