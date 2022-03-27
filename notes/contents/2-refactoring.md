@@ -54,20 +54,6 @@ see Fowler
 
 #### Relevance: When should we Refactor
 
-Two Hats
-% Metaphor Two Hats
-- (fowler) When I use refactoring to develop software, I divide my time between two distinct activities: adding functionality and refactoring.
-- (fowler) When I add functionality, I shouldn’t be changing existing code; I’m just adding new capabilities. 
-- (fowler) When I refactor, I make a point of not adding functionality; I only restructure the code.
-
-% Swapping Hats
-- (fowler) As I develop software, I find myself swapping hats frequently. I start by trying to add a new capability, then I realize this would be much easier if the code were structured differently. 
-- (fowler)  Once the code is better structured, I swap hats back and add the new capability.
-
-% Arguments
-- (fowler) But good developers know that, often, the fastest way to add a new feature is to change the code to make it easy to add. 
-- (fowler) It’s also a common error to see refactoring as something people do to fix past mistakes or clean up ugly code.
-
 % Transition
 - (fowler) All this doesn’t mean that planned refactoring is always wrong. If a team has neglected refactoring, it often needs dedicated time to get their code base into a better state for new features, and a week spent refactoring now can repay itself over the next couple of months. 
 
