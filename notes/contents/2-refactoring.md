@@ -54,8 +54,6 @@ see Fowler
 
 #### Relevance: When should we Refactor
 
-% Transition
-- (fowler) All this doesn’t mean that planned refactoring is always wrong. If a team has neglected refactoring, it often needs dedicated time to get their code base into a better state for new features, and a week spent refactoring now can repay itself over the next couple of months. 
 
 Big Step
 
