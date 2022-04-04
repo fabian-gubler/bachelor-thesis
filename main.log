@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020/Debian) (preloaded format=pdflatex 2022.3.1)  21 MAR 2022 12:05
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020/Debian) (preloaded format=pdflatex 2022.3.28)  30 MAR 2022 10:58
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -12,22 +12,25 @@ L3 programming layer <2021-01-09> xparse <2020-03-03>
 Type X to quit or <RETURN> to proceed,
 or enter new name. (Default extension: tex)
 
-Enter file name: X
-
-! Emergency stop.
-<read *> 
-         
+Enter file name: 
+! Interruption.
+<to be read again> 
+                   }
 l.92 \input{template/preamble}
-                              %% DO NOT REMOVE THIS LINE!
-*** (cannot \read from terminal in nonstop modes)
-
+                              %% DO NOT REMOVE THIS LINE!^^M
+? X
  
 Here is how much of TeX's memory you used:
  36 strings out of 479304
- 627 string characters out of 5869780
- 271123 words of memory out of 5000000
+ 627 string characters out of 5869779
+ 271121 words of memory out of 5000000
  17325 multiletter control sequences out of 15000+600000
  403430 words of font info for 27 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  23i,0n,28p,120b,11s stack positions out of 5000i,500n,10000p,200000b,80000s
-!  ==> Fatal error occurred, no output PDF file produced!
+No pages of output.
+PDF statistics:
+ 0 PDF objects out of 1000 (max. 8388607)
+ 0 named destinations out of 1000 (max. 500000)
+ 1 words of extra memory for PDF output out of 10000 (max. 10000000)
+

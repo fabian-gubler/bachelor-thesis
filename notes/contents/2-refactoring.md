@@ -52,30 +52,7 @@ see Fowler
 ## Background
 ### Notes
 
-#### Relevance: When should we Refactor
-
-
-Big Step
-
-% Cases where development is hindered due to bad code
-
-- Therefore it is safe to say that avoiding refactoring and fixing in post is way of writing code associated with costs and risks.
-- Best Case scenario is, that such points can be adressed a priori. 
-- Refactor then can be then thought as an investment into the future. 
-
-% Corporate Changes
-- Big corporate changes, as in a migration to the cloud, can be done much faster without existing technical debt.
-- (fowler) The real impact of refactoring on architecture is in how it can be used to form a well-designed code base that can respond gracefully to changing needs.
-- Sometimes also one of the quality attributes gains much importance, which would justify a refactor of code that is perceived as healthy.
-- Having a business case for refactoring is such an important topic, that it will be discussed later in section (X).
-
-
-
-#### 3 Key Benefits: Why Should we Refactor
-Transition
-- We now have discussed when we should do the refactor. This begs the question if the previously discussed circumstances do not apply if we then should not spend time working on the quality. Which is not the case.
-- By asking why we should refactor, we can better understand the scope and complexity of a refactor. And might realize that small changes during the development phase can suffice. That while the projet currently does not need a fundamental refactor, we still need to avoid software decay in the future.
-
+#### __Optional__ 3 Key Benefits: Why Should we Refactor
 
 Refactoring Improves the Design of Software
 - Software tends to decay
@@ -119,7 +96,7 @@ Explanation
 - (fowler)  Many people, therefore, argue for keeping feature branches short—perhaps just a couple of days. Others, such as me, want them even shorter than that. This is an approach called Continuous Integration (CI), also known as Trunk-Based Development. 
 - (fowler) Fans of CI like it partly because it reduces the complexity of merges, but the dominant reason to favor CI is that it’s far more compatible with refactoring.
 
-#### Sidenote: Importance Tests
+#### __Optional__ Sidenote: Importance Tests
 Allen Holub (Twitter): Refactoring without tests is like crossing a busy street blindfolded.
 
 Personal Reason
@@ -143,27 +120,6 @@ Purpose
 - (fowler) Self-testing code not only enables refactoring—it also makes it much safer to add new features, since I can quickly find and kill any bugs I introduce.
 
 
-#### Challenges: What to watch out?
-Simultaneous
-- Could inhibit others from working on the code at the same time (fowler describes this phenomenon as two hats). 
-- Easy to change hats when coding alone, but hard when in larger teams.
-- Needs clear separation on which part of the code base is being refactored, and which is added functionality. The key is that these separate parts must be entirely indepenedent 
-- else: bugs will be introduced, point of refactoring that no observable behavior changes is not guaranteed)
-
-Counterintuition
-- (fowler) Although many people see time spent refactoring as slowing down the development of new features, the whole purpose of refactoring is to speed things up.
-
-Scope
-- Different levels of a refactor: From small programs to entire software stack / architecture
-
-Competence
-- Needs Education, not necessarily an easy task.
-- Requires knowledge about a code base.
-- (fowler) That judgment I mentioned earlier on whether to refactor or not is something that takes years of experience to build up. Those with less experience
-
-Conclusion
-- (fowler) Still, the evidence I hear from my colleagues in the industry is that too little refactoring is far more prevalent than too much. In other words, most people should try to refactor more often.
-
 ## Formalisation of Design Patterns
 ### Research and Methods
 - Try to use visuals to explain
@@ -172,11 +128,6 @@ Conclusion
 ### Content
 
 ### Notes
-#### What is a Code Smell?
-- (sonnleithner) So called Bad smells [4] can negatively impact software quality. Bad smells are certain structures [4] or anti-patterns [5] in software that should be avoided. They can hinder understanding, maintaining, or extending a software system [6], [7].
-- (lacerda) The term “smell” refers to some internal problem in the software either at a lower level, known as code level (Fowler et al.,1999) or higher, design (Brown et al., 1998) describing symptoms observed in components that impair software evolution. According to such level, a smell is respectively named code smell or design smell.
-- (lacerda) Differently from a bug, a smell does not necessarily cause a fault in the application but may lead to other negative consequences, impacting on software maintenance and evolution.
-
 #### Examples and Mention Methodology
 **General**
 - Maybe best to decide after the analysis, to see what fits best

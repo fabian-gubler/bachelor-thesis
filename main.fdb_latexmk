@@ -1,12 +1,12 @@
 # Fdb version 3
-["pdflatex"] 1647860732 "latex/main.tex" "main.pdf" "main" 1647860732
-  "/etc/texmf/web2c/texmf.cnf" 1645107686 475 c0e671620eb5563b2130f56340a5fde8 ""
+["pdflatex"] 1648630714 "latex/main.tex" "main.pdf" "main" 1648630714
+  "/etc/texmf/web2c/texmf.cnf" 1648427331 475 c0e671620eb5563b2130f56340a5fde8 ""
   "/usr/share/texlive/texmf-dist/web2c/texmf.cnf" 1613593815 38841 799d1dd9682a55ce442e10c99777ecc1 ""
   "/usr/share/texmf/web2c/texmf.cnf" 1613593815 38841 799d1dd9682a55ce442e10c99777ecc1 ""
-  "/var/lib/texmf/web2c/pdftex/pdflatex.fmt" 1646133139 2570847 57e9385f9f42e2e5495636183060a943 ""
-  "latex/main.tex" 1647364275 10077 81bd1f9d28081a65c6fb74506d2c4a61 ""
-  "main.aux" 1647860732 8 a94a2480d3289e625eea47cd1b285758 ""
+  "/var/lib/texmf/web2c/pdftex/pdflatex.fmt" 1648427370 2571248 698a7d61786b67d5ffe19ebb8904b7ca ""
+  "latex/main.tex" 1648481237 10077 81bd1f9d28081a65c6fb74506d2c4a61 ""
+  "main.aux" 1648481237 8 a94a2480d3289e625eea47cd1b285758 ""
   "template/preamble.tex" 0 -1 0 ""
   (generated)
-  "main.pdf"
   "main.log"
+  "main.pdf"

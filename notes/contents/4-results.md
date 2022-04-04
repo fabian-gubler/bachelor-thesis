@@ -7,5 +7,6 @@ After the analysis the following Patterns ... have been chosen to be the most si
 - Describe the Process
 
 # Refactoring
+Selection of refactoring, describe the process fairly detailed and document the immediate results.
 
 # Metrics
