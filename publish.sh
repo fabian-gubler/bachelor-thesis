@@ -1,7 +1,7 @@
 #!/usr/bin/bash
 
 FILE="thesis.pdf" 
-DIR="/data/thesis"
+DIR="/home/fabian/thesis"
 
 # Compile PDF
 cd $DIR/latex

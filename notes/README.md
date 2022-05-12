@@ -11,5 +11,3 @@ Work week with 4 days seems most appropriate.
 - 12 credits amounts to 360 hours (about 40 Days). 
 - With 4 days per week, the workload will be reached in approximately 10 weeks. 
 - This is desirable, as it leaves me with a 2 week time buffer.\par
-
-

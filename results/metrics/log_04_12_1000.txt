@@ -1,0 +1,62 @@
+Tue 12 Apr 2022 10:15:08 AM CEST
+
+--- APP -----------------------------------
+
+---
+Complexity
+---
+
+Cyclic Complexity:
+Average complexity: A (4.803571428571429)
+
+Halstead:
+app.py:
+    h1: 11
+    h2: 643
+    N1: 346
+    N2: 685
+    vocabulary: 654
+    length: 1031
+    calculated_length: 6036.39172607688
+    volume: 9643.094377088524
+    difficulty: 5.859253499222395
+    effort: 56501.33447228774
+    time: 3138.9630262382075
+    bugs: 3.2143647923628413
+
+Maintainability Index:
+app.py - C (0.00)
+
+---
+Readability
+---
+
+Pylint Rating:
+Your code has been rated at 6.75/10 (previous run: 6.75/10, +0.00)
+
+--- Hardware/generic ----------------------
+
+---
+Complexity
+---
+
+Cyclic Complexity:
+Average complexity: A (2.704225352112676)
+
+Maintainability Index:
+hardware/generic/sorting_machine_txts.py - A (40.76)
+hardware/generic/env_and_cam_txts.py - A (56.47)
+hardware/generic/general_txt.py - A (46.69)
+hardware/generic/milling_machine_txts.py - A (41.77)
+hardware/generic/high_bay_warehouse_txts.py - A (33.91)
+hardware/generic/__init__.py - A (100.00)
+hardware/generic/multi_processing_station_txts.py - A (100.00)
+hardware/generic/vacuum_gripper_txts.py - A (21.89)
+hardware/generic/oven_and_wt_txts.py - A (41.98)
+
+---
+Readability
+---
+
+Pylint Rating:
+Your code has been rated at 5.69/10 (previous run: 5.69/10, +0.00)
