@@ -47,14 +47,30 @@ During the practical work,
 \section{Analysis: Detecting Code Smells}
 
 % Introduction Paragraph
-The following part of this thesis moves on to describe in greater detail detection code smells within the software system. It provides a brief overview of the methods used for detection and the mentions the prevelance of sonagraph as the main software utilized in the detection activities. Moreover this section provides some clarifications necessary to comprehend certain methods to be chose over others.
+The following part of this thesis moves on to describe in greater detail detection code smells within the software system. It provides a brief overview of the methods used for detection and mentions the prevalence of sonargraph as the main suite of software products utilized in the detection activities. Moreover, this section provides some clarifications necessary to comprehend certain methods to be chosen over others.
 
 % Catalogue
-Out of 24 code smells that are examined throughout Martin Fowler examines book on refactoring, only 10 are chosen to be included in the detection work. Further, the 2 smells \it{refused bequest} and \it{data clumps} were discarded, as their focus on inheritance and data structures respectively, are not utilized in the code. In order to revisit the code smell catalogue with their corresponding explanation, refer to (sec:...)
+Out of 24 code smells that are examined throughout Martin Fowler's book on refactoring, only 10 are chosen to be included in the detection work. Further, the 2 smells \emph{refused bequest} and \emph{data clumps} were discarded, as their focus on inheritance and data structures respectively, are not utilized in the code. In order to revisit the code smell catalog with their corresponding explanation, refer to (sec:...)
  
 
 % Restrictions
-There exists several reasons that have lead to the decision of restricting the amount of smells for this section. First, it is not the scope of the thesis to find every code smell in the codebase. Finding and evaluating each smell that is known in literature would be a tedious task, as there are no automatic tools available for the python programming language, as will be discussed in a later part of this section. Hence, it suffices, if some smells that are prevelant have been detected. In addition, it is also advantegous to only focus on the most prominent smells. Very niche smells could distract improving the quality of the entire code base, as well as provide less of possibilities to make generalizations.
+There exists several reasons that have led to the decision of restricting the amount of smells for this section. First, it is not the scope of the thesis to find every code smell in the codebase. Finding and evaluating each smell that is known in literature would be a tedious task, as there are no automatic tools available for the python programming language, as will be discussed in a later part of this section. Hence, it suffices, if some smells that are prevalent have been detected. In addition, it is also advantageous to only focus on the most prominent smells. Very niche smells could distract from improving the quality of the entire code base, as well as provide less of possibilities to make generalizations.
+
+% Metrics based
+Many tools have been created to automatically or semi-automatically detect code smells (Menshawy, p.1). In the context of our paper, the code smells are detected semi-automatically using a metric-based approach. This approach measures source code elements and takes decisions based on threshold values (Menshawy, p.4) It is fulfills two requirements necessary for the following work. On the one hand, it to a certain degree contains automation, making it much more efficient in comparison to manual approaches. On the contrary, it can be used for the python programming language, which is essential in the software system at hand. Menshawy points out (p.3) that with metrics approach does not provide metrics for every code smells. Nevertheless, for the eight smells the thesis is focussing on, as will be seen afterwards, an appropriate metric was found.
+v
+% Automation based
+Using a detection approach based on automated tools would have been more attractive, but unfortunately not possible.  It is the most used approach (Menshawy, p.2), its availability is however highly dependent on the programming language the software system is written in (Menshawy, p.3). By looking at Menshawy's research (p.3) on most cited tools, it can be observed that a significant difference exists between java programming language, which was supported  by 48\% of the tools, whereas the python programming language being only supported by 4\%.
+In addition, by researching automated tools appropriate for python, it was evident that at this moment of time, the offering is insufficient for to accomplish a sound detection strategy. 
+
+% Manual approach
+In the beginning, the author has also considered following a manual approach. In contrast to automation, the manual detection relies on human perception of smells by applying predefined guidelines (Menshawy, p.3). It is characterized as highly time-consuming and prone to human error. Therefore, when comparing this approach to a metrics-based, it is a less desirable way for detecting smells and was subsequently discarded as a detection technique.
+
+% Visualization
+Another detection approach that has not yet been mentioned, is using visualization. Although it only is used to detect a subset of smells, visualization had been used in two occurrences throughout the thesis. First, it had been used to get a broad overview of the code base, which helped the author as an orientation. Second, it was used [... Add coupling + cohesion]
+
+
+
 
 
 \section{Testing: Framework}
