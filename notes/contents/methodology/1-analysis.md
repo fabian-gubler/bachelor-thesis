@@ -1,14 +1,6 @@
 # (1) Analysis (Code Smells -> Internal Problems) 
-Chosen Detection Approach (with explanation)
-Many tools have been created to automatically or semi-automatically detect code smells (Menshawy, p.1)
--  , where the automatic tools approach is the most
-used approach to detect smells (Menshawy, p.3)
-- Manual approach relies on human perception of smells by applying predefined guidelines. It is characterized as highly time consuming and prone to human error (Menshawy, p.3) It is not an efficient way for detecting smells in the following work and is therefore discarded as a detection technique.
-- The appropriateness automated approach is highly dependend on the programming language a software is written in. Menshawy (p.4) has examined what programming languages are supported by the most cited tools. Here the java programming language was supported by 48% of the tools, whereas the python programming language, which is the relevant language of our system, was only supported by 4%. In addition, validated by personal research, the automated tools that support python are mainly targeting niche smells and do not provide detection for the entire suite of code smells.
-- For the detection of the code smells in the software system at hand, the author has chosen a semi-automatec approach called metrics-based.
-- Metrics based approach measures source code elements and takes decisions based on threshold values (Menshawy, p.4)
-- It is accomplishes both prerequisites of the following work, as it can be used for the python programming language and is also efficient.
-- Menshawy points out that a metrics approach cannot detect all smells. However, for the 8 smells the thesis is focussing on, an appropriate metric could be found.
+
+% Visualization
 - Another detection approach relevant to code smell is a visualization based approach, which was used to get a broad overview of the code base, but will not be further discussed in the thesis. 
 
 
