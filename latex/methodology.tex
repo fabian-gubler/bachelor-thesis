@@ -95,6 +95,7 @@ In the case of code duplication, this is however readily available because detec
 % Complexity -> Threshold
 Half of the code smells, in the subgroup called complexity, follow a typical metrics based approach. The threshold value indicate when a code smell is potentially present. Notably, all the metrics in this category involve counting of some sorts. In particular, the smells are detected by counting the number of statements, lines of codes, and numbers of parameters of methods. Prioritization of given smells can be done by comparing the extent of how much a given threshold value is surpassed. Similarly, code smells can be discarded if the associated metric does not surpass the threshold value. 
 
+
 % Cohesion/Coupling -> Dependency graph
 [Don't know yet]
 - For Shotgun Surgery and Divergent change, a dependency graph will be used in addition to the metric.
@@ -103,6 +104,85 @@ Half of the code smells, in the subgroup called complexity, follow a typical met
 
 
 \section{Testing: Framework}
+% Transition
+In the section that follows, it will be argued that testing is a fundamental part of the refactoring process. In the context of the thesis, it moves on to describe in greater detail the challenges that occur when testing a cyber physical system. In the section that follows, the methods used for testing 
+will be outlined, which draw together previously discussed challenges.
+
+\myparagraph{Importance of Testing in a Refactoring Process}
+
+% Importance of Tests
+Moving on now to consider, in what ways, testing plays an important role in the refactoring process. In order to understand the significance, it is appropriate to return to the subject of Martin Fowler's definition. According to his definition, refactoring does not alter the external behavior of code {fowler2018}. It was pointed out in the theoretical part of this paper that by not changing the features of the program, programmers can alleviate the risks associated with changing the codebase, which mainly includes the creation of new bugs. Because ofthis, one can immediately understand how testing is required during refactoring. In more concrete terms, if we want to find out whether the behavior of the code base did not alter, we use testing to confirm this notion. 
+
+% False perception
+Further, confirming an unaltered state of code behavior is vital to verify the improvement of code quality. Disregarding testing is likely to result in a false perception of code quality, as bugs are not taken in consideration. In other words, testing can ensure that the software system is in a better state than before, given the quality metrics have improved.
+
+% Mistakes
+Allen Holub demonstrates these risks with the statement that "Refactoring without tests is like crossing a busy street blindfolded" (Allen Holub). Similarly, Fowler [p.~59]{fowler2018} argues, mistakes naturally occur and are not a problem if caught quickly. Further, in regard to refactoring he mentions the significance of self-testing code, which allows making it much safer to add new features without breaking anything.
+
+\myparagraph{Testing Cyber Physical Systems}
+
+
+
+% CPS Challenges
+Having defined the importance, it is now necessary to explain the present challenges given that our software system being a cyber-physical sytem (CPS). The different characteristics of CPS also needs to be taken into account when determining the methodology of testing these systems. Robots and other cyber-physical systems react to information from the physical worlds and must operate safely even in the presence of uncertainties {geissvolkermaria}. In such a dynamic real-world environment, Kapur {kapurpulkit2020} describes testing, whether a robot will behave as expected, as a time consuming and complicated task for developers. {raikumar2010} points out the the challenge of the heterogenous nature of CPS, making it difficult to verify and validate the software systems. Similarly, {abbaspourasadollah2015} mentions that defining the boundaries and physical limitations of the test landscape is a challenge in testing a CPS. Another limitation in CPS testing is using an automated semi-automated method. Here, the efficacy of testing is limited by the element its hardware components. Testing is then dependent to hardware operating approprietly and therefore including the prominence of physical motions subject to considerable time necessary for each test run. The lack of available software that mitigate these challenges poses a substantial limitation on the testing within our context. Some challenges for instance could be mitigated by using a physics-based simunation that mimics the real-world envirionment. Simulations do exist in practice, but are unavailable for the present software system. 
+
+
+% Software test -> Manual test
+In general, there is a high interest to use automated testing, as manual testing is more likely to produce errors {turlea2019}.  The levels of CPS software testing contains verifying software, hardware, network, and the integration of all these components to work as a single system {abbaspourasadollah2015}. Despite the advantages of automated test, the fact needs to be considered that for the software system at hand, none of these software tests are available. As a result, developing a testing suite for the software system scratch would certainly be out of the scope of this thesis. 
+
+% One advantage
+In fact, there exists an advantage of manual testing that is particular to CPS. Indeed, the physical nature of CPS allows the manual testing through visual observation. Moreover, this benefit is especially apparent when taking into account that our software project is focussing on managing entire processes. In other words, we have the ability to detect for any change in behavior by testing a specific process. 
+
+% Justification
+Both the lack of software tests and the ability to visually observe behavior changes were the primary motivations that manual testing was chosen as the preferred method. It is still less reliable compared to software testing, but adequate to reach the aims of the thesis. This is due to the fact that, while not guaranteeing the equality of the entire software system, this method can decently predict the equivalence of the software needed for specific processes used for testing. One key factor in this approach is the selection of one or multiple processes that best cover most of the software system. Consequently, the interactions among the individual components can be examine, delivering benefits similar to integration testing. All in all, this approach does not provide the same degree of assurance as comprehensive unit and integration testing. Nevertheless, it is an approach that suits the preconditions within our context. Specifically, we can to a certain degree assume that we did not alter the external behavior within the scope of specific processes. 
+
+\myparagraph{Method selection}
+
+% Transition
+As indicated previously, testing for this thesis will be done manually by means of observing an entire process of the CPS. Methods are selected that strive to be able to test objectively and in a routinized manner. Camunda Modeler is used to automate the business processes and the Gherkin Language is used to formulate requirements. Using Camunda Modeler provides objectivity by having a standardized way to run processes. Similarly, the Gherkin language offers a way to objectively formulate requirements. In combination, these tools deliver a procedure to reduce ambiguity, which is essential in order to capture any cues in observable changes. Having this standardized approach allows us to alleviate some of the shortcoming of manual testing, while also reducing human error.
+
+% What we have
+=== Visualization: Camunda Screenshot ===
+Even though there are no software tests available, multiple business processes in using the a BPMN representation have already been implemented for the present software system. These representation in the form of files are what is being executed by camunda to allow the automation of the processes. 
+
+[We use this process]
+- Because it covers all components and major parts of the software system, 
+
+Accordingly, this software solution sequentially does HTTP requests that would otherwise have been done manually. Performing these requests manually would not only be very tedious, but also introduce ambiguity. In addition, the BPMN notation used by Camunda Modeler allows us to visually inspect at which part of the process one currently is when running it. This is a fundamental feature, when trying to find out where a current issue might be located.
+
+
+% Gherkin Explanation
+Gherkin on the other hand is not a software solution. Instead it is a language that is oftentimes used in conjunction with other software tools. Hereby, one can formulate behavior in the form of specifications written in plain text and understandable by humans. It usess a set of special keywords that enables formulating these specifications in a structured way (https://cucumber.io/docs/gherkin/reference/). We can then validate whether the software does what the specifications say. The validation is oftentimes done with writing related software tools. However, in our context this will be done manually. Consequently, using the gherkin language we are able to objectively check whether the current codebase still fulfills the specification in a form that is human readable and can also be routinely repeated in a standardized way. 
+
+=== Visualization: Gherkin as code syntax ===
+
+Language
+- Feature: 
+	High-level description of Application
+- Scenario Steps: 
+	Action to be performed by a user
+	Expected Results of the action
+- Scenario Syntax
+	Given (preconditions)
+	When (user action)
+	Then outcome)
+	And (multiple statements)
+
+As seen in the specifications above, one can observe multiple prerequisites that are necessary due to having hardware. This amount of detail is critical when wanting to reproduce this process at a later time. Even though, some specifications might seem self-evident, only then we can diminish the ambiguity associated with testing CPS. 
+
+% Optional: DEBUGGING
+% - Previous stated tool is what we use to periodically check AFTER we did refactoring
+% - There are preventative measure one can take DURING the refactoring. For instance bugs can be caught by trying to run python code, and see whether errors are raised
+% - At current time, a lot of issues can be caught during programming itself with modern IDEs
+% - With an IDE (Integrated Development Environment) Formatters and static type checkers are also able to catch bugs in the code writing process. 
+% - During programming I use the pyright server as a static type checker
+% - In order to early detect errors before program execution
+% - Advantage is that we do not need to tediously run code all the time, but can catch them before running.
+% - Don't need to run code to see malfunctions within the code
+% - No errors obviously do not mean that there are no bugs. There could still be unexpected behavior.
+% 	-> This is especially the case with python (statically typed language, polymorphism) == Means debugging alone would not suffice, testing is key
+
+
 
 \section{Measurment: Success}
 
