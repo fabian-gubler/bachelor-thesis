@@ -1,6 +1,7 @@
 \chapter{Theoretical Framework for Code Refactoring}
 
 \section{Background}
+\label{sec:background}
 
 % ---
 % Defining Refactoring
@@ -14,12 +15,12 @@ When referring to these activities by name, many employees use the term refactor
 The exact definition of the term \emph{refactoring} is not always self-evident,
 	despite its familiarity.
 To avoid referring to the term too loosely, 
-	it is consequently important to give a precise definition as a reference for this paper. 
+	it is consequently important to give a precise definition as a reference for this thesis. 
 
 % Fowler Refactoring Definition
 Martin \textcite[p. ~xiv]{fowler2018} managed to formulate a definition that is both short and precise. 
 He is one of the most prominent figures in the field of refactoring, 
-	and has pioneered many concepts, which this paper is going to discuss.
+	and has pioneered many concepts, which this thesis is going to discuss.
 Fowler defines refactoring in the following:
 \begin{quote}
 \textbf{Refactoring} is the process of changing a software system in a way 
@@ -43,14 +44,14 @@ By proper refactoring,
 % ---
 
 \clearpage
-\myparagraph{Benefits: Why should we refactor?}
+\subsection{Benefits: Why should we refactor?}
 
 % Adding Features is attractive
 The benefit of refactoring is not as obvious as other activities in software development. 
 Spending valuable resources on a process that does not add new functionality, 
 	might sound unappealing to many managers and software engineers.
-Likewise, \textcite[p.~1]{kim2012} adds the problem of not sensing an immediate benefit when refactoring.
-Furthermore, the value of improving the internals of the code, is hard to show to a manager, 
+Likewise, \textcite[p.~1]{kim2012} add the problem of not sensing an immediate benefit when refactoring.
+Furthermore, the value of improving the internals of the code is hard to show to a manager, 
 	who is not an expert and even harder to present to the client, who is paying for the work.
 
 Having said that, when refactoring is ignored, there is not necessarily more time available.
@@ -65,10 +66,10 @@ Having Fowler's Definition in mind,
 	and rather improve the quality attributes of the code beforehand.
 Neglecting such work, would increase debt, 
 	which would have to be repaid in the future in the form of costly maintenance costs.
-Moreover, by obtaining this so-called technical debt, 
+Moreover, by obtaining this so-called \emph{technical debt}, 
 	future features are more expensive to implement, and sudden changes are near impossible. 
 The concept of technical debt is important to fully grasp, 
-	which is why it is further explained in a future section of this paper 
+	which is why it is further explained in a future section of this thesis
 (see Section \ref{sec:Business}).
 
 
@@ -87,7 +88,7 @@ During refactoring, we are mostly concerned with the latter,
 
 % Listing Attributes
 During a study on the value of quality attributes on refactoring, 
-	Alkhazi et al. \textcite[p.~4]{alkhazi2020} identified 
+	\textcite[p.~4]{alkhazi2020} identified 
 	six of such quality attributes: 
 	Reusability, Flexibility, Understandability, 
 	Functionality, Extendibility, and Effectiveness.
@@ -128,7 +129,7 @@ Consequently, software tests is a major component when deciding the success of a
 % Criteria: When should we Refactor
 % ---
 
-\myparagraph{Criteria: When should we Refactor?}
+\subsection{Criteria: When should we Refactor?}
 
 % Critical Perspective
 From a business standpoint, there needs to be little to no explanation, 
@@ -159,7 +160,7 @@ Therefore, with projects that appear to be qualitatively sufficient,
 This approach leads to the presumption that these activities can be done in parallel.
 It is, however, important to note, 
 	that this parallelism doesn't suggest that one can add features and refactor at the same time.
-The interplay between them can be best described by the hat analogy proposed by Fowler and Beck \textcite[p.~47]{fowler2018}. 
+The interplay between them can be described making use of an analogy (\cite[p.~47]{fowler2018}). 
 Fowler sees software development as wearing two hats, 
 	proposing that time is divided between adding functionality and refactoring. 
 He argues that these activities should be distinctively separated, 
@@ -173,7 +174,7 @@ Conversely, once the code is better structured,
 This approach illustrates nicely that refactoring 
 	should be an integral part of software development according to Fowler's standpoint.  
 Moreover, it challenges the frequent notion of refactoring being 
-	cleaning up ugly code and fixing past mistakes. 
+	cleaning up quality deficient code and fixing past mistakes. 
 
 % Planned Refactor
 Once the relationship between refactorings and adding features is understood, 
@@ -245,7 +246,7 @@ Refactor can then be thought of as a
 % 3 Key Benefits: Why Should we Refactor
 % ---
 
-% \myparagraph{Benefits}
+% \subsection{Benefits}
 
 % We now have a thorough understanding 
 % 	of the timing of the refactor. 
@@ -264,7 +265,7 @@ Refactor can then be thought of as a
 % Challenges: What to watch out?
 % ---
 
-\myparagraph{Challenges: What to watch out?}
+\subsection{Challenges: What to watch out?}
 
 % Intro
 With a thorough understanding of the complexities 
@@ -350,7 +351,7 @@ This can indeed be seen as another challenge,
 % 	and also costs and benefits, are 
 % 	primarily relevant in business thinking. 
 % Regarding the importance of investing resources into refactoring, 
-% 	this paper will spend some time 
+% 	this tehsis will spend some time 
 % 	looking at the business case of refactoring.
 % The following part will set out to answer questions such as
 
@@ -399,6 +400,12 @@ Nonetheless, these internal problems may lead to other negative consequences,
 	such as the “impacting on software maintenance and evolution”
 	\cite[p.~2]{lacerda2020}.
  
+% Illustration
+\begin{figure}[htp]
+    \centering
+    \includegraphics[width=\textwidth]{./assets/simple_process.png}
+    \caption{Simplified model of Refactoring}
+\end{figure}
 
 % Connection
 Knowing that code smells refer to internal problems,
@@ -409,17 +416,19 @@ In other words,
 
 % Examples Intro
 To better comprehend these code smells, it is best to list some of them. 
-However, to stay within the scope of this paper, 
+However, to stay within the scope of this thesis, 
 	we will limit the examples to the most prominent ones. 
 In their work, Fowler and Beck introduced a total of 24 code smells to avoid.
 Therefore, 
 	the following overview briefly summarizes 
-	the top ten code smells according to 
-	\textcite{lacerda2020}.
+	the top ten most frequently reported code smells according to 
+	[p.~15]\textcite{lacerda2020}.
 
 % Table
 	% TODO: Need to be in list of figures, right?
-\myparagraph{Code smells}
+\subsection{Code Smells}
+\label{sec:smells}
+
 Summary of code smells identified by Fowler and Beck \textcite{fowler2018} 
 
 \newcolumntype{b}{X}
@@ -501,135 +510,98 @@ The concept of technical debt will be the main theme
 	in the following part, 
 	which focuses on the business case of refactoring.
 
-
-
 \chapter{The Business Case for Refactoring}
 \label{sec:Business}
+
 % Introduction
-Code smells are inevitably going to occur in software systems. 
-While having smells in our programs,
-	we suffer in terms of costs that we can only mitigate 
-	by getting rid of the smells through refactoring. 
-A typical example of a financial cost is 
-	having to spend additional time, whilst programming. 
-Employees are spending less time 
-	when their code is easy to read, understand, and modify.
-Through the accumulation of code smells in software systems, companies are exposed to financial burden, they might want to get rid of.
-Examining the connection between code smells and financial costs 
-	paves the way discuss refactoring from a business standpoint.
-This relationship will be developed further in the following part of the thesis.  
+During the lifetime of a project, one has to inevitably deal with internal problems appearing in the software systems. While having these code smells in our programs, the company has to suffer in terms of costs that we can only be mitigated by getting rid of the smells by refactoring.  A prototypical example of a common financial cost is the additional time spent, whilst programming with deficient code. Naturally, employees are spending less time when their code is easy to read, understand, and modify. Conversely, through the accumulation of code smells in software systems, companies are exposed to a financial burden they might want to get rid of. Examining this discussion between code smells  and financial costs paves the way to consider refactoring decisions from a business standpoint. The relationship will be the subject in the following part of the thesis.  
 
 \section{Technical Debt}
-% ---
-% Technical Debt Chart (Own Illustration)
-[Illustration here]
-% ---
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=\textwidth]{./assets/technical_debt}
+    \caption{Simple depiction of Technical Debt}
+\end{figure}
 
 % Technical Debt: Explanation
 Technical debt is a helpful metaphor 
-	that provides a framework on thinking of code smells 
-	in terms of financial debt {fowlerrobert}.
-In particular, the term Technical debt, coined by Ward Cunningham {kruchten2012}, decribes the extra effort it takes to add new features. 
-The additional effort is the interest paid on the debt {fowlerrobert}. 
-Technical debt encompasses anything 
-	that adds friction from software development endeavors {kruchten2012}. 
-Within the context of our thesis,
-	this includes frictions that are created through code smells. 
-Fowler {fowlerrobert} presents the example 
+	that provides a framework that allows thinking about code smells 
+	in terms of financial debt {fowlerdebt}.
+In concrete terms, the term Technical debt, coined by Ward Cunningham, describes the extra effort it takes to add new features (\cite{kruchten2012}). 
+In financial terms, the additional effort is the interest that has to be paid on the debt (\cite{fowlerdebt}). 
+Fowler {fowlerdebt} presents the example 
 	of a confusing module structure in a code base.
-For illustration purposes, 
-	a programmer could need four days to add a new features 
+He illustrates that 
+	a programmer could need four days to add new features 
 	with a clear structure and six days with code smells. 
 Then, the two additional days is the interest a company has paid on the debt.
-We see that a company can either decide pay the interest on technical debt, 
+We see that a company can either decide to pay the interest on technical debt, 
 	or reduce it by means of refactoring. 
+Within the context of our thesis,
+	when referring to technical debt, it is implied code smells are the subject of discussion.
+In practice, however, Technical debt must not be limited to code smells. The overarching metaphor of Technical debt encompasses anything 
+	that adds friction from software development endeavors (\cite{kruchten2012}). 
 
 % Technical Debt: Unavoidable
-One might argue for investing in experienced programmers to avoid debt entirely. 
-This assumption would allow for the possibility 
-	to do a simple calculation, 
-	of whether the additional money spent in salary 
-	is offsetting the costs incurred from debt.
-In practice, this is however not that simple.
-Technical debt will always accrue, 
-	even with the most experienced of programming.
-In additional, accumulation of debt is not always the fault of programmers.
-Sometimes this happens because one quality attribute gains in importance. 
-Othertimes it could just be due to the fact 
-	that code base exists for a very long time. 
-In both cases refactoring can get rid of associated technical debt. 
-
-% Technical Debt: Legacy
-Neglecting Refactoring over a larger span of time can lead to a multitude of problems. Code that hasn't been refactored over a long time creates situations in which applications are very difficult to understand and hard to change.
-The burden of technical debt in such instances, is intensified if the code is a fundamental part of the project, which potentially disrupts the product from working entirely.
-To avoid such a position it is therefore wise to pay of the interest debt gradually with continuous refactoring of important applications. This ensures that even after a long lifetime of a projects, features are still easy to add.
+One approach to think about solutions is to argue for investing in experienced programmers to avoid debt entirely. 
+A company could then do such an undertaking, if the additional money spent on the salaries is offset by the cost endured from debt.
+In practice, it is not that simple, as technical debt will always accrue, even with experienced programmers. For instance, sometimes debt accumulates because one quality attribute gained in importance, but the code did not change. Other times it could just be due to the fact that code base exists for a very long time. In both cases, refactoring can be a crucial mechanism in order to get rid of acquired technical debt. 
 
 % Paradox
 There can be instances where technical debt is substantial enough, 
 	where associated interest payments can not be handled. 
-Knowing these dynamics teaches us 
-	that in some cases it is cost-effective to 
-	rewrite entire code bases than to refactor it.  
-It can be recognized that there is a financial incentive in 
-	knowing such dynamics within one's company.
-Difficult decisions regarding technical debt require 
-	competent managers that know in what ways to deal with the debt. 
-On the other hand decision makers can 
-	also be extremely valuable in preventing debt. 
-Skilled managers [example]
-In the event of lacking the expertise in management, 
-	the quality of the code can have immense financial ramifications. 
-This further supports our presumption of 
-	incorporating thinking from a business standpoint.
+In some cases, it might be more cost-effective to 
+	rewrite an entire code bases instead of refactoring it.  
+As a consequence, it becomes apparent, that businesses have financial incentives to make the right decisions in order to efficiently allocate their resources.
+Such difficult decisions require 
+	competent employees that on the one hand know in what ways to deal with the debt, but more importantly to prevent such cases from happening completely.
+These employees are not confined to one type of job
+As a consequence, lacking the relevant expertise in either management or software engineering departments can lead to undesirable financial ramifications. 
+Such conclusions encourage us to look at refactoring from a business standpoint. As a consequence, the section below will explore this topic even further.
 
-\section{Economic Context}
+\section{Communication Device}
 % Economic Context
-Being aware of the economic context, 
-	we see that refactoring is much more connected to management than one
-	might have assumed in the beginning. 
-Having knowledge of abstract concepts such as technical debt,
-	allows product managers or team leaders 
-	to make decisions and communicate them without personally 
-	having a computer science background. 
-In addition, 
-	this helps in convincing clients or upper management 
-	when in doubt of the importance of refactoring their software system.
-It can be extremely freeing not rely on moral principles, 
-	but actually providing a business perspective evaluation.
-Moreover, it can be debated that refactoring becomes purely economic.
+Being aware of the financial relationship, 
+	we see that refactoring must not be restricted to programmers and can be much more relevant to upper team leaders, or product managers.
+Having knowledge of abstract concepts, like technical debt,
+	allows employees from other domains
+	to make decisions and communicate them, without any programming experience.
+It can be extremely freeing not to rely on moral principles, 
+	but instead provide an evaluation that an also be defended from a business standpoint.
+Moreover, some might even argue that decisions regarding refactoring should be purely economic.
 Fowler [p.~57]{fowler2018} claims 
-	that it is beneficial to have this attitude. 
-Besides, he argues that economic benefits of refactoring 
-	should always be the driving factor.
+	that it is beneficial to have this attitude and argues that economic benefits
+	should always be the driving factor of refactoring.
 
 % Communication Device
-Technical debt can be used as a communication device. 
-It is a simple model to porm economic decisions, 
+As alluded to above, Technical debt can also be used as a communication device. 
+It is a simple model to form economic decisions, 
 	that are potentially very complex.
 This device can be used in two directions, top-down or bottom-up.
-Top-down communication by experienced managers 
-	using the term technical debt provides directions to their team.
+Top-down communication by experienced team leaders 
+	using the term technical debt provides directions to their team members.
 As an example, management has decided to migrate their systems to the cloud, 
-	yet has detected a lot of code smells 
-	that make it hard to undergo such a change. 
-Consequently, they can communicate this issue in terms of 
-	having too much technical debt, and lead a refactoring to get rid of debt.
+	but it is realized that the code contains a lot of code smells, 
+	which makes it hard to undergo such a change. 
+Consequently, by communicating this issue in regard to having too much technical debt in that specific domain.
 This aids employees in knowing the particular area 
-	to focus on prevents them to refactor at places 
+	to focus on, and prevents them to refactor at places 
 	that do not directly contribute to the migration.
-Additionally technical debt as a metaphor 
+
+% Bottom-up
+Additionally, technical debt as a metaphor 
 	can also support bottom-up communication.
 This metaphor can be used to provide sufficient arguments for refactoring, 
-	when clients or upper management is in doubt.
-It also serves as a tool to reason about 
-	why it is difficult to add new features or 
-	make major changes to the application. 
-As a result, there is less of a barrier between 
-	software enginer and third-party when discussing the 
+	when clients or upper management are in doubt.
+For instance, it could serve as a tool to reason about 
+	the difficulties of adding new features or 
+	the issues of making major changes to the application. 
+As a result, barrier are reduced between 
+	software engineers, other departments, and clients, when discussing the 
 	underlying problem of code smells. 
 Furthermore, with proper communication, 
-	the clients might even be encouraged to further reduce 
+	clients, for instance, might even be encouraged to further reduce 
 	technical debt in order for the software to be adaptive to 
 	upcoming trends or customer requests. 
-Keeping technical debt low prevents clients from destroying current value 
-	and keep their product to stay successful.
+Moreover, keeping technical debt low prevents clients from destroying current value 
+	and keep their product to stay successful over the long term.

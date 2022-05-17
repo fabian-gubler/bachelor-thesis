@@ -61,7 +61,7 @@
 \newcommand{\mybiblatexdashed}{false}  %% "true" or "false"
 %% If true: replace recurring reference authors with a dash.
 
-\newcommand{\mybiblatexbackref}{true}  %% "true" or "false"
+\newcommand{\mybiblatexbackref}{false}  %% "true" or "false"
 %% If true: create backward links from reference to citations.
 
 \newcommand{\mybiblatexfile}{references.bib}
@@ -153,6 +153,8 @@
 \usepackage{tabularx}
 \usepackage{tabu}
 \usepackage{longtable}
+\usepackage{listings}
+\usepackage{float}
 
 
 
@@ -164,7 +166,7 @@
 %% ... it's OK to put here your own newcommand/newenvironment-definitions ...
 \newcommand{\myparagraph}[1]{\paragraph{#1}\mbox{}\\}
 
-
+\setcounter{secnumdepth}{3}
 
 \newcommand{\myLaT}{\LaTeX{}@TUG\xspace} %% LaTeX@TUG text "logo"
 
@@ -245,7 +247,6 @@
 \appendix                       %% closes main document, appendix follows until end; only available in book-classes
 \addpart*{Appendix}             %% adding Appendix to tableofcontents
 
-% - Bash Script
 
 \printbibliography              %% remove, if using BibTeX instead of biblatex
 
