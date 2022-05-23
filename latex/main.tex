@@ -31,11 +31,11 @@
 %% example "5mm". Refer to KOMA script documentation for a detailed
 %% explanation what a binding correction is and how to measure it.
 
-\newcommand{\myfontsize}{12pt}
+\newcommand{\myfontsize}{11pt}
 %% e.g., 10pt, 11pt, 12pt
 %% The font size of the main text in pt (points).
 
-\newcommand{\mylinespread}{1.0}
+\newcommand{\mylinespread}{1.5}
 %% e.g., 1.0, 1.5, 2.0
 %% Line spacing in %/100. For example 1.5 means 150% of the usual line
 %% spacing. Please use with caution: 100% ("1.0") is fine because the
@@ -145,6 +145,8 @@
 \input{template/typographic_settings}
 
 
+
+
 %% ========================================================================
 %%%% MISC usepackages
 %% ========================================================================
@@ -155,6 +157,11 @@
 \usepackage{longtable}
 \usepackage{listings}
 \usepackage{float}
+\usepackage[left=1.5in, right=1.5in, top=1.5in, bottom=1.8in]{geometry}
+\usepackage{pdfpages}
+\usepackage{graphicx}
+\usepackage[export]{adjustbox}
+\usepackage{minted}
 
 
 
@@ -166,7 +173,9 @@
 %% ... it's OK to put here your own newcommand/newenvironment-definitions ...
 \newcommand{\myparagraph}[1]{\paragraph{#1}\mbox{}\\}
 
+\setcounter{tocdepth}{1}
 \setcounter{secnumdepth}{3}
+
 
 \newcommand{\myLaT}{\LaTeX{}@TUG\xspace} %% LaTeX@TUG text "logo"
 
@@ -219,7 +228,9 @@
 
 \tableofcontents                %% this produces the table of contents - you might have guessed :-)
 
+\listoftables
 \listoffigures
+
 
 %% if myaddlistoftodos is set to "true", the current list of open todos is added:
 \ifthenelse{\boolean{myaddlistoftodos}}{
@@ -231,22 +242,22 @@
 
 %% include tex file chapters:
 \include{introduction}        
-% \include{exploration}
-\include{theory}
 \include{design}
+\include{theory}
 \include{methodology}
 \include{findings}
-\include{discussion}
 \include{conclusion}
 
 %% Statutory Declaration
-\thispagestyle{plain}
-\include{declaration}			
+% \thispagestyle{plain}
+% \include{declaration}			
+
+\includepdf{declaration-signed}
 
 %% Appendix
 \appendix                       %% closes main document, appendix follows until end; only available in book-classes
 \addpart*{Appendix}             %% adding Appendix to tableofcontents
-
+\include{appendix/sonargraph}
 
 \printbibliography              %% remove, if using BibTeX instead of biblatex
 

@@ -15,24 +15,17 @@ When referring to these activities by name, many employees use the term refactor
 The exact definition of the term \emph{refactoring} is not always self-evident,
 	despite its familiarity.
 To avoid referring to the term too loosely, 
-	it is consequently important to give a precise definition as a reference for this thesis. 
+	it is consequently important to give a precise definition as a reference for the following parts of the  thesis. 
 
 % Fowler Refactoring Definition
-Martin \textcite[p. ~xiv]{fowler2018} managed to formulate a definition that is both short and precise. 
+Martin \textcite{fowler2018} managed to formulate a definition that is both short and precise. 
 He is one of the most prominent figures in the field of refactoring, 
-	and has pioneered many concepts, which this thesis is going to discuss.
+	and has pioneered many concepts and ideas, which are also discussed throughout this thesis.
 Fowler defines refactoring in the following:
 \begin{quote}
 \textbf{Refactoring} is the process of changing a software system in a way 
 	that does not alter the external behavior of the code yet improves its internal structure.
 \end{quote}
-
-% Definition in Own Words
-According to this definition, 
-	refactoring should not change the features of the program.
-By proper refactoring, 
-	we can thus alleviate the risk associated with changing the codebase, 
-    such as the creation of new bugs.
 
 % --
 % Refactoring Example
@@ -44,140 +37,93 @@ By proper refactoring,
 % ---
 
 \clearpage
-\subsection{Benefits: Why should we refactor?}
+\section{Benefits: Why should we refactor?}
+\label{sec:benefits}
 
 % Adding Features is attractive
 The benefit of refactoring is not as obvious as other activities in software development. 
-Spending valuable resources on a process that does not add new functionality, 
+Spending valuable resources on a process that does not add new functionality 
 	might sound unappealing to many managers and software engineers.
-Likewise, \textcite[p.~1]{kim2012} add the problem of not sensing an immediate benefit when refactoring.
-Furthermore, the value of improving the internals of the code is hard to show to a manager, 
-	who is not an expert and even harder to present to the client, who is paying for the work.
+Likewise, \textcite{kim2012} discuss the problem of not sensing an immediate benefit when refactoring.
+Furthermore, the value of improving the internal structure of the code is hard to demonstrate to a manager, 
+	who is not an expert and even harder to present to a client, who is paying for the work.
 
-Having said that, when refactoring is ignored, there is not necessarily more time available.
-Through continuous modifications and adaptations to new requirements, 
+Having said that, when refactoring is ignored, more time is not necessarily accessible to programmers. 
+\textcite{mens2003} argue that through continuous modifications and adaptations to new requirements, 
 	the code becomes increasingly complex and drifts away from the original design.
-By not improving the quality of the software, which would counteract this complexity, 
-	a major part of the resources is still spent on software maintenance (\cite[p.~1]{mens2003}). 
-
-% Refactoring necessary to avoid maintenance costs
-Having Fowler's Definition in mind, 
-	we thus aim to mitigate time spent on tedious maintenance, 
-	and rather improve the quality attributes of the code beforehand.
-Neglecting such work, would increase debt, 
-	which would have to be repaid in the future in the form of costly maintenance costs.
-Moreover, by obtaining this so-called \emph{technical debt}, 
-	future features are more expensive to implement, and sudden changes are near impossible. 
-The concept of technical debt is important to fully grasp, 
-	which is why it is further explained in a future section of this thesis
-(see Section \ref{sec:Business}).
-
+Hence, by not improving the quality of the software, resources will still need to be spent on software maintenance. Bearing in mind Fowler's Definition of refactoring, 
+	we therefore aim to mitigate time spent on tedious maintenance, 
+by instead improving attributes of the code beforehand.
 
 % Internal Structure = Improving the Quality Attributes
-In general, refactoring helps to improve the internal quality attributes of the software (\cite[p.~129]{mens2004}). 
+In particular, refactoring helps to improve the internal quality attributes of the software system (\cite{mens2004}). 
 For instance, some refactorings remove code redundancy, 
 	some raise the level of abstraction, 
-	some enhance the reusability, and so on.
+	some enhance the reusability.
 \textcite{bass1998} distinguishes
-	between two types of quality attributes. 
-One type is concerned with the observation of the system at runtime, 
-	such as performance and security, 
-	whereas the other type does not consider  system runtime.
-During refactoring, we are mostly concerned with the latter, 
-	meaning we ignore the performative aspect of software during runtime.
+	between two categories of quality attributes. 
+The first category observes software attributes at runtime. This includes the performance and the security of the software system. The other category does not consider system runtime, but focuses on the quality of the source code. During refactoring, we are only concerned with the latter. This means that we do not consider software quality with respect to its performance and security. 
 
 % Listing Attributes
 During a study on the value of quality attributes on refactoring, 
-	\textcite[p.~4]{alkhazi2020} identified 
+	\textcite{alkhazi2020} identified 
 	six of such quality attributes: 
 	Reusability, Flexibility, Understandability, 
 	Functionality, Extendibility, and Effectiveness.
-We will not go into detail of each attribute, 
-	but it is still important to remember some of them,
-   to measure whether the refactoring improved the internal quality of the software.
-In addition, choosing the relevance of quality attributes,
-	highly depends in particular on the project at hand.
-Fortunately, even without understanding the specificities of these attributes,
-	programmers can get a feel of what code with high quality is.
-As a rule of thumb, 
-	if it takes the programmer a week to make a change 
-	that would have taken only an hour with proper quality, 
-	we can assume that most of these attributes are at 
-	least partly not fulfilled.
-
-% Interconnectedness
-The advantage of knowing quality attributes, is the ability to evaluate refactorings. 
-In particular, the effect of a refactor can be estimated, 
-	by the level of improvement in these quality attributes.
-Again, the transformation of the internal structure 
-	is the deciding factor on which success is measured.
-Refactoring adds value if at least one quality attribute has significantly improved.
-
-% External Structure = Tests
-As previously mentioned, there is one requisite when measuring the added value.
-The external behavior must not altered. 
-As an example, changing the code base could make the program more modular, 
-	but during the process create bugs that didn't exist before. 
+As a general principle, refactoring adds value if at least one quality attribute has significantly improved, given that the external behavior was not altered.
 Accordingly, to make meaningful evaluations, 
 	it must be proven that only the internal structure has changed.
-This can be achieved by writing software tests beforehand 
-	and then testing the features after the refactor.
-Consequently, software tests is a major component when deciding the success of a refactor.
+This can be achieved by writing software tests beforehand, to then test whether features remained the same after refactoring (\cite{fowler2018}).
+As a result, software tests are a major component when deciding the success of a refactor (for further information, refer to \ref{sec:testing}.
 
 
 % ---
 % Criteria: When should we Refactor
 % ---
 
-\subsection{Criteria: When should we Refactor?}
+\section{Criteria: When should we Refactor?}
+\label{sec:criteria}
 
 % Critical Perspective
-From a business standpoint, there needs to be little to no explanation, 
+From a business standpoint, there needs to be little explanation, 
 	when debating time spent on new features and fixing unresolved bugs.
-As discussed earlier, it is significantly harder to persuade doing a refactor, 
+As discussed earlier, it is significantly harder to persuade refactoring, 
 	as there are fewer immediate benefits.
-For that reason, one needs to verify the necessity of a refactor 
+For that reason, one needs to verify the necessity of refactoring
 	and compare it to the need of other pending tasks.
-\textcite[p.~5]{fowler2018} points out that if the code works and doesn't ever need to change, 
-	it's fine to leave it alone.
-He suggests that as soon as someone needs to understand how the code works, 
+For instance, \textcite{fowler2018} points out that if the code works and does not ever need to change, 
+	it is fine to leave it alone.
+In contrast, he suggests that as soon as someone needs to understand how the code works, 
 	and struggles to follow it, one has to do something about it.
-Accordingly, a potential improvement in quality, doesn't warrant a refactor by itself.
+Generally speaking, a potential improvement in quality therefore does not warrant refactoring by itself.
 
 % Small Refactors
-It is crucial to note that refactoring does not have to be a massive, obscure undertaking.
-Even if there is a demand for a huge refactor, the refactorings themselves are minor.
-Refactoring is all about applying small behavior-preserving steps 
-	and making a big change by stringing together a sequence of these behavior-preserving steps (\cite[p.~45]{fowler2018}). 
+It is crucial to note that refactoring does not have to be a large and complex undertaking.
+Even if there is a demand for it, the refactorings themselves are minor.
+\textcite{fowler2018} describes refactoring practices as the application of small behavior-preserving steps, 
+	allowing to produce a big change by stringing together a sequence of these behavior-preserving steps ). 
 For this reason, refactoring as a principle, 
-	always plays a key role in software development, 
-	as code being easier to understand and cheaper to modify is vital.
+	can always play a part in software development, 
 Therefore, with projects that appear to be qualitatively sufficient, 
 	active monitoring of the code quality and continuous improvements 
-	through refactorings are still advisable.
+	through refactorings is still advisable.
 
 % Two Hats
 This approach leads to the presumption that these activities can be done in parallel.
-It is, however, important to note, 
-	that this parallelism doesn't suggest that one can add features and refactor at the same time.
-The interplay between them can be described making use of an analogy (\cite[p.~47]{fowler2018}). 
-Fowler sees software development as wearing two hats, 
-	proposing that time is divided between adding functionality and refactoring. 
-He argues that these activities should be distinctively separated, 
-	meaning that during a refactor one should not add functionality and vice versa. 
+However, adding features and refactoring at the same time is not recommended.
+The interplay between them can be described making use of an analogy developed by Martin \textcite{fowler2018}. 
+He sees software development as wearing two hats, 
+	and proposes that time should be distinctively divided between adding functionality and refactoring. 
+This means that during refactoring one should not add functionality and vice versa. 
 To support his point, 
-	Fowler adds that “often the fastest way to add a new feature is to change the code to make it easy to add” (\cite[p.~53]{fowler2018}) 
+	Fowler adds that “often the fastest way to add a new feature is to change the code to make it easy to add” (\cite{fowler2018}) 
 Conversely, once the code is better structured, 
 	time can be efficiently spent on adding new capabilities.
 
-% Transition
-This approach illustrates nicely that refactoring 
-	should be an integral part of software development according to Fowler's standpoint.  
-Moreover, it challenges the frequent notion of refactoring being 
-	cleaning up quality deficient code and fixing past mistakes. 
-
 % Planned Refactor
-Once the relationship between refactorings and adding features is understood, 
+This analogy illustrates nicely that refactoring 
+	should be an integral part of software development according to Fowler's standpoint. 
+Once this relationship between refactorings and adding features is understood, 
 	one can better estimate the timing of each activity.
 Even though we learned that refactoring at its best is fairly small, 
 	by understanding the precise relationship, 
@@ -185,137 +131,50 @@ Even though we learned that refactoring at its best is fairly small,
 In more concrete terms, if we agree that better structured code 
 	allows us to add features quicker, 
 	we can infer that there could be moments where dedicated time spent on refactoring 
-	is necessary to get the code base into a better state for new features (\cite[p.~53]{fowler2018}).
+	is necessary to get the code base into a better state for new features (\cite{fowler2018}).
+As a consequence, doing continuous refactoring might not suffice for larger projects. 
 
-% ... compared to small steps
-Contrasting large and potentially complex refactors with our previous definition of 
-	refactoring being smaller steps, we realize 
-	that there exists a difference in scope.
-The difference in scope being precisely 
-	the amount of small refactoring steps needed to be applied.
-Therefore, with certain projects, doing continuous refactoring during the development process might not suffice, 
-	and an overarching refactor is necessary.
+However, there needs to be a note of caution. Specifically, one may assume that for software systems with good internal structure, small refactors suffice. In contrast, in software systems that lack quality, one might think that larger refactorings are required. Although intuitively both assumptions generally make sense, there are exceptions to both cases that are important to keep in mind. 
 
-% Transition: Critical view
-According to these presumptions, the conclusion would be 
-	that with increased code quality small refactors suffice, 
-	whereas with a lack of code quality larger refactorings are required. 
-Although this is typically valid, there are exceptions one needs to keep in mind. 
-Indeed, there are scenarios, which challenge both assumptions.
-
-% Arguments: Transformation 
-The assumption that small and continuous refactor suffice, for code bases with high quality, 
-	does not hold if one of the quality attributes gains significantly in importance, 
-Such a situation could justify a larger refactor of code, 
-	even though it is perceived as being high in quality. 
-This is typically the case,
-	with approaching of large transformations to the code base. 
-For example, unprecedented security risks might demand the code base 
-	to be more testable.
-Another case would be a migration to the cloud, which would require the code being high in modifiability. 
-Consequently, a larger refactoring would then be used to satisfy these requirements.
-
+% Arguments
+The first assumption, associated with well-structured software, can be disputed if one of the quality attributes gains significantly in importance. Such a situation alone may justify large efforts of refactoring, necessary to reach the desired state. 
 % Argument: Lack of importance
-The second assumption was that code that clearly lacks quality 
-	would inevitably result in a lot of time spent in refactoring.
-In contrast, 
-	if a part of code is relatively insignificant,  
-	an argument for a planned refactoring is difficult 
-	to be made when accounting the associated costs. 
-Here, minor restructurings and bug fixes could suffice. 
-However, once the part gains in importance, 
-	a larger refactoring could then be considered and might be necessary. 
-This means that successful refactoring can also be thought of 
-	allocating the companies' resources efficiently. 
-Having a business case for refactoring is such an important topic, 
-	that it will be discussed later in section (X).
+The second assumption, associated with software systems that lack quality, does not hold for modules of the codebase that are not a crucial part of the software system. Here, considering the associated costs, it is hard to make a case for planned refactoring and minor restructuring could suffice.
 
-% Conclusion
-In summary, it is safe to say 
-	that large refactoring efforts and tedious maintenance in post is not desirable. 
-This is because ignoring refactoring, even though it is required,
-	will result in costs and risks.
-The ideal case is, then, 
-	that decisions are conducted in advance 
-	by establishing refactoring as an integral part 
-	of the software development process.
-Refactor can then be thought of as a 
-	potential investment that would be repaid in the future. 
-
-% ---
-% 3 Key Benefits: Why Should we Refactor
-% ---
-
-% \subsection{Benefits}
-
-% We now have a thorough understanding 
-% 	of the timing of the refactor. 
-% The previous sections implied the overarching reason of refactoring, 
-% 	which is the increase of code quality. 
-% However, 
-% 	we did not formulate the concrete benefits. 
-% By asking ourselves why we should refactor, 
-% 	we can better understand the scope and complexity of a refactor. 
-% In addition, one might realize that 
-% 	small changes during the development phase can suffice 
-% 	in avoiding software decay in the future.
-% Fowler \textcite[p.~47]{fowler2018} states three key benefits that answer the question of why exactly we should refactor.
-
-% ---
-% Challenges: What to watch out?
-% ---
-
-\subsection{Challenges: What to watch out?}
-
+\section{Challenges: What to watch out?}
+\label{sec:challenges}
 % Intro
-With a thorough understanding of the complexities 
-	such as benefits, scope and timing of refactoring, 
-	the effective act of refactoring seems fairly easy in comparison. 
-In other words, 
-	the actual difficulties
-	might be related to the planning rather than the implementation. 
-
-% Two hats
-% Note: Could be shortened
-The difficulties of planning become even more evident,
+Having a comprehensive understanding of the benefits, scope, and timing of refactoring, 
+	it becomes evident that many of the difficulties, are related to planning refactoring rather than its execution.
+The complexity of planning become more apparent,
 	when working within teams.
 Going back to the analogy of the two hats, 
 	we assumed that the software development process 
-	is conducted by an individual. 
+	is conducted by a single person. 
 In practice, however, 
-	the development is typically done with more than one person. 
+	the software development in organizations is typically done within a team. 
  This makes refactoring considerably more difficult,
  	knowing that refactoring and adding new features 
 	should be a distinct activity. 
-Thus, a programmer decides to refactor in a team,
-	said programmer could inhibit others from working on the code 
-	at the same time. 
-In other words, it is particularly easy to swap hats when coding alone, 
-	but much more difficult when the coding is done in teams. 
+Thus, when a programmer decides to refactor parts of the software system,
+	it could inhibit others from working on the software at the same time. 
 As a result, 
 	it is a challenge to clearly separate 
 	which part of the code base is being refactored, 
 	and which is added functionality. 
 The underlying goal is to reach a state,
 	where the separate parts are entirely independent. 
-When ignoring this division, 
-	the risk of bugs being introduced becomes much higher. 
+It is important to be aware of this challenge, 
+	because otherwise the risk of bugs being introduced becomes much higher. 
 As a consequence, 
-	the essential premise of refactoring, 
-	being that no observable behavior is changed, 
-	cannot be achieved.
 
 % Counterintuition
-These challenges related to refactoring 
+Comprehensively planning refactoring 
 	may sound intimidating and time-consuming at first.
-Fowler \textcite[p.~56]{fowler2018} argues against this belief,
+\textcite{fowler2018} argues against this belief,
 	by suggesting that the whole purpose of refactoring 
 	is to speed things up.
-The key is, as with most software-related work, to not do it blindly, 
-	and try to do the refactoring with intent.
- This means to not only focus on the practical steps of refactoring,
- 	but also to always have an overview of the entire project.
-Situating refactoring within the broader scale of the project 
+Positioning refactoring within the broader scale of the project 
 	allows to actively decrease risks and 
     enables to focus on the overall quality of the code base.
 Even though refactoring is often done on a small scale,
@@ -328,34 +187,14 @@ This is especially apparent when incrementally improving previously discussed at
 % Conclusion: Competence
 In practice, 
 	“too little refactoring is far more prevalent than too much” 
-	(\cite[p.56]{fowler2018}).
+	(\cite{fowler2018}).
 The suggestion that people should attempt to refactor more often, 
 	is, however, much easier said than done.
-Besides the mentioned challenges, 
+Besides the mentioned difficulties, 
 	refactoring can add considerable value, 
 	with the precondition that it is properly carried out.
 Carrying out refactorings, however, is not always an easy task, 
 	requires education, and most definitely experience.
-This can indeed be seen as another challenge, 
-	which depends on the competences of the software engineers who are actively involved.
-
-% Transition
-
-% In addition, on a broader level, the team, 
-% 	or company must be aware of the trade-offs relating to refactoring. 
-% Refactoring is dynamic in its nature,
-% 	as the quality of the code and the overall objectives,
-% 	must constantly be reassessed,
-% 	in order for the refactoring to be most effective.
-% These associated trade off between opportunities and risks, 
-% 	and also costs and benefits, are 
-% 	primarily relevant in business thinking. 
-% Regarding the importance of investing resources into refactoring, 
-% 	this tehsis will spend some time 
-% 	looking at the business case of refactoring.
-% The following part will set out to answer questions such as
-
-% [...]
 
 % --
 % Code Smells
@@ -364,77 +203,71 @@ This can indeed be seen as another challenge,
 \section{Formalization of Code Smells}
 
 % Transition: Relationship between Refactoring and Code Smells
-Knowing just the importance and applications of refactoring does not suffice, 
-	as one still needs to understand the indications 
-	that lead to an individual refactoring.
-\textcite[p.~71]{fowler2018} argues that deciding when to start refactoring,
+Programmers need to be aware of indications that lead to refactoring.
+\textcite{fowler2018} argues that deciding when to start refactoring,
 	and when to stop,
 	is just as important to refactoring,
 	as knowing how to operate the mechanics of it.
-Particularly, there is no clear-cut moment when to refactor, 
-	there are only indications 
-	that there is trouble that can be solved by a refactoring.
+Particularly, there is oftentimes no a clear-cut moment requiring refactoring. Instead, there commonly exist 
+	indications of issues that can be solved by refactoring.
 In practice, 
-	these indications are known as code or design smells 
-	(\cite[p.~2]{lacerda2020}).
-These two terms are distinguished by being either located at a lower level,
+	these indications are known as \emph{code smells} or \emph{design smells} 
+	(\cite{lacerda2020}).
+These two terms are distinguished by existing either at a lower level,
 	known as the code level, or on a higher level, 
 	the design level. 
 Hence, 
 	depending on the degree of complexity, 
 	the smells are named code smell or design smell.
 As throughout this work we are not concerned 
-	with design decisions of the codebase, 
+	with design decisions of the software system, 
 	we will from now on refer to the indications as code smells.
 
 % What is a Code Smell?
-The term “smell” is used in reference to an internal software problems
-	\textcite[p.~2]{lacerda2020}, 
+The term “smell” is used in reference to an internal software problem
+	(\cite{lacerda2020}), 
 	which can negatively impact software quality 
-	(\cite[p.~1]{sonnleithner2021}). 
+	(\cite{sonnleithner2021}). 
 One might think that software bugs fall into this category, 
 	but this is a false assumption.
 Although bugs also negatively impact the state of software, 
 	code smells do not necessarily cause the application to break.
 Nonetheless, these internal problems may lead to other negative consequences,
-	such as the “impacting on software maintenance and evolution”
-	\cite[p.~2]{lacerda2020}.
+	such as “impacting software maintenance and evolution”
+	\cite{lacerda2020}.
  
 % Illustration
 \begin{figure}[htp]
     \centering
     \includegraphics[width=\textwidth]{./assets/simple_process.png}
-    \caption{Simplified model of Refactoring}
+    \caption{Refactoring process (Simplified Model)}
 \end{figure}
 
 % Connection
 Knowing that code smells refer to internal problems,
-	it becomes apparent that they are linked to refactoring, 
+	it becomes apparent that they are closely connected to refactoring, 
 	which tries to improve the internal state of the software.
 In other words, 
-	refactoring can be thought of getting rid of code smells. 
+	refactoring can be thought of removing or getting rid of code smells. 
 
 % Examples Intro
-To better comprehend these code smells, it is best to list some of them. 
-However, to stay within the scope of this thesis, 
+To better comprehend the concept of code smells, it is best to list some of them. 
+To stay within the scope of this thesis, 
 	we will limit the examples to the most prominent ones. 
-In their work, Fowler and Beck introduced a total of 24 code smells to avoid.
-Therefore, 
-	the following overview briefly summarizes 
-	the top ten most frequently reported code smells according to 
-	[p.~15]\textcite{lacerda2020}.
+A selection of ten code smells will be introduced out of 24 code detailed in Fowler's catalog \cite{fowler2018}.
+According to a survey conducted by \textcite{lacerda2020}, the following overview briefly summarizes 
+	the ten most frequently reported code smells.
+\newpage
 
+Summary of code smells identified by Kent Beck and Martin \textcite{fowler2018} 
 % Table
-	% TODO: Need to be in list of figures, right?
-\subsection{Code Smells}
-\label{sec:smells}
-
-Summary of code smells identified by Fowler and Beck \textcite{fowler2018} 
-
+\begin{table}[H]
+    \centering
 \newcolumntype{b}{X}
 \newcolumntype{s}{>{\hsize=.5\hsize}X}
-\renewcommand{\arraystretch}{1.7}
-\scalebox{0.8}{
+\renewcommand{\arraystretch}{1.2}
+\scalebox{0.9}{
+\label{fig:smells}
 \begin{tabularx}{1.2\textwidth}{{sb}}
 	Code Smells & Description \\
  \hline
@@ -442,166 +275,99 @@ Summary of code smells identified by Fowler and Beck \textcite{fowler2018}
 	Large Class & Class that has many responsibilities and therefore contains many variables and methods. \\
 	Feature Envy & When a method is more interested in members of other classes than its own,
 		is a clear sign that it is in the wrong class \\
-	Long Method & Very large method/function and, therefore, difficult to understand, extend and modify.
-		It is very likely that this method has too many responsibilities,
-		hurting one of the principles of a good OO design \\
+	Long Method & A method that is very likely to have too many responsibilities,
+		hurting one of the principles of good object oriented design \\
 	Long Parameter List & Extensive parameter list, which makes it difficult to understand
 		and is usually an indication that the method has too many responsibilities. \\
 	Data Clumps & Data structures that always appear together,
 		and when one of the items is not present, the whole set loses its meaning \\
-	% Refused Bequest & It indicates that a subclass does not use inherited data or behaviors \\
+	Refused Bequest & Indicates that a subclass does not use inherited data or behaviors \\
 	Divergent Change & A single class needs to be changed for many reasons.
 		This is a clear indication that it is not sufficiently cohesive and must be divided \\
 	Shotgun Surgery & Opposite to Divergent Change,
-		because when it happens a modification, several different classes have to be changed \\
+		because modification requires changing several classes \\
 	Lazy Class & Classes that do not have sufficient responsibilities and therefore should not exist \\
 \end{tabularx}
 }
+    \caption{Code Smells Overview}
+    \label{tab:my_label}
+\end{table}
 
-% Conclusion (Transition)
-Despite having an infinite amount of potential code smells,
-	the list gives a good overview of internal problems.
-Being aware of these pattern is crucial
-	in order to achieve the goals of improving the state of software quality.
-Ignoring these smells might not seem to be that big of a problem. 
-In cumulation, 
-	however, getting rid can have a significant effect.
-Furthermore, 
-	looking at it from a broader perspective, 
-	code decay inhibits the software development project. 
-Refactoring then becomes a tool for programmers to invert this decay.
-If ignored, 
-	this effect becomes harder and harder to manage, 
-	as it is increasingly difficult to both change the internal state and 
-	add features, with software that is lacking quality. 
-This is why it is essential not to do refactorings in stages, 
-	but in a simultaenous manner.
-Disregarding this, 
-	leads to the accumulation of debt, 
-	which is formaly known as technical debt. 
-The concept of technical debt will be the main theme 
-	in the following part, 
-	which focusses on the business case of refactoring.
-
-% Conclusion (1)
-Despite having an infinite amount of potential code smells,
-	the list gives a good overview of possible internal problems.
-Being aware of such pattern is crucial
-	to improve the state of software quality.
-The act of ignoring a code smell, 
-	might not seem to be that big of a problem at first. 
-Cumulatively, however, 
-	getting rid of smells does have a significant effect.
-From a broader perspective, not acting on int12340ernal problems results in
-	code decay, which in turn inhibits the software development project. 
-
-% Conclusion (2)
-Refactoring then becomes a tool for programmers to be able to invert code decay.
-In other terms, 
-	neglecting code smells becomes harder and harder to manage, 
-	as it is increasingly difficult to both change the internal state and 
-	add features, with software that is lacking quality. 
-This is why it is essential not to do refactorings in stages, 
-	but in a simultaneous manner.
-Disregarding this, 
-	leads to the accumulation of debt, 
-	which is formally known as technical debt. 
-The concept of technical debt will be the main theme 
-	in the following part, 
-	which focuses on the business case of refactoring.
-
-\chapter{The Business Case for Refactoring}
+\chapter{Technical Debt}
 \label{sec:Business}
 
 % Introduction
-During the lifetime of a project, one has to inevitably deal with internal problems appearing in the software systems. While having these code smells in our programs, the company has to suffer in terms of costs that we can only be mitigated by getting rid of the smells by refactoring.  A prototypical example of a common financial cost is the additional time spent, whilst programming with deficient code. Naturally, employees are spending less time when their code is easy to read, understand, and modify. Conversely, through the accumulation of code smells in software systems, companies are exposed to a financial burden they might want to get rid of. Examining this discussion between code smells  and financial costs paves the way to consider refactoring decisions from a business standpoint. The relationship will be the subject in the following part of the thesis.  
+During the lifetime of a project, companies have to inevitably deal with code smells appearing in the software systems. Consequently, associated financial costs can only be mitigated by getting rid of them by refactoring.  A typical example of a common financial cost is the additional work required, when programming with deficient code. Naturally, employees are spending less time when their code is easier to read, understand, and modify. Examining the discussion of the relationship between code smells  and financial costs paves the way to consider refactoring decisions from a business standpoint.
 
-\section{Technical Debt}
+\section{Establish a Business Case}
+\label{sec:business-case}
 \begin{figure}[H]
     \centering
-    \includegraphics[width=\textwidth]{./assets/technical_debt}
-    \caption{Simple depiction of Technical Debt}
+    \includegraphics[width=0.6\columnwidth]{./assets/technical_debt}
+    \caption{Technical Debt Simplified Depiction}
 \end{figure}
-
 % Technical Debt: Explanation
 Technical debt is a helpful metaphor 
 	that provides a framework that allows thinking about code smells 
-	in terms of financial debt {fowlerdebt}.
-In concrete terms, the term Technical debt, coined by Ward Cunningham, describes the extra effort it takes to add new features (\cite{kruchten2012}). 
-In financial terms, the additional effort is the interest that has to be paid on the debt (\cite{fowlerdebt}). 
-Fowler {fowlerdebt} presents the example 
+	in terms of financial debt (\cite{fowler2019}) in order to establish a firm business case.
+In concrete terms, the concept of Technical debt, coined by Ward Cunningham, describes the extra effort it takes to add new features (\cite{kruchten2012}). 
+In financial terms, the additional effort is the interest that has to be paid on the accumulated debt (\cite{fowler}). 
+Fowler presents the example 
 	of a confusing module structure in a code base.
 He illustrates that 
-	a programmer could need four days to add new features 
+	a programmer needs four days to add new features 
 	with a clear structure and six days with code smells. 
-Then, the two additional days is the interest a company has paid on the debt.
+Then, the two additional days spent is the interest a company has paid on the debt.
 We see that a company can either decide to pay the interest on technical debt, 
 	or reduce it by means of refactoring. 
-Within the context of our thesis,
-	when referring to technical debt, it is implied code smells are the subject of discussion.
-In practice, however, Technical debt must not be limited to code smells. The overarching metaphor of Technical debt encompasses anything 
-	that adds friction from software development endeavors (\cite{kruchten2012}). 
 
 % Technical Debt: Unavoidable
 One approach to think about solutions is to argue for investing in experienced programmers to avoid debt entirely. 
-A company could then do such an undertaking, if the additional money spent on the salaries is offset by the cost endured from debt.
-In practice, it is not that simple, as technical debt will always accrue, even with experienced programmers. For instance, sometimes debt accumulates because one quality attribute gained in importance, but the code did not change. Other times it could just be due to the fact that code base exists for a very long time. In both cases, refactoring can be a crucial mechanism in order to get rid of acquired technical debt. 
+Based on this assumption, it would sound reasonable to do so, if the additional money spent on the salaries is offset by the cost endured from debt.
+In practice, it however is not that simple. Technical debt will always accrue, even with the most experienced of programmers. For instance, technical debt could accumulate solely because one quality attribute gained in importance. It could also be due to the fact that a code base exists for a very long time. In both cases, refactoring is a crucial mechanism in order to get rid of accumulated technical debt. 
 
 % Paradox
+Consequently, it becomes apparent, that businesses have financial incentives to make the right decisions in order to efficiently allocate their resources.
 There can be instances where technical debt is substantial enough, 
 	where associated interest payments can not be handled. 
 In some cases, it might be more cost-effective to 
 	rewrite an entire code bases instead of refactoring it.  
-As a consequence, it becomes apparent, that businesses have financial incentives to make the right decisions in order to efficiently allocate their resources.
-Such difficult decisions require 
-	competent employees that on the one hand know in what ways to deal with the debt, but more importantly to prevent such cases from happening completely.
-These employees are not confined to one type of job
-As a consequence, lacking the relevant expertise in either management or software engineering departments can lead to undesirable financial ramifications. 
-Such conclusions encourage us to look at refactoring from a business standpoint. As a consequence, the section below will explore this topic even further.
+Difficult decisions require 
+	competent employees that are able to decide in ways to deal with the debt. 
+These employees are not limited to one type of job role.
+Relevant expertise in both management or software engineering department can lead to substantial financial opportunities.
 
-\section{Communication Device}
+
+\section{Justify Economic Decisions}
+\label{sec:economic-decisions}
 % Economic Context
 Being aware of the financial relationship, 
-	we see that refactoring must not be restricted to programmers and can be much more relevant to upper team leaders, or product managers.
+	it was just indicated that refactoring must not be restricted to programmers and can also be relevant to managerial roles such as team leaders, or product managers.
 Having knowledge of abstract concepts, like technical debt,
-	allows employees from other domains
-	to make decisions and communicate them, without any programming experience.
-It can be extremely freeing not to rely on moral principles, 
-	but instead provide an evaluation that an also be defended from a business standpoint.
-Moreover, some might even argue that decisions regarding refactoring should be purely economic.
-Fowler [p.~57]{fowler2018} claims 
+	allows employees to participate in decisions and communicate them, without deep knowledge of software engineering.
+Instead of relying on best practices in software development, employees are able to offer an evaluation that can be defended from a business standpoint.
+Moreover, some might even argue that decisions regarding refactoring should be purely economic. \textcite{fowler2018} claims 
 	that it is beneficial to have this attitude and argues that economic benefits
 	should always be the driving factor of refactoring.
 
 % Communication Device
-As alluded to above, Technical debt can also be used as a communication device. 
-It is a simple model to form economic decisions, 
-	that are potentially very complex.
-This device can be used in two directions, top-down or bottom-up.
-Top-down communication by experienced team leaders 
-	using the term technical debt provides directions to their team members.
-As an example, management has decided to migrate their systems to the cloud, 
-	but it is realized that the code contains a lot of code smells, 
-	which makes it hard to undergo such a change. 
-Consequently, by communicating this issue in regard to having too much technical debt in that specific domain.
-This aids employees in knowing the particular area 
-	to focus on, and prevents them to refactor at places 
-	that do not directly contribute to the migration.
+Technical debt can a useful device to communicate decision relating to refactoring.
+It is a simple model to form significant and potentially complex economic decisions.
+The device can be used in two directions, top-down or bottom-up.
+In top-down communication, using the term technical debt, provides directions to team members.
+As an example, management has decided to migrate their parts of their systems to the cloud, 
+	but it team leaders have realized that the code contains a lot of code smells, 
+	making it hard to undergo such a change. 
+Communicating this issue using the concept of technical debt prevents refactoring parts of code 
+	that does not directly contribute to the objective of migration.
 
 % Bottom-up
-Additionally, technical debt as a metaphor 
+Likewise, technical debt as a metaphor 
 	can also support bottom-up communication.
 This metaphor can be used to provide sufficient arguments for refactoring, 
-	when clients or upper management are in doubt.
-For instance, it could serve as a tool to reason about 
+	when clients or upper management are in doubt of such a decision.
+For instance, it could serve as a device to reason about 
 	the difficulties of adding new features or 
 	the issues of making major changes to the application. 
-As a result, barrier are reduced between 
-	software engineers, other departments, and clients, when discussing the 
-	underlying problem of code smells. 
-Furthermore, with proper communication, 
-	clients, for instance, might even be encouraged to further reduce 
-	technical debt in order for the software to be adaptive to 
-	upcoming trends or customer requests. 
-Moreover, keeping technical debt low prevents clients from destroying current value 
-	and keep their product to stay successful over the long term.
+Overall, independent of the direction of communication, knowing technical debt allows companies to have less friction between
+	software engineers and its other departments. 
