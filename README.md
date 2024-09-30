@@ -1,73 +1,50 @@
-# Refactoring of a Software System for Industry 4.0
-<!-- ### [👉 Preview Bachelor Thesis](thesis.pdf) -->
-### [👉 Preview Bachelor Thesis](https://github.com/fabian-gubler/bachelor-thesis/raw/main/thesis.pdf)
+# Bachelor Thesis – Refactoring of a Software System for Industry 4.0
 
-Note: This PDF document is continuously updated and automatically generated
+### :books: **Bachelor Thesis**:  
+**[Refactoring of a Software System for Industry 4.0](https://raw.githubusercontent.com/fabian-gubler/bachelor-thesis/main/BachelorThesis_FabianGubler_Refactoring.pdf)** – Click the link to preview my bachelor thesis.
 
-## Project Description
-Here comes a short introduction of this project.
+---
 
-### Open Questions
-see PDF
+## Overview
 
-### Milestones Overview
-- [1. Preparations](#1.-Preparations) (completed)
-- [2. Framework](#2.-Framework)
-- [3. Coding](#3.-Coding)
-- [4. Finalization](#3.-Finalization)
+This bachelor thesis focuses on refactoring a software system for Industry 4.0, aiming to improve the system’s internal structure without altering its external behavior. The thesis builds on the established concepts of refactoring, closely linking them with the detection of code smells, managing technical debt, and measuring quality improvement. A comprehensive methodology was developed to apply refactoring principles to a specific case study in Industry 4.0, using the Fischertechnik Learning Factory as a simulation of a smart factory.
 
-### Project Notes
-- [Contents](https://github.com/fabian-gubler/bachelor-thesis/blob/main/notes/contents/overview.md)
-	1. [Exploration](https://github.com/fabian-gubler/bachelor-thesis/blob/main/notes/contents/1-exploration.md)
-	2. [Refactoring](https://github.com/fabian-gubler/bachelor-thesis/blob/main/notes/contents/2-refactoring.md)
-- [Research](https://github.com/fabian-gubler/bachelor-thesis/blob/main/notes/research.md)
+- **Degree**: Bachelor of Arts in Business Administration  
+- **Institution**: University of St. Gallen  
+- **Supervisor**: Prof. Dr. Ronny Seiger  
+- **Submission Date**: May 2022  
 
-## 1. Preparations
-It makes sense to first take some time preparing the writing process of the thesis.
-The following measures are personally useful to me by making writing more efficent and fun.
+## Abstract
 
-~~**Structuring Writing Process**~~
-- [x] Declaration of Authorship
-- [x] Superficial Descriptions of Parts (see [contents](https://github.com/fabian-gubler/bachelor-thesis/blob/main/notes/contents/overview.md))
-- [x] Preliminary Table of Contents
+This thesis explores the connection between refactoring, software quality, and business impact. By analyzing a software system in an Industry 4.0 context, the research identifies key drivers of successful refactoring, such as detecting code smells, using a testing environment, and measuring improvements in code quality. The findings recommend that businesses establish a solid case for refactoring decisions using the concept of technical debt, ensuring that refactoring activities are well-justified economically.
 
-~~**Empirical Groundwork**~~
-- [x] Formulate Research Question
-- [x] Formulate Research Objectives
+## Key Contributions
 
-~~**Editing Setup**~~
-- [x] Managing References with Zotero
-- [x] Thesis Template and first adjustments
-- [x] Latex Environment
-- [x] Create this Git Repository
+1. **Comprehensive Refactoring Process**: Developed a refactoring methodology tailored to a smart factory simulation, identifying how refactoring influences both software engineering and business decisions.
+   
+2. **Detection of Code Smells**: Identified prominent code smells, including duplicated code, long methods, and lazy classes, providing practical approaches for removing these issues.
 
-## 2. Framework
-It is essential to understanding the theoretical framework of refactoring and design patterns. At the same time, get an overview of the code and relevant toolset for refactoring.
-- Duration: 4 Weeks
-- Deliverable: Aim to write min. 10 Pages.
+3. **Business Case for Refactoring**: Demonstrated how refactoring improves long-term maintainability and reduces technical debt, offering guidelines for businesses on when to invest in refactoring.
 
-~~**Research and Literature Review**~~
-- [x] Find relevant Papers for subject matter
+4. **Technical Debt Management**: Introduced technical debt as a metaphor to justify refactoring and guide decision-making from both technical and business perspectives.
 
-**Comprehensive Understanding of Refactoring**
-- [x] Study Fowler's work and take notes
-- [ ] Develop Hypotheses
+## Key Learnings
 
-**Toolset**
-- [x] Find Software tools for different code smells
-- [ ] Best Coding Practices in a refactor
-- [x] Find Metrics to evaluate refactor
+1. **Software Quality Management**: Gained experience in applying refactoring to enhance software maintainability, particularly in complex systems like those found in Industry 4.0.
+   
+2. **Technical Debt**: Learned to quantify and communicate technical debt to stakeholders, providing a clear justification for refactoring decisions.
 
+3. **Refactoring Techniques**: Implemented Martin Fowler's refactoring strategies to improve the structure and flexibility of the software system without introducing new bugs.
 
-## 3. Coding
-This is the main part of the thesis. Code refactoring based on theoretical framework. Noting down whether hypotheses are validated and documenting the results.
-- Duration: 4 Weeks
-- Deliverables: Refactored codebase, (Extensive) Note-taking of results
+4. **Testing and Measurement**: Employed automated tools like Sonargraph and Radon to detect code smells and measure the improvement in code maintainability. Developed a custom Git hook to automate quality measurements after each code change.
 
-**Preparations**
-- [ ] Create new Git Branch for active Development
-- [ ] Run Software Tools for initial Analysis
+## Tools & Technologies
 
-## 4. Finalization
-Formulation of notes into first draft of the final paper, which will then be revised and improved upon.
-- Duration: 3 Weeks
+- **Languages**: Python
+- **Tools**: Sonargraph, Radon, Git, Bash
+- **Metrics**: Maintainability Index, Cyclomatic Complexity, Halstead Volume
+- **Framework**: Fischertechnik Learning Factory, Camunda BPMN
+
+## Acknowledgements
+
+I would like to thank Prof. Dr. Ronny Seiger for his invaluable guidance and support throughout this project. Additionally, I am grateful to the University of St. Gallen for providing the resources and environment to complete this thesis.
